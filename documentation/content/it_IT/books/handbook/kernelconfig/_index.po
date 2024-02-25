@@ -1,0 +1,838 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2023-04-20 20:56-0300\n"
+"PO-Revision-Date: 2022-04-11 03:48+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Italian <https://translate-dev.freebsd.org/projects/"
+"documentation/bookshandbookkernelconfig_index/it_IT/>\n"
+"Language: it_IT\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+#. type: YAML Front Matter: description
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
+#, no-wrap
+msgid "This chapter covers how to configure the FreeBSD Kernel. When to build a custom kernel, how to take a hardware inventory, how to customize a kernel configuration file, etc"
+msgstr ""
+
+#. type: YAML Front Matter: part
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
+#, no-wrap
+msgid "Part II. Common Tasks"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
+#, fuzzy, no-wrap
+#| msgid "Configuring the FreeBSD Kernel"
+msgid "Chapter 9. Configuring the FreeBSD Kernel"
+msgstr "Configurazione del Kernel di FreeBSD"
+
+#. type: Title =
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:14
+#, no-wrap
+msgid "Configuring the FreeBSD Kernel"
+msgstr "Configurazione del Kernel di FreeBSD"
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:52
+#, no-wrap
+msgid "Synopsis"
+msgstr "Sinossi"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:57
+#, fuzzy
+msgid ""
+"The kernel is the core of the FreeBSD operating system.  It is responsible "
+"for managing memory, enforcing security controls, networking, disk access, "
+"and much more.  While much of FreeBSD is dynamically configurable, it is "
+"still occasionally necessary to configure and compile a custom kernel."
+msgstr ""
+"Il kernel è il cuore del sistema operativo FreeBSD. È responsabile della "
+"gestione della memoria, applicare i controlli di sicurezza, gestione della "
+"rete, accesso al disco e molto altro. Anche se molte parti di FreeBSD sono "
+"configurabili dinamicamente, occasionalmete è ancora necessario configurare "
+"e compilare un kernel personalizzato."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:59
+msgid "After reading this chapter, you will know:"
+msgstr "Dopo aver letto questo capitolo, saprai:"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:61
+msgid "When to build a custom kernel."
+msgstr "Quando creare un kernel personalizzato."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:62
+msgid "How to take a hardware inventory."
+msgstr "Come fare un elenco dell' hardware."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:63
+msgid "How to customize a kernel configuration file."
+msgstr "Come personalizzare un file di configurazione del kernel."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:64
+msgid ""
+"How to use the kernel configuration file to create and build a new kernel."
+msgstr ""
+"Come usare il file di configurazione del kernel per creare un nuovo kernel."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:65
+msgid "How to install the new kernel."
+msgstr "Come installare il nuovo kernel."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:66
+msgid "How to troubleshoot if things go wrong."
+msgstr "Come risolvere i problemi se le cose vanno male."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:68
+msgid ""
+"All of the commands listed in the examples in this chapter should be "
+"executed as `root`."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:70
+#, no-wrap
+msgid "Why Build a Custom Kernel?"
+msgstr "Perchè Creare un Kernel Personalizzato?"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:74
+#, fuzzy
+msgid ""
+"Traditionally, FreeBSD used a monolithic kernel.  The kernel was one large "
+"program, supported a fixed list of devices, and in order to change the "
+"kernel's behavior, one had to compile and then reboot into a new kernel."
+msgstr ""
+"Tradizionalmente, FreeBSD ha usato un kernel monolitico. Il kernel era un "
+"programma di grandi dimensioni, supportava un lista fissa di device e per "
+"cambiare il suo comportamento bisognava compilarne un altro e riavviare "
+"caricando il nuovo kernel."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:78
+#, fuzzy
+msgid ""
+"Today, most of the functionality in the FreeBSD kernel is contained in "
+"modules which can be dynamically loaded and unloaded from the kernel as "
+"necessary.  This allows the running kernel to adapt immediately to new "
+"hardware and for new functionality to be brought into the kernel.  This is "
+"known as a modular kernel."
+msgstr ""
+"Attualmente la maggior parte delle funzionalità nel kernel sono contenute "
+"nei moduli che possono essere caricati e scaricati dal kernel secondo le "
+"necessatà in modo dinamico. Questo permette al kernel in eseguzione di "
+"adattarsi immediatamente al nuovo hardware e per le nuove funzionalià da "
+"portare nel kernel. Questo è noto come kernel modulare."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:82
+#, fuzzy
+msgid ""
+"Occasionally, it is still necessary to perform static kernel configuration.  "
+"Sometimes the needed functionality is so tied to the kernel that it can not "
+"be made dynamically loadable.  Some security environments prevent the "
+"loading and unloading of kernel modules and require that only needed "
+"functionality is statically compiled into the kernel."
+msgstr ""
+"Occasionalmente, è ancora necessario eseguire la configurazione statica del "
+"kernel. Qualche volta la funzionalità necessaria è così legata al kernel che "
+"non può essere caricata dinamicamente. Alcuni ambienti di sicurezza "
+"impediscono di caricare e scaricare i moduli del kernel e richiedono che "
+"solo le funzionalità necessarie siano compilate nel kernel."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:87
+#, fuzzy
+msgid ""
+"Building a custom kernel is often a rite of passage for advanced BSD users.  "
+"This process, while time consuming, can provide benefits to the FreeBSD "
+"system.  Unlike the [.filename]#GENERIC# kernel, which must support a wide "
+"range of hardware, a custom kernel can be stripped down to only provide "
+"support for that computer's hardware.  This has a number of benefits, such "
+"as:"
+msgstr ""
+"Creare un kernel personalizzato è spesso un rito di passaggio per gli utenti "
+"BSD avanzati. Sebbene questo processo richiede tempo, può fornire benefici "
+"al sistema FreeBSD. A differenza del kernel <filename>GENERIC</filename>, "
+"che deve supportare una vasta gamma di hardware, un kernel personalizzato "
+"può essere ridotto per fornire supporto solo all' hardware di quel computer. "
+"Questo ha diversi benefici, ad esempio:"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:89
+msgid ""
+"Faster boot time. Since the kernel will only probe the hardware on the "
+"system, the time it takes the system to boot can decrease."
+msgstr ""
+"Tempo di avvio più veloce. Dal momento che il kernel cercherà di riconoscere "
+"solo l' hardware sul sistema, il tempo speso per l' avvio può diminuire."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:90
+#, fuzzy
+msgid ""
+"Lower memory usage. A custom kernel often uses less memory than the [."
+"filename]#GENERIC# kernel by omitting unused features and device drivers. "
+"This is important because the kernel code remains resident in physical "
+"memory at all times, preventing that memory from being used by applications. "
+"For this reason, a custom kernel is useful on a system with a small amount "
+"of RAM."
+msgstr ""
+"Minore uso di memoria. Un kernel personalizzato spesso usa meno memoria di "
+"un kernel <filename>GENERIC</filename> omettendo le funzionalità e i device "
+"driver non usati. Questo è importante perchè il kernel resiede tutto il "
+"tempo nella memoria fisica, impedendo che la memoria venga utilizzata dalle "
+"applicazioni. Per questo motivo, un kernel perosnalizzato è utile su un "
+"sistema con una piccola quantità di RAM."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:91
+#, fuzzy
+msgid ""
+"Additional hardware support. A custom kernel can add support for devices "
+"which are not present in the [.filename]#GENERIC# kernel."
+msgstr ""
+"Supporto hardware aggiuntivo. Un kernel personalizzato può aggiungere il "
+"supporto per i device che non sono presenti nel kernel <filename>GENERIC</"
+"filename>."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:94
+#, fuzzy
+msgid ""
+"Before building a custom kernel, consider the reason for doing so.  If there "
+"is a need for specific hardware support, it may already exist as a module."
+msgstr ""
+"Prima di creare un kernel personalizzato, considera i motivi per farlo. Se "
+"c'è necessità di supporto per hardware specifico, potrebbe già esistere un "
+"modulo."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:98
+msgid ""
+"Kernel modules exist in [.filename]#/boot/kernel# and may be dynamically "
+"loaded into the running kernel using man:kldload[8].  Most kernel drivers "
+"have a loadable module and manual page.  For example, the man:ath[4] "
+"wireless network driver has the following information in its manual page:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:103
+#, no-wrap
+msgid ""
+"Alternatively, to load the driver as a module at boot time, place the\n"
+"following line in man:loader.conf[5]:\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:105
+#, no-wrap
+msgid "    if_ath_load=\"YES\"\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:108
+msgid ""
+"Adding `if_ath_load=\"YES\"` to [.filename]#/boot/loader.conf# will load "
+"this module dynamically at boot time."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:111
+#, fuzzy
+msgid ""
+"In some cases, there is no associated module in [.filename]#/boot/kernel#.  "
+"This is mostly true for certain subsystems."
+msgstr ""
+"In qualche caso non c'è un modulo associato in <filename>/boot/kernel</"
+"filename>. Questo è vero principalemente per alcuni sottosistemi."
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:113
+#, no-wrap
+msgid "Finding the System Hardware"
+msgstr "Trovate l' Hardware del Sistema"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:118
+msgid ""
+"Before editing the kernel configuration file, it is recommended to perform "
+"an inventory of the machine's hardware.  On a dual-boot system, the "
+"inventory can be created from the other operating system.  For example, "
+"Microsoft(R)'s Device Manager contains information about installed devices."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:122
+msgid ""
+"Some versions of Microsoft(R) Windows(R) have a System icon which can be "
+"used to access Device Manager."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:127
+msgid ""
+"If FreeBSD is the only installed operating system, use man:dmesg[8] to "
+"determine the hardware that was found and listed during the boot probe.  "
+"Most device drivers on FreeBSD have a manual page which lists the hardware "
+"supported by that driver.  For example, the following lines indicate that "
+"the man:psm[4] driver found a mouse:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:134
+#, no-wrap
+msgid ""
+"psm0: <PS/2 Mouse> irq 12 on atkbdc0\n"
+"psm0: [GIANT-LOCKED]\n"
+"psm0: [ITHREAD]\n"
+"psm0: model Generic PS/2 mouse, device ID 0\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:137
+msgid ""
+"Since this hardware exists, this driver should not be removed from a custom "
+"kernel configuration file."
+msgstr ""
+"Siccome questo hardware esiste, questo driver non dovrebbe essere rimosso da "
+"un file di configurazione del kernel personalizzato."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:139
+msgid ""
+"If the output of `dmesg` does not display the results of the boot probe "
+"output, instead read the contents of [.filename]#/var/run/dmesg.boot#."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:142
+msgid ""
+"Another tool for finding hardware is man:pciconf[8], which provides more "
+"verbose output.  For example:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:151
+#, no-wrap
+msgid ""
+"% pciconf -lv\n"
+"ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00\n"
+"    vendor     = 'Atheros Communications Inc.'\n"
+"    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n"
+"    class      = network\n"
+"    subclass   = ethernet\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:154
+#, fuzzy
+msgid ""
+"This output shows that the [.filename]#ath# driver located a wireless "
+"Ethernet device."
+msgstr ""
+"Questo output mostra che il driver <filename>ath</filename> ha trovato un "
+"dispositivo Ethernet wireless."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:157
+msgid ""
+"The `-k` flag of man:man[1] can be used to provide useful information.  For "
+"example, it can be used to display a list of manual pages which contain a "
+"particular device brand or name:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:163
+#, no-wrap
+msgid ""
+"# man -k Atheros\n"
+"ath(4)                   - Atheros IEEE 802.11 wireless network driver\n"
+"ath_hal(4)               - Atheros Hardware Access Layer (HAL)\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:166
+msgid ""
+"Once the hardware inventory list is created, refer to it to ensure that "
+"drivers for installed hardware are not removed as the custom kernel "
+"configuration is edited."
+msgstr ""
+"Una volta che la lista dell' hardware è stata creata, facci riferimento per "
+"assicurarti che i driver per l' hardware installato non siano rimossi mentre "
+"viene modificato il file di configurazione del kernel."
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:168
+#, no-wrap
+msgid "The Configuration File"
+msgstr "Il File di Configurazione"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:171
+msgid ""
+"In order to create a custom kernel configuration file and build a custom "
+"kernel, the full FreeBSD source tree must first be installed."
+msgstr ""
+"Al fine di creare un file di configurazione del kernel personalizzato e "
+"costruire un kernel personalizzato, tutti i file sorgente di FreeBSD devono "
+"essere prima installati."
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:174
+msgid ""
+"If [.filename]#/usr/src/# does not exist or it is empty, source has not been "
+"installed.  Source can be installed with Git using the instructions in "
+"crossref:mirrors[git,“Using Git”]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:179
+msgid ""
+"Once source is installed, review the contents of [.filename]#/usr/src/sys#.  "
+"This directory contains a number of subdirectories, including those which "
+"represent the following supported architectures: [.filename]#amd64#, [."
+"filename]#i386#, [.filename]#powerpc#, and [.filename]#sparc64#.  Everything "
+"inside a particular architecture's directory deals with that architecture "
+"only and the rest of the code is machine independent code common to all "
+"platforms.  Each supported architecture has a [.filename]#conf# subdirectory "
+"which contains the [.filename]#GENERIC# kernel configuration file for that "
+"architecture."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:185
+#, fuzzy
+msgid ""
+"Do not make edits to [.filename]#GENERIC#.  Instead, copy the file to a "
+"different name and make edits to the copy.  The convention is to use a name "
+"with all capital letters.  When maintaining multiple FreeBSD machines with "
+"different hardware, it is a good idea to name it after the machine's "
+"hostname.  This example creates a copy, named [.filename]#MYKERNEL#, of the "
+"[.filename]#GENERIC# configuration file for the `amd64` architecture:"
+msgstr ""
+"Non fare modifiche a <filename>GENERIC</filename>. Invece, copia il file con "
+"un nome diverso e apporta le modifiche alla copia. La convenzione prevede "
+"l'uso di un nome con tutte le lettere maiuscole. Quando mantieni più "
+"macchine FreeBSD con hardware diverso, è una buona idea chiamarlo come l' "
+"hostname della macchina. Questo esempio crea una copia, chiamata "
+"<filename>MYKERNEL</filename>, del file di configurazione <filename>GENERIC</"
+"filename> per l' architettura <literal>amd64</literal>:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:190
+#, no-wrap
+msgid ""
+"# cd /usr/src/sys/amd64/conf\n"
+"# cp GENERIC MYKERNEL\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:194
+msgid ""
+"[.filename]#MYKERNEL# can now be customized with any `ASCII` text editor.  "
+"The default editor is vi, though an easier editor for beginners, called ee, "
+"is also installed with FreeBSD."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:200
+#, fuzzy
+msgid ""
+"The format of the kernel configuration file is simple.  Each line contains a "
+"keyword that represents a device or subsystem, an argument, and a brief "
+"description.  Any text after a `+#+` is considered a comment and ignored.  "
+"To remove kernel support for a device or subsystem, put a `+#+` at the "
+"beginning of the line representing that device or subsystem.  Do not add or "
+"remove a `+#+` for any line that you do not understand."
+msgstr ""
+"Il formato del file di configurazione del kernel è semplice. Ogni linea "
+"contiene una parola chiave che rappresenta un dispositivo o un sottosistema, "
+"un argomento, e una breve descrizione. Qualsiesi testo dopo un <literal>#</"
+"literal> è considerato un commento ed ignorato. Per rimuovere il supporto "
+"del kernel per un dispositivo o sottosistema, metti un <literal>#</literal> "
+"all' inizio della linea che rappresenta quel dispositivo o sottosistema. Non "
+"aggiungere o rimuovere un <literal>#</literal> per qualsiesi linea che non "
+"comprendi."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:206
+msgid ""
+"It is easy to remove support for a device or option and end up with a broken "
+"kernel.  For example, if the man:ata[4] driver is removed from the kernel "
+"configuration file, a system using `ATA` disk drivers may not boot.  When in "
+"doubt, just leave support in the kernel."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:210
+#, fuzzy
+msgid ""
+"In addition to the brief descriptions provided in this file, additional "
+"descriptions are contained in [.filename]#NOTES#, which can be found in the "
+"same directory as [.filename]#GENERIC# for that architecture.  For "
+"architecture independent options, refer to [.filename]#/usr/src/sys/conf/"
+"NOTES#."
+msgstr ""
+"In aggiunta alla breve descrizione fornita in questo file, descrizioni "
+"aggiuntive sono contenute in <filename>NOTES</filename>, che possono essere "
+"trovati nella stessa directory come <filename>GENERIC</filename> per quella "
+"architettura. Per le opzioni indipendenti dall' architettura, fare "
+"riferimento a <filename>/usr/src/sys/conf/NOTES</filename>."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:214
+#, fuzzy
+msgid ""
+"When finished customizing the kernel configuration file, save a backup copy "
+"to a location outside of [.filename]#/usr/src#."
+msgstr ""
+"Quando la personalizzazione del file di configurazione del kernel è finita, "
+"salva una copia di riserva in una posizione fuori da <filename>/usr/src</"
+"filename>."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:216
+msgid ""
+"Alternately, keep the kernel configuration file elsewhere and create a "
+"symbolic link to the file:"
+msgstr ""
+"In alternativa, mantieni il file di configurazione del kernel altrove e crea "
+"un collegamento simbolico al file:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:223
+#, no-wrap
+msgid ""
+"# cd /usr/src/sys/amd64/conf\n"
+"# mkdir /root/kernels\n"
+"# cp GENERIC /root/kernels/MYKERNEL\n"
+"# ln -s /root/kernels/MYKERNEL\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:230
+#, fuzzy
+msgid ""
+"An `include` directive is available for use in configuration files.  This "
+"allows another configuration file to be included in the current one, making "
+"it easy to maintain small changes relative to an existing file.  If only a "
+"small number of additional options or drivers are required, this allows a "
+"delta to be maintained with respect to [.filename]#GENERIC#, as seen in this "
+"example:"
+msgstr ""
+"Una direttiva <literal>include</literal> è disponibile per l' uso nei file "
+"di configurazione. Questo permette a un altro file di configurazione di "
+"essere incluso in quello corrente, rendendo semplice mantenere piccoli cambi "
+"relativi a un file esistente. Se sono richiesti solo un piccolo numero di "
+"opzioni o driver da aggiungere, questo permette a una versione delta di "
+"essere mantenuta rispettando <filename>GENERIC</filename>, come visto in "
+"questo esempio:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:235
+#, no-wrap
+msgid ""
+"include GENERIC\n"
+"ident MYKERNEL\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:240
+#, no-wrap
+msgid ""
+"options         IPFIREWALL\n"
+"options         DUMMYNET\n"
+"options         IPFIREWALL_DEFAULT_TO_ACCEPT\n"
+"options         IPDIVERT\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:245
+msgid ""
+"Using this method, the local configuration file expresses local differences "
+"from a [.filename]#GENERIC# kernel.  As upgrades are performed, new features "
+"added to [.filename]#GENERIC# will also be added to the local kernel unless "
+"they are specifically prevented using `nooptions` or `nodevice`.  A "
+"comprehensive list of configuration directives and their descriptions may be "
+"found in man:config[5]."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:249
+msgid ""
+"To build a file which contains all available options, run the following "
+"command as `root`:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:253
+#, no-wrap
+msgid "# cd /usr/src/sys/arch/conf && make LINT\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:258
+#, no-wrap
+msgid "Building and Installing a Custom Kernel"
+msgstr "Creare e Installare un Kernel Personalizzato"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:261
+msgid ""
+"Once the edits to the custom configuration file have been saved, the source "
+"code for the kernel can be compiled using the following steps:"
+msgstr ""
+"Una volta che le modifiche al file di configurazione personalizzato sono "
+"state salvate, il codice sorgente per il kernel può essere compilato usando "
+"i seguenti passi:"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:265
+#, no-wrap
+msgid "*Procedure: Building a Kernel*\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:267
+#, fuzzy
+msgid "Change to this directory:"
+msgstr "Passare a questa directory\n"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:271
+#, no-wrap
+msgid "# cd /usr/src\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:274
+msgid ""
+"Compile the new kernel by specifying the name of the custom kernel "
+"configuration file:"
+msgstr ""
+"Compila il nuovo kernel specificando il nome del file personalizzato di "
+"configurazione del kernel:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:278
+#, no-wrap
+msgid "# make buildkernel KERNCONF=MYKERNEL\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:281
+#, fuzzy
+msgid ""
+"Install the new kernel associated with the specified kernel configuration "
+"file. This command will copy the new kernel to [.filename]#/boot/kernel/"
+"kernel# and save the old kernel to [.filename]#/boot/kernel.old/kernel#:"
+msgstr ""
+"Installa il nuovo kernel associato al file di configurazione del kernel "
+"specificato. Questo comando copierà il nuovo kernel in <filename>/boot/"
+"kernel/kernel</filename> e salverà il vecchio kernel in <filename>/boot/"
+"kernel.old/kernel</filename>:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:285
+#, no-wrap
+msgid "# make installkernel KERNCONF=MYKERNEL\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:288
+msgid ""
+"Shutdown the system and reboot into the new kernel. If something goes wrong, "
+"refer to <<kernelconfig-noboot, The kernel does not boot>>."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:292
+#, fuzzy
+msgid ""
+"By default, when a custom kernel is compiled, all kernel modules are "
+"rebuilt.  To update a kernel faster or to build only custom modules, edit [."
+"filename]#/etc/make.conf# before starting to build the kernel."
+msgstr ""
+"Di default, quando un kernel personalizzato è compilato, tutti i moduli del "
+"kernel sono ricreati. Per aggiornare un kernel pià velocemente o per creare "
+"solo moduli personalizzati, modifica <filename>/etc/make.conf</filename> "
+"prima di iniziare a creare il kernel."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:294
+msgid ""
+"For example, this variable specifies the list of modules to build instead of "
+"using the default of building all modules:"
+msgstr ""
+"Per esempio, questa variabile specifica la lista dei moduli da creare invece "
+"di costruirli tutti come predefinito:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:298
+#, fuzzy, no-wrap
+msgid "MODULES_OVERRIDE = linux acpi\n"
+msgstr "MODULES_OVERRIDE = linux acpi\n"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:301
+msgid ""
+"Alternately, this variable lists which modules to exclude from the build "
+"process:"
+msgstr ""
+"Alternativamente, questa variabile elenca quali moduli escludere dal "
+"processo di compilazione:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:305
+#, fuzzy, no-wrap
+msgid "WITHOUT_MODULES = linux acpi sound\n"
+msgstr "WITHOUT_MODULES = linux acpi sound\n"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:309
+msgid ""
+"Additional variables are available.  Refer to man:make.conf[5] for details."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:311
+#, no-wrap
+msgid "If Something Goes Wrong"
+msgstr "Se Qualcosa Va Male"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:314
+msgid ""
+"There are four categories of trouble that can occur when building a custom "
+"kernel:"
+msgstr ""
+"Esistono quattro categorie di problemi che possono verificarsi durante la "
+"creazione di un kernel personalizzato:"
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:315
+#, no-wrap
+msgid "`config` fails"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:318
+msgid ""
+"If `config` fails, it will print the line number that is incorrect.  As an "
+"example, for the following message, make sure that line 17 is typed "
+"correctly by comparing it to [.filename]#GENERIC# or [.filename]#NOTES#:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:322
+#, fuzzy, no-wrap
+msgid "config: line 17: syntax error\n"
+msgstr "config: line 17: syntax error\n"
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:324
+#, no-wrap
+msgid "`make` fails"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:327
+msgid ""
+"If `make` fails, it is usually due to an error in the kernel configuration "
+"file which is not severe enough for `config` to catch.  Review the "
+"configuration, and if the problem is not apparent, send an email to the "
+"{freebsd-questions} which contains the kernel configuration file."
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:329
+#, no-wrap
+msgid "The kernel does not boot"
+msgstr "Il kernel non si avvia"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:334
+msgid ""
+"If the new kernel does not boot or fails to recognize devices, do not panic! "
+"Fortunately, FreeBSD has an excellent mechanism for recovering from "
+"incompatible kernels.  Simply choose the kernel to boot from at the FreeBSD "
+"boot loader.  This can be accessed when the system boot menu appears by "
+"selecting the \"Escape to a loader prompt\" option.  At the prompt, type "
+"`boot _kernel.old_`, or the name of any other kernel that is known to boot "
+"properly."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:338
+msgid ""
+"After booting with a good kernel, check over the configuration file and try "
+"to build it again.  One helpful resource is [.filename]#/var/log/messages# "
+"which records the kernel messages from every successful boot.  Also, man:"
+"dmesg[8] will print the kernel messages from the current boot."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:344
+#, fuzzy
+msgid ""
+"When troubleshooting a kernel make sure to keep a copy of a kernel that is "
+"known to work, such as [.filename]#GENERIC#.  This is important because "
+"every time a new kernel is installed, [.filename]#kernel.old# is overwritten "
+"with the last installed kernel, which may or may not be bootable.  As soon "
+"as possible, move the working kernel by renaming the directory containing "
+"the good kernel:"
+msgstr ""
+"Durante la risoluzione dei problemi di un kernel, assicurarsi di conservare "
+"una copia di <filename>GENERIC</filename>, o qualche altro kernel noto per "
+"funzionare, con un nome diverso che non verrà cancellato nella compilazione "
+"successiva. Questo è importante perchè ogni volta che un nuovo kernel è "
+"installato, <filename>kernel.old</filename> è sovrascritto con l' ultimo "
+"kernel installato, che può o non può essere avviabile. Appena possibile, "
+"sposta il kernel funzionante rinominando la directory contenente il kernel "
+"valido:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:349
+#, no-wrap
+msgid ""
+"# mv /boot/kernel /boot/kernel.bad\n"
+"# mv /boot/kernel.good /boot/kernel\n"
+msgstr ""
+
+#. type: Labeled list
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:353
+#, no-wrap
+msgid "The kernel works, but man:ps[1] does not"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/kernelconfig/_index.adoc:356
+msgid ""
+"If the kernel version differs from the one that the system utilities have "
+"been built with, for example, a kernel built from -CURRENT sources is "
+"installed on a -RELEASE system, many system status commands like man:ps[1] "
+"and man:vmstat[8] will not work.  To fix this, crossref:cutting-"
+"edge[makeworld,recompile and install a world] built with the same version of "
+"the source tree as the kernel.  It is never a good idea to use a different "
+"version of the kernel than the rest of the operating system."
+msgstr ""

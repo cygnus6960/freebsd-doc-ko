@@ -1,0 +1,1867 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2023-04-20 20:56-0300\n"
+"PO-Revision-Date: 2021-06-03 00:06+0000\n"
+"Last-Translator: Anonymous <noreply@weblate.org>\n"
+"Language-Team: Chinese (Simplified) <https://translate-dev.freebsd.org/"
+"projects/documentation/bookshandbookeresources_index/zh_CN/>\n"
+"Language: zh_CN\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.6.2\n"
+
+#. type: YAML Front Matter: description
+#: documentation/content/en/books/handbook/eresources/_index.adoc:1
+#, no-wrap
+msgid "FreeBSD additional resources on internet like websites, mailing lists, mirrors, etc"
+msgstr ""
+
+#. type: YAML Front Matter: part
+#: documentation/content/en/books/handbook/eresources/_index.adoc:1
+#, no-wrap
+msgid "Part V. Appendices"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: documentation/content/en/books/handbook/eresources/_index.adoc:1
+#, no-wrap
+msgid "Appendix C. Resources on the Internet"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/books/handbook/eresources/_index.adoc:15
+#, no-wrap
+msgid "Resources on the Internet"
+msgstr "网络资源"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:55
+#, fuzzy
+msgid ""
+"The rapid pace of FreeBSD progress makes print media impractical as a means "
+"of following the latest developments.  Electronic resources are the best, if "
+"not often the only, way to stay informed of the latest advances.  Since "
+"FreeBSD is a volunteer effort, the user community itself also generally "
+"serves as a \"technical support department\" of sorts, with electronic mail, "
+"web forums, and USENET news being the most effective way of reaching that "
+"community."
+msgstr ""
+"发展迅猛的FreeBSD使得现有的印刷、平面媒体跟不上它的发展进度！ 而电子版的也许"
+"是最好的，通常是唯一一个可以跟上最新发展方向的。FreeBSD来自于志愿者的成果， "
+"用户社区通常也扮演着是“技术支持部门”的角色。通过电子邮， Web 论坛件和 USENET "
+"新闻组可以很快的找到他们。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:59
+msgid ""
+"The most important points of contact with the FreeBSD user community are "
+"outlined below.  There is a possibly more up to date list on the link:"
+"https://wiki.freebsd.org/Community[community portal on the FreeBSD Wiki].  "
+"Please send other resources not mentioned here to the {freebsd-doc} so that "
+"they may also be included."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/eresources/_index.adoc:61
+#, no-wrap
+msgid "Websites"
+msgstr "网站"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:64
+msgid ""
+"The link:https://forums.FreeBSD.org/[FreeBSD Forums] provide a web based "
+"discussion forum for FreeBSD questions and technical discussion."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:65
+msgid ""
+"The link:https://wiki.FreeBSD.org/[FreeBSD Wiki] provides various bits of "
+"information that hadn't yet made it into the Handbook."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:66
+msgid ""
+"The link:https://docs.FreeBSD.org/[FreeBSD Documentation website] doesn't "
+"provide just the Users's Handbook; there are other handbooks and articles "
+"that are worth a read."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:67
+msgid ""
+"The link:https://freebsdfoundation.org/our-work/journal/browser-based-"
+"edition/[FreeBSD Journal] is a free, professionally-edited, bi-monthly "
+"technical magazine released by link:https://freebsdfoundation.org[FreeBSD "
+"Foundation]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:68
+msgid ""
+"The link:http://www.youtube.com/bsdconferences[BSDConferences YouTube "
+"Channel] provides a collection of high quality videos from BSD conferences "
+"around the world. This is a great way to watch key developers give "
+"presentations about new work in FreeBSD."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:69
+msgid ""
+"link:https://www.freebsd.org/status/[FreeBSD Status Reports] are released "
+"every three months and track progress of FreeBSD development."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:70
+msgid ""
+"There's a link:https://www.reddit.com/r/freebsd/[FreeBSD-focused Reddit "
+"group] at r/freebsd."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:71
+msgid ""
+"link:https://superuser.com/questions/tagged/freebsd[Super User] and link:"
+"https://serverfault.com/questions/tagged/freebsd[Server Fault], the Stack "
+"Exchange services for system administrators."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:72
+msgid ""
+"link:https://wiki.freebsd.org/Discord[FreeBSD Discord server], a "
+"communications and community-building service, where FreeBSD community "
+"members can socialise, obtain support or support others, learn, contribute, "
+"collaborate, and stay up to date with all things FreeBSD-related."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:73
+msgid ""
+"link:https://wiki.freebsd.org/IRC/Channels[IRC channels], a widely "
+"implemented, technically mature, open standard text chat."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/eresources/_index.adoc:75
+#, no-wrap
+msgid "Mailing Lists"
+msgstr "邮件列表"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:80
+#, fuzzy
+#| msgid ""
+#| "The mailing lists are the most direct way of addressing questions or "
+#| "opening a technical discussion to a concentrated FreeBSD audience. There "
+#| "are a wide variety of lists on a number of different FreeBSD topics. "
+#| "Sending questions to the most appropriate mailing list will invariably "
+#| "assure a faster and more accurate response."
+msgid ""
+"The mailing lists are the most direct way of addressing questions or opening "
+"a technical discussion to a concentrated FreeBSD audience.  There are a wide "
+"variety of lists on a number of different FreeBSD topics.  Sending questions "
+"to the most appropriate mailing list will invariably assure a faster and "
+"more accurate response."
+msgstr ""
+"邮件列表通常是提问或是发起有关 FreeBSD 某一方面的专项技术讨论最直接的途径。 "
+"有多种针对于不同 FreeBSD 话题的邮件列表。 把你的问题发送到最合适的邮件列表通"
+"常能获得更加快速准确的回复。"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/eresources/_index.adoc:85
+msgid ""
+"_To test the ability to send email to FreeBSD lists, send a test message to "
+"{freebsd-test}._ Please do not send test messages to any other list."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:88
+msgid ""
+"When in doubt about what list to post a question to, see extref:{freebsd-"
+"questions-article}[How to get best results from the FreeBSD-questions "
+"mailing list]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:90
+msgid "Before posting to any list, please:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:92
+msgid ""
+"learn about how to best use the mailing lists, such as how to help avoid "
+"frequently-repeated discussions, by reading the extref:{mailing-list-faq}"
+"[Mailing List Frequently Asked Questions] (FAQ) document"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:93
+msgid ""
+"search the archives, to tell whether someone else has already posted what "
+"you intend to post."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:95
+msgid "Archive search interfaces include:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:97
+msgid "https://www.freebsd.org/search/[] (DuckDuckGo)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:98
+msgid "https://lists.freebsd.org/search[] (Experimental search engine)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:101
+msgid ""
+"Note that this also means that messages sent to FreeBSD mailing lists are "
+"archived in perpetuity.  When protecting privacy is a concern, consider "
+"using a disposable secondary email address and posting only public "
+"information."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:103
+msgid "FreeBSD-provided archives:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:105
+msgid "do not present links as links"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:106
+msgid "do not present inline images"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:107
+msgid "do not present HTML content of HTML messages."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:110
+msgid ""
+"The FreeBSD public mailing lists can be consulted link:{mailing-lists-url}"
+"[here]."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:112
+#, no-wrap
+msgid "How to Subscribe"
+msgstr "如何订阅"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:116
+msgid ""
+"To subscribe to a list, click the list name at {mailing-lists-url}.  The "
+"page that is displayed should contain all of the necessary subscription "
+"instructions for that list."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:119
+msgid ""
+"To actually post to a given list, send mail to mailto:listname@FreeBSD."
+"org[listname@FreeBSD.org].  It will then be redistributed to mailing list "
+"members world-wide."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:122
+msgid ""
+"To unsubscribe from a list, click on the URL found at the bottom of every "
+"email received from the list.  It is also possible to send an email to "
+"mailto:listname+unsubscribe@FreeBSD.org[listname+unsubscribe@FreeBSD.org] to "
+"unsubscribe."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:125
+msgid ""
+"It is important to keep discussion in the technical mailing lists on a "
+"technical track.  To only receive important announcements, instead join the "
+"{freebsd-announce}, which is intended for infrequent traffic."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:127
+#, no-wrap
+msgid "Lists Basic Rules"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:132
+#, fuzzy
+msgid ""
+"_All_ FreeBSD mailing lists have certain basic rules which must be adhered "
+"to by anyone using them.  Failure to comply with these guidelines will "
+"result in two (2) written warnings from the FreeBSD Postmaster mailto:"
+"postmaster@FreeBSD.org[postmaster@FreeBSD.org], after which, on a third "
+"offense, the poster will removed from all FreeBSD mailing lists and filtered "
+"from further posting to them.  We regret that such rules and measures are "
+"necessary at all, but today's Internet is a pretty harsh environment, it "
+"would seem, and many fail to appreciate just how fragile some of its "
+"mechanisms are."
+msgstr ""
+"<emphasis>所有</emphasis> FreeBSD 的邮件列表都有同样的基本规则， 所有人必须按"
+"照规则来做。 违反这些规则时， FreeBSD Postmaster <email>postmaster@FreeBSD."
+"org</email> 会在前两次发送警告， 如果第三次违反， FreeBSD Postmaster 将从所"
+"有 FreeBSD 的邮件列表中删除这样的人， 并过滤来自发信人之后的所有邮件。 我们很"
+"遗憾必须要遵守这样的规则， 但今天的互联网是一个很混乱的环境， 它上面的很多约"
+"束机制， 都相当脆弱。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:134
+msgid "Rules of the road:"
+msgstr "具体规则:"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:136
+msgid ""
+"The topic of any posting should adhere to the basic description of the list "
+"it is posted to. If the list is about technical issues, the posting should "
+"contain technical discussion. Ongoing irrelevant chatter or flaming only "
+"detracts from the value of the mailing list for everyone on it and will not "
+"be tolerated. For free-form discussion on no particular topic, the {freebsd-"
+"chat} is freely available and should be used instead."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:137
+msgid ""
+"No posting should be made to more than 2 mailing lists, and only to 2 when a "
+"clear and obvious need to post to both lists exists. For most lists, there "
+"is already a great deal of subscriber overlap and except for the most "
+"esoteric mixes (say \"-stable & -scsi\"), there really is no reason to post "
+"to more than one list at a time. If a message is received with multiple "
+"mailing lists on the `Cc` line, trim the `Cc` line before replying. _The "
+"person who replies is still responsible for cross-posting, no matter who the "
+"originator might have been._"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:138
+#, fuzzy
+msgid ""
+"Personal attacks and profanity (in the context of an argument) are not "
+"allowed, and that includes users and developers alike. Gross breaches of "
+"netiquette, like excerpting or reposting private mail when permission to do "
+"so was not and would not be forthcoming, are frowned upon but not "
+"specifically enforced."
+msgstr ""
+"不容许进行人身攻击和亵渎（在前后的争论中），包括用户和开发人员。 应当遵守最起"
+"码的网络礼节，象需要征得同意才可以引用或张贴私人邮件等。 <emphasis>然而</"
+"emphasis>，也有非常少的情况下，这样的内容会符合列表规章， 因此，它会在最初给"
+"予警告（或禁止）。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:139
+msgid ""
+"Advertising of non-FreeBSD related products or services is strictly "
+"prohibited and will result in an immediate ban if it is clear that the "
+"offender is advertising by spam."
+msgstr "严格的禁止非FreeBSD相关产品或服务的广告，一旦发现将马上取缔。"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:141
+#, no-wrap
+msgid "Filtering on the Mailing Lists"
+msgstr "过滤邮件列表"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:145
+#, fuzzy
+#| msgid ""
+#| "The FreeBSD mailing lists are filtered in multiple ways to avoid the "
+#| "distribution of spam, viruses, and other unwanted emails. The filtering "
+#| "actions described in this section do not include all those used to "
+#| "protect the mailing lists."
+msgid ""
+"The FreeBSD mailing lists are filtered in multiple ways to avoid the "
+"distribution of spam, viruses, and other unwanted emails.  The filtering "
+"actions described in this section do not include all those used to protect "
+"the mailing lists."
+msgstr ""
+"FreeBSD邮件列表是使用了多种过滤方法去消除垃圾邮件、病毒和其他没用的电子邮"
+"件。 这部分所描述的并不包括所有常用的保护邮件列表的消除方法。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:148
+#, fuzzy
+#| msgid ""
+#| "Only certain types of attachments are allowed on the mailing lists. All "
+#| "attachments with a MIME content type not found in the list below will be "
+#| "stripped before an email is distributed on the mailing lists."
+msgid ""
+"Only certain types of attachments are allowed on the mailing lists.  All "
+"attachments with a MIME content type not found in the list below will be "
+"stripped before an email is distributed on the mailing lists."
+msgstr ""
+"邮件列表只包含一些允许的附件类型。所有在列表中有MIME类型的附件的电子邮件在 邮"
+"件列表中被转发之前将被过滤掉。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:150
+msgid "application/octet-stream"
+msgstr "application/octet-stream"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:151
+msgid "application/pdf"
+msgstr "application/pdf"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:152
+msgid "application/pgp-signature"
+msgstr "application/pgp-signature"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:153
+msgid "application/x-pkcs7-signature"
+msgstr "application/x-pkcs7-signature"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:154
+msgid "message/rfc822"
+msgstr "message/rfc822"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:155
+msgid "multipart/alternative"
+msgstr "multipart/alternative"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:156
+msgid "multipart/related"
+msgstr "multipart/related"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:157
+msgid "multipart/signed"
+msgstr "multipart/signed"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:158
+msgid "text/html"
+msgstr "text/html"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:159
+msgid "text/plain"
+msgstr "text/plain"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:160
+msgid "text/x-diff"
+msgstr "text/x-diff"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:161
+msgid "text/x-patch"
+msgstr "text/x-patch"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/eresources/_index.adoc:165
+msgid ""
+"Some of the mailing lists might allow attachments of other MIME content "
+"types, but the above list should be applicable for most of the mailing lists."
+msgstr ""
+"一些邮件列表可以允许附件为其他MIME类型，但是以上列出的 应该被多数的邮件列表所"
+"采用。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:169
+#, fuzzy
+#| msgid ""
+#| "If an email contains both an HTML and a plain text version, the HTML "
+#| "version will be removed. If an email contains only an HTML version, it "
+#| "will be converted to plain text."
+msgid ""
+"If an email contains both an HTML and a plain text version, the HTML version "
+"will be removed.  If an email contains only an HTML version, it will be "
+"converted to plain text."
+msgstr ""
+"如果一个电子邮件包含HTML和纯文本形式，HTML的形式将被删除。 如果一个电子邮件内"
+"容只是HTML形式，他将被转换为纯文本格式。"
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/eresources/_index.adoc:171
+#, no-wrap
+msgid "Usenet Newsgroups"
+msgstr "Usenet 新闻组"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:174
+msgid ""
+"In addition to two FreeBSD specific newsgroups, there are many others in "
+"which FreeBSD is discussed or are otherwise relevant to FreeBSD users."
+msgstr ""
+"除了两个 FreeBSD 特定新闻组外，还有许多其他新闻组讨论 FreeBSD 或与 FreeBSD 相"
+"关的东西。"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:175
+#, no-wrap
+msgid "BSD Specific Newsgroups"
+msgstr "BSD 特别的新闻组"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:178
+msgid ""
+"link:news:comp.unix.bsd.freebsd.announce[comp.unix.bsd.freebsd.announce]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:179
+msgid "link:news:comp.unix.bsd.freebsd.misc[comp.unix.bsd.freebsd.misc]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:180
+msgid "link:news:de.comp.os.unix.bsd[de.comp.os.unix.bsd] (German)"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:181
+msgid "link:news:fr.comp.os.bsd[fr.comp.os.bsd] (French)"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:182
+#, no-wrap
+msgid "Other UNIX(R) Newsgroups of Interest"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:185
+msgid "link:news:comp.unix[comp.unix]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:186
+msgid "link:news:comp.unix.questions[comp.unix.questions]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:187
+msgid "link:news:comp.unix.admin[comp.unix.admin]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:188
+msgid "link:news:comp.unix.programmer[comp.unix.programmer]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:189
+msgid "link:news:comp.unix.shell[comp.unix.shell]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:190
+msgid "link:news:comp.unix.misc[comp.unix.misc]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:191
+msgid "link:news:comp.unix.bsd[comp.unix.bsd]"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/eresources/_index.adoc:192
+#, no-wrap
+msgid "X Window System"
+msgstr "X Window系统"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/eresources/_index.adoc:194
+msgid "link:news:comp.windows.x[comp.windows.x]"
+msgstr ""
+
+#, fuzzy
+#~ msgid ""
+#~ "The charters for the various lists are given at the bottom of this "
+#~ "document.  _Please read the charter before joining or sending mail to any "
+#~ "list_.  Most list subscribers receive many hundreds of FreeBSD related "
+#~ "messages every day, and the charters and rules for use are meant to keep "
+#~ "the signal-to-noise ratio of the lists high.  To do less would see the "
+#~ "mailing lists ultimately fail as an effective communications medium for "
+#~ "the Project."
+#~ msgstr ""
+#~ "本文的最后给出了各个不同的邮件列表的使用规则。 <emphasis>在订阅其中任何一"
+#~ "个列表之前，请先阅读使用条文</emphasis>。 现在订阅这些邮件列表的人每天都会"
+#~ "收到上百封关于FreeBSD的信件。 设立列表的使用条文有助于维护讨论质量。否则这"
+#~ "些讨论计划的列表将失去其意义。"
+
+#, no-wrap
+#~ msgid "List Summary"
+#~ msgstr "列表摘要"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD accessibility discussions"
+#~ msgstr "关于 FreeBSD 上 Ruby 的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "Architecture and design discussions"
+#~ msgstr "架构和设计的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "Bug reports"
+#~ msgstr "错误报告"
+
+#, fuzzy, no-wrap
+#~ msgid "Non-technical items related to the FreeBSD community"
+#~ msgstr "和技术无关的FreeBSD讨论区"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Chromium issues"
+#~ msgstr "FreeBSD Chromium 相关的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "ACPI and power management development"
+#~ msgstr "ACPI 和电源管理的开发"
+
+#, fuzzy, no-wrap
+#~ msgid "Using ATM networking with FreeBSD"
+#~ msgstr "在 FreeBSD 上使用和改进 Dtrace"
+
+#, fuzzy, no-wrap
+#~ msgid "Using FreeBSD in a clustered environment"
+#~ msgstr "在嵌入式应用中使用 FreeBSD"
+
+#, fuzzy, no-wrap
+#~ msgid "Using and improving FreeBSD on the desktop"
+#~ msgstr "在桌面上使用和改进 FreeBSD"
+
+#, fuzzy, no-wrap
+#~ msgid "Notifications of the FreeBSD review system"
+#~ msgstr "打包 FreeBSD base system"
+
+#, fuzzy, no-wrap
+#~ msgid "Creating FreeBSD related documents"
+#~ msgstr "翻译 FreeBSD 文档和程序"
+
+#, fuzzy, no-wrap
+#~ msgid "Writing device drivers for FreeBSD"
+#~ msgstr "为 FreeBSD 撰写驱动"
+
+#, fuzzy, no-wrap
+#~ msgid "Using and working on DTrace in FreeBSD"
+#~ msgstr "在 FreeBSD 上使用和改进 Dtrace"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD users of Eclipse IDE, tools, rich client applications and ports."
+#~ msgstr "FreeBSD 上的 Eclipse IDE、工具、 富客户应用， 以及 ports 的用户讨论。"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific ElasticSearch discussions"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Using FreeBSD in embedded applications"
+#~ msgstr "在嵌入式应用中使用 FreeBSD"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Erlang discussions"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Fortran on FreeBSD"
+#~ msgstr "FreeBSD 上的 Fortran"
+
+#, fuzzy, no-wrap
+#~ msgid "File systems"
+#~ msgstr "文件系统"
+
+#, fuzzy, no-wrap
+#~ msgid "Support for Games on FreeBSD"
+#~ msgstr "FreeBSD 上的 Fortran"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Haskell issues and discussions"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Infiniband on FreeBSD"
+#~ msgstr "在 FreeBSD 上使用 Infiniband"
+
+#, fuzzy, no-wrap
+#~ msgid "Mono and C# applications on FreeBSD"
+#~ msgstr "FreeBSD 上的 Mono 和 C# 应用"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific OCaml discussions"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Office applications on FreeBSD"
+#~ msgstr "FreeBSD 上的办公套件"
+
+#, fuzzy, no-wrap
+#~ msgid "Discussion and questions about the packet filter firewall system"
+#~ msgstr "关于 packet filter 防火墙系统的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "Binary package management and package tools discussion"
+#~ msgstr "二进制包管理工具讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Fallout logs from package building"
+#~ msgstr "来自软件包构建的失败日志"
+
+#, fuzzy, no-wrap
+#~ msgid "Packaging the FreeBSD base system"
+#~ msgstr "打包 FreeBSD base system"
+
+#, fuzzy, no-wrap
+#~ msgid "Technical discussion of FreeBSD on HP ProLiant server platforms"
+#~ msgstr "关于 FreeBSD 在 HP ProLiant 服务器平台上的技术讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Python issues"
+#~ msgstr "FreeBSD Chromium 相关的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Ruby discussions"
+#~ msgstr "关于 FreeBSD 上 Ruby 的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD Development Snapshot Announcements"
+#~ msgstr "FreeBSD 开发快照公告"
+
+#, fuzzy, no-wrap
+#~ msgid "Porting FreeBSD to SPARC(R) based systems"
+#~ msgstr "打包 FreeBSD base system"
+
+#, fuzzy, no-wrap
+#~| msgid "This is a forum for technical discussions related to FreeBSD Conformance to the C99 and the POSIX standards."
+#~ msgid "FreeBSD's conformance to the C99 and the POSIX(R) standards"
+#~ msgstr "这是关于FreeBSD顺应C99和POSIX标准的技术讨论论坛。"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD-specific Tcl/Tk discussions"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy, no-wrap
+#~ msgid "Testing on FreeBSD"
+#~ msgstr "FreeBSD 性能和稳定性测试"
+
+#, fuzzy, no-wrap
+#~ msgid "Porting TeX and its applications to FreeBSD"
+#~ msgstr "FreeBSD 上的 Mono 和 C# 应用"
+
+#, fuzzy, no-wrap
+#~ msgid "Threading in FreeBSD"
+#~ msgstr "FreeBSD 性能和稳定性测试"
+
+#, fuzzy, no-wrap
+#~ msgid "Support Token Ring in FreeBSD"
+#~ msgstr "FreeBSD 性能和稳定性测试"
+
+#, fuzzy, no-wrap
+#~ msgid "Maintenance of FreeBSD's integrated toolchain"
+#~ msgstr "维护 FreeBSD 的集成工具链"
+
+#, fuzzy, no-wrap
+#~ msgid "Translating FreeBSD documents and programs"
+#~ msgstr "翻译 FreeBSD 文档和程序"
+
+#, fuzzy, no-wrap
+#~ msgid "Discussions of transport level network protocols in FreeBSD"
+#~ msgstr "讨论 FreeBSD 上的网络传输层协议"
+
+#, fuzzy, no-wrap
+#~ msgid "Discussing FreeBSD support for USB"
+#~ msgstr "关于 FreeBSD 的 USB 支持的讨论"
+
+#, fuzzy, no-wrap
+#~ msgid "Discussion of various virtualization techniques supported by FreeBSD"
+#~ msgstr "讨论各种 FreeBSD 支持的虚拟化技术"
+
+#, fuzzy
+#~ msgid ""
+#~ "_Limited lists:_ The following lists are for more specialized (and "
+#~ "demanding) audiences and are probably not of interest to the general "
+#~ "public.  It is also a good idea to establish a presence in the technical "
+#~ "lists before joining one of these limited lists in order to understand "
+#~ "the communications etiquette involved."
+#~ msgstr ""
+#~ "<emphasis>限制订阅的列表:</emphasis> 以下的列表是针对某些特定的读者而设"
+#~ "的， 而且并不适合被当成是一般公开讨论区。您最好在某一技术讨论区参与讨论后"
+#~ "再选择订阅这些 限制订阅的邮件列表，因为这样您可以了解到在这些讨论区发言所"
+#~ "需要的礼仪。"
+
+#, fuzzy, no-wrap
+#~ msgid "FreeBSD Work-In-Progress Status"
+#~ msgstr "FreeBSD 项目进度状态"
+
+#, fuzzy, no-wrap
+#~ msgid "Discussions of 802.11 stack, tools, device driver development"
+#~ msgstr "讨论 802.11 堆栈、工具、设备驱动程序开发"
+
+#, fuzzy
+#~| msgid ""
+#~| "Only SVN log messages are sent to SVN lists. After the SVN to Git "
+#~| "Migration, the following lists no longer receives new commit messages."
+#~ msgid ""
+#~ "Only SVN log messages are sent to SVN lists.  After the SVN to Git "
+#~ "Migration, the following lists no longer receive new commit messages and "
+#~ "are unavailable for subscribing.  The lists' addresses are pointing to "
+#~ "their respective archives."
+#~ msgstr ""
+#~ "只有 SVN 日志信息发送到 SVN 列表。从 SVN 转换到 Git 后，该列表不再接收新消"
+#~ "息。"
+
+#, no-wrap
+#~ msgid "List Charters"
+#~ msgstr "列表规章"
+
+#, fuzzy
+#~ msgid "_ACPI and power management development_"
+#~ msgstr "ACPI 和电源管理的开发"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is the mailing list for people interested only in occasional "
+#~| "announcements of significant FreeBSD events. This includes announcements "
+#~| "about snapshots and other releases. It contains announcements of new "
+#~| "FreeBSD capabilities. It may contain calls for volunteers etc. This is a "
+#~| "low volume, strictly moderated mailing list."
+#~ msgid ""
+#~ "This is the mailing list for people interested only in occasional "
+#~ "announcements of significant FreeBSD events.  This includes announcements "
+#~ "about snapshots and other releases.  It contains announcements of new "
+#~ "FreeBSD capabilities.  It may contain calls for volunteers etc.  This is "
+#~ "a low volume, strictly moderated mailing list."
+#~ msgstr ""
+#~ "这是一个发布FreeBSD重大事件的邮件列表。这包括有关snapshots和其他版本的公"
+#~ "告， 新的FreeBSD的性能的公告，还可以用于指派志愿者等等。这个列表比较小。"
+
+#, fuzzy
+#~ msgid "_Architecture and design discussions_"
+#~ msgstr "架构和设计的讨论"
+
+#, fuzzy
+#~| msgid ""
+#~| "This list is for discussion of the FreeBSD architecture. Messages will "
+#~| "mostly be kept strictly technical in nature. Examples of suitable topics "
+#~| "are:"
+#~ msgid ""
+#~ "This list is for discussion of the FreeBSD architecture.  Messages will "
+#~ "mostly be kept strictly technical in nature.  Examples of suitable topics "
+#~ "are:"
+#~ msgstr ""
+#~ "这个列表是讨论FreeBSD的架构。本质上应保证内容的纯技术性。例如主题是："
+
+#~ msgid ""
+#~ "How to re-vamp the build system to have several customized builds running "
+#~ "at the same time."
+#~ msgstr "如何重新创建系统使其同时有几个自己构造的系统运行。"
+
+#~ msgid "What needs to be fixed with VFS to make Heidemann layers work."
+#~ msgstr "需要什么才能修复VFS来使 Heidemann 层工作。"
+
+#~ msgid ""
+#~ "How do we change the device driver interface to be able to use the same "
+#~ "drivers cleanly on many buses and architectures."
+#~ msgstr ""
+#~ "我们怎么改变设备驱动程序接口以便能够在多种总线和体系结构上使用同样的驱动程"
+#~ "序。"
+
+#~ msgid "How to write a network driver."
+#~ msgstr "如何写一个网络驱动。"
+
+#, fuzzy
+#~| msgid ""
+#~| "The purpose of this list is to serve as a coordination and discussion "
+#~| "forum for the Bugmeister, his Bugbusters, and any other parties who have "
+#~| "a genuine interest in the PR database. This list is not for discussions "
+#~| "about specific bugs, patches or PRs."
+#~ msgid ""
+#~ "The purpose of this list is to serve as a coordination and discussion "
+#~ "forum for the Bugmeister, his Bugbusters, and any other parties who have "
+#~ "a genuine interest in the PR database.  This list is not for discussions "
+#~ "about specific bugs, patches or PRs."
+#~ msgstr ""
+#~ "这个列表的目的是作为一个调整和讨论论坛来服务于Bug列表的成员，Bugbuster列表"
+#~ "成员 和其他任何的对PR数据库真正的有兴趣的成员。这个列表不是为了讨论关于Bug"
+#~ "细节，补丁或PRs。"
+
+#, fuzzy
+#~ msgid "_Bug reports_"
+#~ msgstr "错误报告"
+
+#, fuzzy
+#~ msgid "_Non technical items related to the FreeBSD community_"
+#~ msgstr "和技术无关的FreeBSD讨论区"
+
+#, fuzzy
+#~| msgid ""
+#~| "This list contains the overflow from the other lists about non-"
+#~| "technical, social information. It includes discussion about whether "
+#~| "Jordan looks like a toon ferret or not, whether or not to type in "
+#~| "capitals, who is drinking too much coffee, where the best beer is "
+#~| "brewed, who is brewing beer in their basement, and so on. Occasional "
+#~| "announcements of important events (such as upcoming parties, weddings, "
+#~| "births, new jobs, etc) can be made to the technical lists, but the "
+#~| "follow ups should be directed to this -chat list."
+#~ msgid ""
+#~ "This list contains the overflow from the other lists about non-technical, "
+#~ "social information.  It includes discussion about whether Jordan looks "
+#~ "like a toon ferret or not, whether or not to type in capitals, who is "
+#~ "drinking too much coffee, where the best beer is brewed, who is brewing "
+#~ "beer in their basement, and so on.  Occasional announcements of important "
+#~ "events (such as upcoming parties, weddings, births, new jobs, etc) can be "
+#~ "made to the technical lists, but the follow ups should be directed to "
+#~ "this -chat list."
+#~ msgstr ""
+#~ "这个列表超出了其他有关非技术、社会信息的内容。 包括谈论Jordan看起来是否像"
+#~ "一个机敏的侦探，是否句首的字母要大写， 谁喝了很多咖啡， 哪儿的啤酒酿造的最"
+#~ "好，谁在他们的地下室里酿造了啤酒等等。对于偶然宣布重大的事件 （例如：将要"
+#~ "举行的聚会，婚礼，生日，新工作等等）也能使用这种技术列表，除上述列举之外 "
+#~ "任何事情都可以发布在-chat列表上。"
+
+#, fuzzy
+#~ msgid "_FreeBSD-specific Chromium issues_"
+#~ msgstr "FreeBSD Chromium 相关的讨论"
+
+#~ msgid ""
+#~ "This is a list for the discussion of Chromium support for FreeBSD. This "
+#~ "is a technical list to discuss development and installation of Chromium."
+#~ msgstr ""
+#~ "这是一个讨论 FreeBSD 上 Chromium 相关问题的邮件列表。 这是一个讨论开发和安"
+#~ "装 Chromium 的技术类列表。"
+
+#~ msgid ""
+#~ "This list discusses running FreeBSD on Amazon EC2, Google Compute Engine, "
+#~ "Microsoft Azure, and other cloud computing platforms."
+#~ msgstr ""
+#~ "此列表讨论在 Amazon EC2、谷歌计算引擎、微软 Azure 和其他云计算平台上运行 "
+#~ "FreeBSD。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is an internal mailing list for use by the core members. Messages "
+#~| "can be sent to it when a serious FreeBSD-related matter requires "
+#~| "arbitration or high-level scrutiny."
+#~ msgid ""
+#~ "This is an internal mailing list for use by the core members.  Messages "
+#~ "can be sent to it when a serious FreeBSD-related matter requires "
+#~ "arbitration or high-level scrutiny."
+#~ msgstr ""
+#~ "这是一个只供核心成员内部使用的邮件列表，只有当一个与FreeBSD相关的严重的事"
+#~ "情需要裁决或严格审核时， 才能发送消息到这个邮件列表。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the mailing list for users of FreeBSD-CURRENT.  It includes "
+#~ "warnings about new features coming out in -CURRENT that will affect the "
+#~ "users, and instructions on steps that must be taken to remain -CURRENT.  "
+#~ "Anyone running \"CURRENT\" must subscribe to this list.  This is a "
+#~ "technical mailing list for which strictly technical content is expected."
+#~ msgstr ""
+#~ "这是一个针对FreeBSD-CURRENT用户的邮件列表。 它包括一些可能影响用户的新特性"
+#~ "的警告，使用FreeBSD-current的一些指导。 任何运行<quote>CURRENT</quote>的人"
+#~ "必须同意这个列表，这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid "_Using and improving FreeBSD on the desktop_"
+#~ msgstr "在桌面上使用和改进 FreeBSD"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a forum for discussion of FreeBSD on the desktop. It is "
+#~| "primarily a place for desktop porters and users to discuss issues and "
+#~| "improve FreeBSD's desktop support."
+#~ msgid ""
+#~ "This is a forum for discussion of FreeBSD on the desktop.  It is "
+#~ "primarily a place for desktop porters and users to discuss issues and "
+#~ "improve FreeBSD's desktop support."
+#~ msgstr ""
+#~ "这是一个讨论 FreeBSD Desktop 论坛。它主要是为桌面移植者和用户提供一个讨论"
+#~ "问题和改进FreeBSD桌面支持的地方。"
+
+#~ msgid "All Continuous Integration reports of build and test results"
+#~ msgstr "所有构建和测试结果的持续集成报告"
+
+#~ msgid ""
+#~ "Automated notifications of work in progress for review in FreeBSD's "
+#~ "review tools, including patches."
+#~ msgstr "在 FreeBSD 的审查工具中自动通知审查中的工作，包括补丁。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This mailing list is for the discussion of issues and projects related to "
+#~ "the creation of documentation for FreeBSD.  The members of this mailing "
+#~ "list are collectively referred to as \"The FreeBSD Documentation Project"
+#~ "\".  It is an open list; feel free to join and contribute!"
+#~ msgstr ""
+#~ "这个邮件列表是与FreeBSD创建的文档的出版和计划的讨论。 这个邮件列表的成员都"
+#~ "会提交到<quote>The FreeBSD Documentation Project</quote>。 它是一个开放的"
+#~ "列表，可以自由地加入和做贡献！"
+
+#, fuzzy
+#~ msgid "_Writing device drivers for FreeBSD_"
+#~ msgstr "为 FreeBSD 撰写驱动"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a forum for technical discussions related to device drivers on "
+#~| "FreeBSD. It is primarily a place for device driver writers to ask "
+#~| "questions about how to write device drivers using the APIs in the "
+#~| "FreeBSD kernel."
+#~ msgid ""
+#~ "This is a forum for technical discussions related to device drivers on "
+#~ "FreeBSD.  It is primarily a place for device driver writers to ask "
+#~ "questions about how to write device drivers using the APIs in the FreeBSD "
+#~ "kernel."
+#~ msgstr ""
+#~ "这是关于 FreeBSD 上的设备驱动的技术论坛。 它主要供编写设备驱动的开发人员提"
+#~ "出关于如何使用 FreeBSD 内核提供的 API 来编写设备驱动程序的问题。"
+
+#, fuzzy
+#~ msgid "_Using and working on DTrace in FreeBSD_"
+#~ msgstr "在 FreeBSD 上使用和改进 Dtrace"
+
+#, fuzzy
+#~| msgid ""
+#~| "DTrace is an integrated component of FreeBSD that provides a framework "
+#~| "for understanding the kernel as well as user space programs at run time. "
+#~| "The mailing list is an archived discussion for developers of the code as "
+#~| "well as those using it."
+#~ msgid ""
+#~ "DTrace is an integrated component of FreeBSD that provides a framework "
+#~ "for understanding the kernel as well as user space programs at run time.  "
+#~ "The mailing list is an archived discussion for developers of the code as "
+#~ "well as those using it."
+#~ msgstr ""
+#~ "DTrace 是FreeBSD的一个集成组件， 它提供了一个框架来理解内核以及运行时的用"
+#~ "户空间程序。邮件列表是为代码的开发者和使用代码的人提供了一个存档讨论。"
+
+#, fuzzy
+#~ msgid ""
+#~ "_FreeBSD users of Eclipse IDE, tools, rich client applications and ports._"
+#~ msgstr ""
+#~ "FreeBSD 上的 Eclipse IDE、工具、 富客户应用， 以及 ports 的用户讨论。"
+
+#~ msgid ""
+#~ "The intention of this list is to provide mutual support for everything to "
+#~ "do with choosing, installing, using, developing and maintaining the "
+#~ "Eclipse IDE, tools, rich client applications on the FreeBSD platform and "
+#~ "assisting with the porting of Eclipse IDE and plugins to the FreeBSD "
+#~ "environment."
+#~ msgstr ""
+#~ "这个邮件列表的目的， 是为在 FreeBSD 平台上选择、 安装、 使用、 开发和维护 "
+#~ "Eclipse IDE、 工具、 富客户应用的用户， 提供互助式支持， 以及为将 Eclipse "
+#~ "IDE 和插件移植到 FreeBSD 环境中提供帮助。"
+
+#~ msgid ""
+#~ "The intention is also to facilitate exchange of information between the "
+#~ "Eclipse community and the FreeBSD community to the mutual benefit of both."
+#~ msgstr ""
+#~ "另一个目的是建立一个在 Eclipse 社区和 FreeBSD 社区之间的交流管道， 以达到"
+#~ "互惠互利。"
+
+#~ msgid ""
+#~ "Although this list is focused primarily on the needs of Eclipse users it "
+#~ "will also provide a forum for those who would like to develop FreeBSD "
+#~ "specific applications using the Eclipse framework."
+#~ msgstr ""
+#~ "尽管这个列表主要关注的是 Eclipse 用户的诉求， 它也为使用 Eclipse 框架开发 "
+#~ "FreeBSD 专用的应用提供了论坛。"
+
+#, fuzzy
+#~ msgid "_Using FreeBSD in embedded applications_"
+#~ msgstr "在嵌入式应用中使用 FreeBSD"
+
+#, fuzzy
+#~| msgid ""
+#~| "This list discusses topics related to using FreeBSD in embedded systems. "
+#~| "This is a technical mailing list for which strictly technical content is "
+#~| "expected. For the purpose of this list, embedded systems are those "
+#~| "computing devices which are not desktops and which usually serve a "
+#~| "single purpose as opposed to being general computing environments. "
+#~| "Examples include, but are not limited to, all kinds of phone handsets, "
+#~| "network equipment such as routers, switches and PBXs, remote measuring "
+#~| "equipment, PDAs, Point Of Sale systems, and so on."
+#~ msgid ""
+#~ "This list discusses topics related to using FreeBSD in embedded systems.  "
+#~ "This is a technical mailing list for which strictly technical content is "
+#~ "expected.  For the purpose of this list, embedded systems are those "
+#~ "computing devices which are not desktops and which usually serve a single "
+#~ "purpose as opposed to being general computing environments.  Examples "
+#~ "include, but are not limited to, all kinds of phone handsets, network "
+#~ "equipment such as routers, switches and PBXs, remote measuring equipment, "
+#~ "PDAs, Point Of Sale systems, and so on."
+#~ msgstr ""
+#~ "这个列表讨论关于在嵌入式系统中如何使用 FreeBSD 的话题。 这是一个技术性的邮"
+#~ "件列表， 其主要内容是技术讨论。 针对这一邮件列表， 我们将嵌入式系统定义为"
+#~ "那些不作为桌面系统、 只完成某些单一任务的计算设备。 这些实例包括路由器交换"
+#~ "机和 PBX 这样的网络设备、 远程测量设备、 PDA、 PoS 系统，等等。"
+
+#~ msgid ""
+#~ "This is a forum for technical discussions related to running programs "
+#~ "written for other operating systems on FreeBSD."
+#~ msgstr ""
+#~ "这是一个讨论关于如何在 FreeBSD 上运行为其他操作系统所撰写的程序的论坛。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions concerning FreeBSD filesystems. This is a technical mailing "
+#~| "list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Discussions concerning the Enlightenment Desktop Environment for FreeBSD "
+#~ "systems.  This is a technical mailing list for which strictly technical "
+#~ "content is expected."
+#~ msgstr "关于FreeBSD文件系统的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid "_Fortran on FreeBSD_"
+#~ msgstr "FreeBSD 上的 Fortran"
+
+#~ msgid ""
+#~ "This is the mailing list for discussion of Fortran related ports on "
+#~ "FreeBSD: compilers, libraries, scientific and engineering applications "
+#~ "from laptops to HPC clusters."
+#~ msgstr ""
+#~ "这里是讨论 FreeBSD 上的 Fortran 相关软件移植的邮件列表：从笔记本电脑到 "
+#~ "HPC 集群的编译器、库、科学和工程应用。"
+
+#, fuzzy
+#~ msgid "_File systems_"
+#~ msgstr "文件系统"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions concerning FreeBSD filesystems. This is a technical mailing "
+#~| "list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Discussions concerning FreeBSD filesystems.  This is a technical mailing "
+#~ "list for which strictly technical content is expected."
+#~ msgstr "关于FreeBSD文件系统的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a technical list for discussions related to bringing games to "
+#~| "FreeBSD. It is for individuals actively working on porting games to "
+#~| "FreeBSD, to bring up problems or discuss alternative solutions. "
+#~| "Individuals interested in following the technical discussion are also "
+#~| "welcome."
+#~ msgid ""
+#~ "This is a technical list for discussions related to bringing games to "
+#~ "FreeBSD.  It is for individuals actively working on porting games to "
+#~ "FreeBSD, to bring up problems or discuss alternative solutions.  "
+#~ "Individuals interested in following the technical discussion are also "
+#~ "welcome."
+#~ msgstr ""
+#~ "这是一个讨论将游戏移植到 FreeBSD 的技术列表。这是为积极致力于将游戏移植到"
+#~ "FreeBSD的个人提供的，可以提出问题或讨论其他的解决方案。也欢迎有兴趣关注技"
+#~ "术讨论的个人。"
+
+#~ msgid ""
+#~ "Discussion centers around Gecko Ports applications, their installation, "
+#~ "their development and their support within FreeBSD."
+#~ msgstr ""
+#~ "围绕 FreeBSD 上 Gecko Ports 应用程序的讨论， 以及它们的安装， 开发和支持。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions specific to GEOM and related implementations. This is a "
+#~| "technical mailing list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Discussions specific to GEOM and related implementations.  This is a "
+#~ "technical mailing list for which strictly technical content is expected."
+#~ msgstr "针对GEOM和相关执行的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions of how to use git in FreeBSD infrastructure including the "
+#~| "github mirror and other uses of git for project collaboration. "
+#~| "Discussion area for people using git against the FreeBSD github mirror. "
+#~| "People wanting to get started with the mirror or git in general on "
+#~| "FreeBSD can ask here."
+#~ msgid ""
+#~ "Discussions of how to use git in FreeBSD infrastructure including the "
+#~ "github mirror and other uses of git for project collaboration.  "
+#~ "Discussion area for people using git against the FreeBSD github mirror.  "
+#~ "People wanting to get started with the mirror or git in general on "
+#~ "FreeBSD can ask here."
+#~ msgstr ""
+#~ "讨论如何在 FreeBSD 基础架构中使用 git， 包括 github 镜像和其他使用 git 进"
+#~ "行项目协作的讨论。为使用 git 与 FreeBSD github 镜像的人提供讨论区。想要在 "
+#~ "FreeBSD 上使用镜像或 git 的人可以在这里询问。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions concerning FreeBSD filesystems. This is a technical mailing "
+#~| "list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Discussions concerning The GNOME Desktop Environment for FreeBSD "
+#~ "systems.  This is a technical mailing list for which strictly technical "
+#~ "content is expected."
+#~ msgstr "关于FreeBSD文件系统的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid "_Infiniband on FreeBSD_"
+#~ msgstr "在 FreeBSD 上使用 Infiniband"
+
+#~ msgid ""
+#~ "Technical mailing list discussing Infiniband, OFED, and OpenSM on FreeBSD."
+#~ msgstr "技术型邮件列表，讨论在FreeBSD上使用OFED和OpenSM。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is the forum for technical discussions concerning the redesign of "
+#~| "the IP firewall code in FreeBSD. This is a technical mailing list for "
+#~| "which strictly technical content is expected."
+#~ msgid ""
+#~ "This is the forum for technical discussions concerning the redesign of "
+#~ "the IP firewall code in FreeBSD.  This is a technical mailing list for "
+#~ "which strictly technical content is expected."
+#~ msgstr "这是关于在FreeBSD里重新设计IP防火墙代码的技术讨论论坛。"
+
+#~ msgid ""
+#~ "This is the mailing list for people discussing the development of ISDN "
+#~ "support for FreeBSD."
+#~ msgstr "这是一个FreeBSD支持的ISDN系统开发的邮件列表。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is a forum for posting employment notices specifically related to "
+#~ "FreeBSD and resumes from those seeking FreeBSD-related employment.  This "
+#~ "is _not_ a mailing list for general employment issues since adequate "
+#~ "forums for that already exist elsewhere."
+#~ msgstr ""
+#~ "这个论坛是针对与 FreeBSD 相关的雇佣信息和个人简历， 比如： 如果您想找一个"
+#~ "与 FreeBSD 相关的工作或有一个工作需要 FreeBSD 这是一个让您来广告的好地"
+#~ "方。 这 <emphasis>不</emphasis> 是对一般性雇佣问题的邮件列表， 对这个问题"
+#~ "已经有了足够多的论坛。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions concerning FreeBSD filesystems. This is a technical mailing "
+#~| "list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Discussions concerning KDE on FreeBSD systems.  This is a technical "
+#~ "mailing list for which strictly technical content is expected."
+#~ msgstr "关于FreeBSD文件系统的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a forum for technical discussions related to FreeBSD. This is "
+#~| "the primary technical mailing list. It is for individuals actively "
+#~| "working on FreeBSD, to bring up problems or discuss alternative "
+#~| "solutions. Individuals interested in following the technical discussion "
+#~| "are also welcome. This is a technical mailing list for which strictly "
+#~| "technical content is expected."
+#~ msgid ""
+#~ "This is a forum for technical discussions related to FreeBSD.  This is "
+#~ "the primary technical mailing list.  It is for individuals actively "
+#~ "working on FreeBSD, to bring up problems or discuss alternative "
+#~ "solutions.  Individuals interested in following the technical discussion "
+#~ "are also welcome.  This is a technical mailing list for which strictly "
+#~ "technical content is expected."
+#~ msgstr ""
+#~ "这是一个与FreeBSD相关的技术讨论论坛，是一个主要的技术性邮件列表。 他是针对"
+#~ "个别的工作在FreeBSD上的人来提出问题或讨论相关的解决方案, 也欢迎对这些问题"
+#~ "感兴趣的个别的讨论者。这是一个纯技术的邮件列表。"
+
+#~ msgid ""
+#~ "General discussion about the types of hardware that FreeBSD runs on, "
+#~ "various problems and suggestions concerning what to buy or avoid."
+#~ msgstr "有关FreeBSD运行的硬件类型的普通讨论，包括是否该买的一些问题和建议。"
+
+#~ msgid ""
+#~ "Announcements and discussion for people who run FreeBSD mirror sites."
+#~ msgstr "人们运行FreeBSD的镜象站点的公告和讨论。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This mailing list is for discussing topics relevant to Internet Service "
+#~| "Providers (ISPs) using FreeBSD. This is a technical mailing list for "
+#~| "which strictly technical content is expected."
+#~ msgid ""
+#~ "This mailing list is for discussing topics relevant to Internet Service "
+#~ "Providers (ISPs) using FreeBSD.  This is a technical mailing list for "
+#~ "which strictly technical content is expected."
+#~ msgstr ""
+#~ "这是一个讨论使用FreeBSD的ISP供应商的邮件列表。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid "_Mono and C# applications on FreeBSD_"
+#~ msgstr "FreeBSD 上的 Mono 和 C# 应用"
+
+#~ msgid ""
+#~ "This is a list for discussions related to the Mono development framework "
+#~ "on FreeBSD. This is a technical mailing list. It is for individuals "
+#~ "actively working on porting Mono or C# applications to FreeBSD, to bring "
+#~ "up problems or discuss alternative solutions. Individuals interested in "
+#~ "following the technical discussion are also welcome."
+#~ msgstr ""
+#~ "这是一个讨论 FreeBSD 上的 Mono 开发框架的邮件列表。 这是一个纯技术的邮件列"
+#~ "表。 它是为将 Mono 或 C# 应用移植到 FreeBSD， 以及提出问题及讨论其他解决方"
+#~ "案的人准备的。 此外， 也欢迎有兴趣参与讨论的其他人。"
+
+#, fuzzy
+#~ msgid "_FreeBSD-specific OCaml discussions_"
+#~ msgstr "FreeBSD OCaml 讨论组"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a list for discussions related to the OCaml support on FreeBSD. "
+#~| "This is a technical mailing list. It is for individuals working on OCaml "
+#~| "ports, 3rd party libraries and frameworks. Individuals interested in the "
+#~| "technical discussion are also welcome."
+#~ msgid ""
+#~ "This is a list for discussions related to the OCaml support on FreeBSD.  "
+#~ "This is a technical mailing list.  It is for individuals working on OCaml "
+#~ "ports, 3rd party libraries and frameworks.  Individuals interested in the "
+#~ "technical discussion are also welcome."
+#~ msgstr ""
+#~ "这是一个与 FreeBSD 上的 OCaml 支持相关的讨论列表。这是一个技术邮件列表。它"
+#~ "适用于在 OCaml Ports、第三方库和框架上工作的个人。欢迎对技术讨论感兴趣的个"
+#~ "人。"
+
+#, fuzzy
+#~ msgid "_Office applications on FreeBSD_"
+#~ msgstr "FreeBSD 上的办公套件"
+
+#~ msgid ""
+#~ "Discussion centers around office applications, their installation, their "
+#~ "development and their support within FreeBSD."
+#~ msgstr "关于办公套件应用， 它们的安装、 开发和 FreeBSD 支持的讨论中心。"
+
+#~ msgid ""
+#~ "This is the mailing list for people interested in changes and issues "
+#~ "related to the FreeBSD.org Project infrastructure."
+#~ msgstr ""
+#~ "这是为对FreeBSD.org项目基础架构相关的更改和问题感兴趣的人提供的邮件列表。"
+
+#~ msgid ""
+#~ "This moderated list is strictly for announcements: no replies, requests, "
+#~ "discussions, or opinions."
+#~ msgstr "本列表仅用于发布公告：不允许回复、请求、讨论或意见。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This mailing list exists to provide a place for hackers, administrators, "
+#~| "and/or concerned parties to discuss performance related topics "
+#~| "pertaining to FreeBSD. Acceptable topics includes talking about FreeBSD "
+#~| "installations that are either under high load, are experiencing "
+#~| "performance problems, or are pushing the limits of FreeBSD. Concerned "
+#~| "parties that are willing to work toward improving the performance of "
+#~| "FreeBSD are highly encouraged to subscribe to this list. This is a "
+#~| "highly technical list ideally suited for experienced FreeBSD users, "
+#~| "hackers, or administrators interested in keeping FreeBSD fast, robust, "
+#~| "and scalable. This list is not a question-and-answer list that replaces "
+#~| "reading through documentation, but it is a place to make contributions "
+#~| "or inquire about unanswered performance related topics."
+#~ msgid ""
+#~ "This mailing list exists to provide a place for hackers, administrators, "
+#~ "and/or concerned parties to discuss performance related topics pertaining "
+#~ "to FreeBSD.  Acceptable topics includes talking about FreeBSD "
+#~ "installations that are either under high load, are experiencing "
+#~ "performance problems, or are pushing the limits of FreeBSD.  Concerned "
+#~ "parties that are willing to work toward improving the performance of "
+#~ "FreeBSD are highly encouraged to subscribe to this list.  This is a "
+#~ "highly technical list ideally suited for experienced FreeBSD users, "
+#~ "hackers, or administrators interested in keeping FreeBSD fast, robust, "
+#~ "and scalable.  This list is not a question-and-answer list that replaces "
+#~ "reading through documentation, but it is a place to make contributions or "
+#~ "inquire about unanswered performance related topics."
+#~ msgstr ""
+#~ "这个邮件列表提供了一个为黑客，管理员和有关的团体去讨论与FreeBSD性能相关的"
+#~ "主题的空间。 可以在这里进行讨论的包括在任意高负载下，体验版下或者是有限制"
+#~ "的条件下安装FreeBSD。 非常鼓励自愿地为了改进FreeBSD性能的相关团体去订阅这"
+#~ "个列表。 这是个高技术含量的列表理论上说适合有丰富经验的FreeBSD用户，黑客，"
+#~ "或对FreeBSD的速度、性能 、升级感兴趣的管理员。这不是一个问答式的列表，关于"
+#~ "这些应该去读相关文档，但他是 一个可以投稿的地方，或者了解关于待解决的与性"
+#~ "能相关的主题。"
+
+#, fuzzy
+#~ msgid "_Discussion and questions about the packet filter firewall system_"
+#~ msgstr "关于 packet filter 防火墙系统的讨论"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussion concerning the packet filter (pf) firewall system in terms of "
+#~| "FreeBSD. Technical discussion and user questions are both welcome. This "
+#~| "list is also a place to discuss the ALTQ QoS framework."
+#~ msgid ""
+#~ "Discussion concerning the packet filter (pf) firewall system in terms of "
+#~ "FreeBSD.  Technical discussion and user questions are both welcome.  This "
+#~ "list is also a place to discuss the ALTQ QoS framework."
+#~ msgstr ""
+#~ "关于 FreeBSD 环境下 packet filter (pf) 防火墙系统的讨论。 这里欢迎技术讨"
+#~ "论， 以及一般的应用问题。 此外， 这里也是讨论 ALTQ QoS 框架的合适场所。"
+
+#, fuzzy
+#~ msgid "_Binary package management and package tools discussion_"
+#~ msgstr "二进制包管理工具讨论组"
+
+#~ msgid ""
+#~ "Discussion of all aspects of managing FreeBSD systems by using binary "
+#~ "packages to install software, including binary package toolkits and "
+#~ "formats, their development and support within FreeBSD, package repository "
+#~ "management, and third party packages."
+#~ msgstr ""
+#~ "讨论通过使用二进制软件包安装软件来管理FreeBSD系统的所有方面， 包括二进制软"
+#~ "件包工具包和格式、它们在FreeBSD系统中的开发和支持、软件包仓库管理和第三方"
+#~ "软件包。"
+
+#~ msgid ""
+#~ "Note that discussion of ports which fail to generate packages correctly "
+#~ "should generally be considered as ports problems, and so inappropriate "
+#~ "for this list."
+#~ msgstr ""
+#~ "注意，讨论不能正确生成包的 port 一般应视为 port 问题，因此不宜在本列表中讨"
+#~ "论。"
+
+#, fuzzy
+#~ msgid "_Fallout logs from package building_"
+#~ msgstr "来自软件包构建的失败日志"
+
+#~ msgid ""
+#~ "All packages building failures logs from the package building clusters"
+#~ msgstr "包构建集群中所有构建失败的日志"
+
+#, fuzzy
+#~ msgid "_Packaging the FreeBSD base system._"
+#~ msgstr "打包 FreeBSD base system"
+
+#~ msgid ""
+#~ "Discussions surrounding implementation and issues regarding packaging the "
+#~ "FreeBSD base system."
+#~ msgstr "围绕着 FreeBSD 基础系统的实现和封装问题的讨论。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Discussions concerning FreeBSD filesystems. This is a technical mailing "
+#~| "list for which strictly technical content is expected."
+#~ msgid ""
+#~ "Cross-platform FreeBSD issues, general discussion and proposals for non "
+#~ "Intel(R) FreeBSD ports.  This is a technical mailing list for which "
+#~ "strictly technical content is expected."
+#~ msgstr "关于FreeBSD文件系统的讨论。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Discussions concerning FreeBSD's \"ports collection\" ([.filename]#/usr/"
+#~ "ports#), ports infrastructure, and general ports coordination efforts.  "
+#~ "This is a technical mailing list for which strictly technical content is "
+#~ "expected."
+#~ msgstr ""
+#~ "关于FreeBSD的<quote>ports collection</quote> (<filename>/usr/ports</"
+#~ "filename>)的讨论, ports的基础构造和调整过的ports结构。这是一个纯技术的邮件"
+#~ "列表。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Important news for developers, porters, and users of the \"Ports "
+#~ "Collection\" ([.filename]#/usr/ports#), including architecture/"
+#~ "infrastructure changes, new capabilities, critical upgrade instructions, "
+#~ "and release engineering information.  This is a low-volume mailing list, "
+#~ "intended for announcements."
+#~ msgstr ""
+#~ "<quote>Ports Collection</quote> (<filename>/usr/ports</filename>) 的与开发"
+#~ "者和用户相关的重要新闻，涵盖架构/基础设施变更、新功能、关键升级说明和发布"
+#~ "工程信息。此邮件列表仅用于发布公告。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Discussions concerning problem reports for FreeBSD's \"ports collection"
+#~ "\" ([.filename]#/usr/ports#), proposed ports, or modifications to ports.  "
+#~ "This is a technical mailing list for which strictly technical content is "
+#~ "expected."
+#~ msgstr ""
+#~ "讨论关于FreeBSD的<quote>ports collection</quote> (<filename>/usr/ports</"
+#~ "filename>),问题报告 ports建议，或者ports的修正。这是一个纯技术的邮件列表。"
+
+#, fuzzy
+#~ msgid "_Technical discussion of FreeBSD on HP ProLiant server platforms_"
+#~ msgstr "关于 FreeBSD 在 HP ProLiant 服务器平台上的技术讨论"
+
+#, fuzzy
+#~| msgid ""
+#~| "This mailing list is to be used for the technical discussion of the "
+#~| "usage of FreeBSD on HP ProLiant servers, including the discussion of "
+#~| "ProLiant-specific drivers, management software, configuration tools, and "
+#~| "BIOS updates. As such, this is the primary place to discuss the hpasmd, "
+#~| "hpasmcli, and hpacucli modules."
+#~ msgid ""
+#~ "This mailing list is to be used for the technical discussion of the usage "
+#~ "of FreeBSD on HP ProLiant servers, including the discussion of ProLiant-"
+#~ "specific drivers, management software, configuration tools, and BIOS "
+#~ "updates.  As such, this is the primary place to discuss the hpasmd, "
+#~ "hpasmcli, and hpacucli modules."
+#~ msgstr ""
+#~ "这个邮件列表用来讨论在 HP ProLiant 服务器上使用 FreeBSD， 包括讨论 "
+#~ "ProLiant 专用的驱动、 管理软件、 配置工具， 以及 BIOS 更新等。 同样地， 这"
+#~ "里也是讨论 hpasmd、 hpasmcli， 以及 hpacucli 模块的主要场所。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is a list for discussions related to improving Python-support on "
+#~ "FreeBSD.  This is a technical mailing list.  It is for individuals "
+#~ "working on porting Python, its third party modules and Zope stuff to "
+#~ "FreeBSD.  Individuals interested in following the technical discussion "
+#~ "are also welcome."
+#~ msgstr ""
+#~ "这是一个讨论关于如何在 FreeBSD 上改善 Python 支持的邮件列表。 这是一个纯技"
+#~ "术的邮件列表。 它是为那些移植 Python、 其第三方模块， 以及 "
+#~ "<application>Zope</application> 相关软件到 FreeBSD 上的人准备的。 这里也欢"
+#~ "迎参与技术讨论的人。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the mailing list for questions about FreeBSD.  Do not send \"how "
+#~ "to\" questions to the technical lists unless the question is quite "
+#~ "technical."
+#~ msgstr ""
+#~ "这是一个有关FreeBSD问题的邮件列表。您不应当发送<quote>how to</quote> 问题"
+#~ "给技术列表，除非您认为这个问题是非常可爱的技术问题。"
+
+#, fuzzy
+#~ msgid "_FreeBSD-specific Ruby discussions_"
+#~ msgstr "关于 FreeBSD 上 Ruby 的讨论"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a list for discussions related to the Ruby support on FreeBSD. "
+#~| "This is a technical mailing list. It is for individuals working on Ruby "
+#~| "ports, third party libraries and frameworks."
+#~ msgid ""
+#~ "This is a list for discussions related to the Ruby support on FreeBSD.  "
+#~ "This is a technical mailing list.  It is for individuals working on Ruby "
+#~ "ports, third party libraries and frameworks."
+#~ msgstr ""
+#~ "这是一个讨论关于 Ruby 在 FreeBSD 上支持的邮件列表。 这是一个纯技术的邮件列"
+#~ "表。它是为那些移植 Ruby、第三方库以及 各种 framework 准备的。"
+
+#~ msgid "Individuals interested in the technical discussion are also welcome."
+#~ msgstr "这里也欢迎参与技术讨论的人。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is the mailing list for people working on the SCSI subsystem for "
+#~| "FreeBSD. This is a technical mailing list for which strictly technical "
+#~| "content is expected."
+#~ msgid ""
+#~ "This is the mailing list for people working on the SCSI subsystem for "
+#~ "FreeBSD.  This is a technical mailing list for which strictly technical "
+#~ "content is expected."
+#~ msgstr "这是一个讨论FreeBSD的SCSI子系统的邮件列表。这是一个纯技术的列表。"
+
+#, fuzzy
+#~| msgid ""
+#~| "FreeBSD computer security issues (DES, Kerberos, known security holes "
+#~| "and fixes, etc). This is a technical mailing list for which strictly "
+#~| "technical discussion is expected. Note that this is not a question-and-"
+#~| "answer list, but that contributions (BOTH question AND answer) to the "
+#~| "FAQ are welcome."
+#~ msgid ""
+#~ "FreeBSD computer security issues (DES, Kerberos, known security holes and "
+#~ "fixes, etc).  This is a technical mailing list for which strictly "
+#~ "technical discussion is expected.  Note that this is not a question-and-"
+#~ "answer list, but that contributions (BOTH question AND answer) to the FAQ "
+#~ "are welcome."
+#~ msgstr ""
+#~ "FreeBSD的计算机安全问题（DES,Kerberos,已知的安全漏洞和修复等）。 这是一个"
+#~ "纯技术的邮件列表。注意：这不是一个问和答的列表，但是同时给出 问题和答案到"
+#~ "FAQ是欢迎的。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Notifications of FreeBSD security problems and fixes. This is not a "
+#~| "discussion list. The discussion list is FreeBSD-security."
+#~ msgid ""
+#~ "Notifications of FreeBSD security problems and fixes.  This is not a "
+#~ "discussion list.  The discussion list is FreeBSD-security."
+#~ msgstr ""
+#~ "FreeBSD 安全问题和修复的通知。这不是一个讨论列表，讨论的列表应当是 "
+#~ "FreeBSD-security。"
+
+#, fuzzy
+#~ msgid "_FreeBSD Development Snapshot Announcements_"
+#~ msgstr "FreeBSD 开发快照公告"
+
+#~ msgid ""
+#~ "This list provides notifications about the availability of new FreeBSD "
+#~ "development snapshots for the head/ and stable/ branches."
+#~ msgstr ""
+#~ "这个列表提供了关于 head/ 和 stable/分支的新 FreeBSD 开发快照的通知。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is the mailing list for users of FreeBSD-STABLE.  \"STABLE\" is the "
+#~ "branch where development continues after a RELEASE, including bug fixes "
+#~ "and new features.  The ABI is kept stable for binary compatibility.  It "
+#~ "includes warnings about new features coming out in -STABLE that will "
+#~ "affect the users, and instructions on steps that must be taken to remain -"
+#~ "STABLE.  Anyone running \"STABLE\" should subscribe to this list.  This "
+#~ "is a technical mailing list for which strictly technical content is "
+#~ "expected."
+#~ msgstr ""
+#~ "这里是 FreeBSD-STABLE 用户的邮件列表。<quote>STABLE</quote> 是在发布之后继"
+#~ "续开发的分支， 包括 bug 修复和新功能。ABI 是为了二进制的兼容性而保持稳定。"
+#~ "它包括了关于在 -STABLE 中发布的新特性的警告，这些新特性会影响到用户，并提"
+#~ "供了保持 -STABLE 的步骤说明。建议使用<quote>STABLE</quote>的人订阅这个列"
+#~ "表。这是个技术性的邮件列表，仅允许发表技术相关内容。"
+
+#~ msgid ""
+#~ "This is a forum for technical discussions related to FreeBSD Conformance "
+#~ "to the C99 and the POSIX standards."
+#~ msgstr "这是关于FreeBSD顺应C99和POSIX标准的技术讨论论坛。"
+
+#~ msgid "Non technical mailing list discussing teaching with FreeBSD."
+#~ msgstr "讨论 FreeBSD 教学的非技术性邮件列表。"
+
+#, fuzzy
+#~ msgid "_Testing on FreeBSD_"
+#~ msgstr "FreeBSD 性能和稳定性测试"
+
+#~ msgid ""
+#~ "Technical mailing list discussing testing on FreeBSD, including ATF/Kyua, "
+#~ "test build infrastructure, port tests to FreeBSD from other operating "
+#~ "systems (NetBSD, ...), etc."
+#~ msgstr ""
+#~ "技术邮件列表。讨论FreeBSD上的测试，包括 ATF/Kyua、测试构建基础设施、从其他"
+#~ "操作系统（NetBSD、...）移植到FreeBSD的测试等。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is a technical mailing list for discussions related to TeX and its "
+#~| "applications on FreeBSD. It is for individuals actively working on "
+#~| "porting TeX to FreeBSD, to bring up problems or discuss alternative "
+#~| "solutions. Individuals interested in following the technical discussion "
+#~| "are also welcome."
+#~ msgid ""
+#~ "This is a technical mailing list for discussions related to TeX and its "
+#~ "applications on FreeBSD.  It is for individuals actively working on "
+#~ "porting TeX to FreeBSD, to bring up problems or discuss alternative "
+#~ "solutions.  Individuals interested in following the technical discussion "
+#~ "are also welcome."
+#~ msgstr ""
+#~ "这是一个技术邮件列表，用于讨论有关 TeX 及其在 FreeBSD 上的应用。它是为积极"
+#~ "致力于将 TeX 移植到 FreeBSD 上的个人提供的，以提出问题或讨论其他解决方案。"
+#~ "也欢迎有兴趣的人关注技术讨论。"
+
+#, fuzzy
+#~ msgid "_Maintenance of FreeBSD's integrated toolchain_"
+#~ msgstr "维护 FreeBSD 的集成工具链"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is the mailing list for discussions related to the maintenance of "
+#~| "the toolchain shipped with FreeBSD. This could include the state of "
+#~| "Clang and GCC, but also pieces of software such as assemblers, linkers "
+#~| "and debuggers."
+#~ msgid ""
+#~ "This is the mailing list for discussions related to the maintenance of "
+#~ "the toolchain shipped with FreeBSD.  This could include the state of "
+#~ "Clang and GCC, but also pieces of software such as assemblers, linkers "
+#~ "and debuggers."
+#~ msgstr ""
+#~ "这是关于维护 FreeBSD 中集成的联编工具集的论坛。 这里有包括 Clang 和 GCC， "
+#~ "以及其他类似汇编器、 连接器和调试器等软件的讨论。"
+
+#, fuzzy
+#~ msgid "_Discussions of transport level network protocols in FreeBSD_"
+#~ msgstr "讨论 FreeBSD 上的网络传输层协议"
+
+#, fuzzy
+#~ msgid "_Translating FreeBSD documents and programs_"
+#~ msgstr "翻译 FreeBSD 文档和程序"
+
+#, fuzzy
+#~| msgid ""
+#~| "A discussion list where translators of FreeBSD documents from English "
+#~| "into other languages can talk about translation methods and tools. New "
+#~| "members are asked to introduce themselves and mention the languages they "
+#~| "are interested in translating."
+#~ msgid ""
+#~ "A discussion list where translators of FreeBSD documents from English "
+#~ "into other languages can talk about translation methods and tools.  New "
+#~ "members are asked to introduce themselves and mention the languages they "
+#~ "are interested in translating."
+#~ msgstr ""
+#~ "FreeBSD 文档从英语翻译成其他语言的翻译人员可以讨论翻译方法和工具的讨论列"
+#~ "表。要求新成员自我介绍并提及他们感兴趣的语言。"
+
+#, fuzzy
+#~ msgid "_Discussing FreeBSD support for USB_"
+#~ msgstr "关于 FreeBSD 的 USB 支持的讨论"
+
+#~ msgid ""
+#~ "This is a mailing list for technical discussions related to FreeBSD "
+#~ "support for USB."
+#~ msgstr "这个邮件列表是关于 FreeBSD 上的 USB 支持的技术性讨论。"
+
+#, fuzzy
+#~| msgid ""
+#~| "This is the mailing list for the coordinators from each of the local "
+#~| "area Users Groups to discuss matters with each other and a designated "
+#~| "individual from the Core Team. This mail list should be limited to "
+#~| "meeting synopsis and coordination of projects that span User Groups."
+#~ msgid ""
+#~ "This is the mailing list for the coordinators from each of the local area "
+#~ "Users Groups to discuss matters with each other and a designated "
+#~ "individual from the Core Team.  This mail list should be limited to "
+#~ "meeting synopsis and coordination of projects that span User Groups."
+#~ msgstr ""
+#~ "这个邮件列表为协调从各地的使用群体到彼此相互讨论问题和 从核心团队中指定个"
+#~ "人。这个邮件列表应被限制到大纲和协调用户组 计划的范围之内。"
+
+#, fuzzy
+#~ msgid ""
+#~ "_Discussion of various virtualization techniques supported by FreeBSD_"
+#~ msgstr "讨论各种 FreeBSD 支持的虚拟化技术"
+
+#, fuzzy
+#~| msgid ""
+#~| "A list to discuss the various virtualization techniques supported by "
+#~| "FreeBSD. On one hand the focus will be on the implementation of the "
+#~| "basic functionality as well as adding new features. On the other hand "
+#~| "users will have a forum to ask for help in case of problems or to "
+#~| "discuss their use cases."
+#~ msgid ""
+#~ "A list to discuss the various virtualization techniques supported by "
+#~ "FreeBSD.  On one hand the focus will be on the implementation of the "
+#~ "basic functionality as well as adding new features.  On the other hand "
+#~ "users will have a forum to ask for help in case of problems or to discuss "
+#~ "their use cases."
+#~ msgstr ""
+#~ "讨论 FreeBSD 所支持的各种虚拟化技术的邮件列表。 在注重实现基本功能，加入新"
+#~ "特性的同时， 也为用户提供了一个寻求帮助和讨论他们的使用经验的场所。"
+
+#, fuzzy
+#~ msgid "_FreeBSD Work-In-Progress Status_"
+#~ msgstr "FreeBSD 项目进度状态"
+
+#, fuzzy
+#~| msgid ""
+#~| "This mailing list can be used by developers to announce the creation and "
+#~| "progress of FreeBSD related work. Messages will be moderated. It is "
+#~| "suggested to send the message \"To:\" a more topical FreeBSD list and "
+#~| "only \"BCC:\" this list. This way the WIP can also be discussed on the "
+#~| "topical list, as no discussion is allowed on this list."
+#~ msgid ""
+#~ "This mailing list can be used by developers to announce the creation and "
+#~ "progress of FreeBSD related work.  Messages will be moderated. It is "
+#~ "suggested to send the message \"To:\" a more topical FreeBSD list and "
+#~ "only \"BCC:\" this list.  This way the WIP can also be discussed on the "
+#~ "topical list, as no discussion is allowed on this list."
+#~ msgstr ""
+#~ "这个邮件列表是用来发布 FreeBSD 相关项目的创建和工作进度的。 发至这个列表的"
+#~ "消息将会先被审核。通常建议把消息用 \"To:\" 发给一个更典型的 FreeBSD 列表，"
+#~ "而只仅仅 \"BCC:\" 给这个列表。 这样你的工作进度就能在典型的列表上讨论， 因"
+#~ "为这个列表是不允许讨论问题的。"
+
+#, fuzzy
+#~ msgid "_Discussions of 802.11 stack, tools device driver development_"
+#~ msgstr "讨论 802.11 堆栈、工具、设备驱动程序开发"
+
+#, fuzzy
+#~| msgid ""
+#~| "The FreeBSD-wireless list focuses on 802.11 stack (sys/net80211), device "
+#~| "driver and tools development. This includes bugs, new features and "
+#~| "maintenance."
+#~ msgid ""
+#~ "The FreeBSD-wireless list focuses on 802.11 stack (sys/net80211), device "
+#~ "driver and tools development.  This includes bugs, new features and "
+#~ "maintenance."
+#~ msgstr ""
+#~ "FreeBSD-wireless 邮件列表集中讨论 802.11 栈 (sys/net80211)， 驱动程序和工"
+#~ "具的开发。"
+
+#, fuzzy
+#~ msgid ""
+#~ "A list that focuses on the FreeBSD Xen(TM) port.  The anticipated traffic "
+#~ "level is small enough that it is intended as a forum for both technical "
+#~ "discussions of the implementation and design details as well as "
+#~ "administrative deployment issues."
+#~ msgstr ""
+#~ "这个邮件列表集中讨论 FreeBSD 的 <trademark>Xen</trademark> 移植。 预期的流"
+#~ "量会很小，所以这个列表旨在同时为 设计与实现细节的技术讨论和管理部属问题 提"
+#~ "供一个讨论的场所。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is a forum for discussions related to bring the XFCE environment to "
+#~ "FreeBSD.  This is a technical mailing list.  It is for individuals "
+#~ "actively working on porting XFCE to FreeBSD, to bring up problems or "
+#~ "discuss alternative solutions.  Individuals interested in following the "
+#~ "technical discussion are also welcome."
+#~ msgstr ""
+#~ "这是讨论关于向 FreeBSD 移植 <application>XFCE</application> 的论坛。 这是"
+#~ "一个技术性的邮件列表。 其成员是目前正活跃地进行 FreeBSD "
+#~ "<application>XFCE</application> 移植的开发人员， 主要用于提出问题或讨论其"
+#~ "他解决方法。 此外， 也欢迎希望关注相关技术讨论的其他人士。"
+
+#, fuzzy
+#~ msgid ""
+#~ "This is a forum for discussions related to bring the Zope environment to "
+#~ "FreeBSD.  This is a technical mailing list.  It is for individuals "
+#~ "actively working on porting Zope to FreeBSD, to bring up problems or "
+#~ "discuss alternative solutions.  Individuals interested in following the "
+#~ "technical discussion are also welcome."
+#~ msgstr ""
+#~ "这是一个讨论<application>Zope</application>环境的讨论论坛。这是一个技术邮"
+#~ "件列表。正是个人积极致力于将<application>Zope</application>移植到 "
+#~ "FreeBSD，提出问题或讨论替代解决方案。也欢迎有兴趣关注技术讨论的个人。"
+
+#, fuzzy, no-wrap
+#~| msgid "Websites"
+#~ msgid "Website Mirrors"
+#~ msgstr "网站"
+
+#~ msgid "Look inside the archives for examples of suitable messages."
+#~ msgstr "查看一下归档中合适的消息作为例子。"
+
+#, no-wrap
+#~ msgid "Official Mirrors"
+#~ msgstr "官方镜像"
+
+#~ msgid "SVN log messages are sent to SVN lists."
+#~ msgstr "SVN 日志信息将发送到 SVN 列表。"
+
+#, fuzzy
+#~ msgid ""
+#~ "_Peer support of FreeBSD-related software that is no longer supported by "
+#~ "the FreeBSD Project._"
+#~ msgstr ""
+#~ "关于与 FreeBSD 有关， 但已不再为 FreeBSD Project 所维护的软件的互助支持。"
+
+#~ msgid ""
+#~ "This list is for those interested in providing or making use of peer "
+#~ "support of FreeBSD-related software for which the FreeBSD Project no "
+#~ "longer provides official support in the form of security advisories and "
+#~ "patches."
+#~ msgstr ""
+#~ "这个邮件列表主要用于那些有兴趣提供或使用针对已不再为 FreeBSD Project 官方"
+#~ "所支持 (例如， 以安全更新或补丁的形式) 的 FreeBSD 相关软件的用户或公司讨"
+#~ "论。"
+
+#~ msgid "(as of UTC)"
+#~ msgstr "（截至 UTC）"

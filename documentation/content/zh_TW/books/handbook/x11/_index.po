@@ -1,0 +1,2236 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# Allan Sun <allan914@gmail.com>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2023-04-20 20:56-0300\n"
+"PO-Revision-Date: 2022-01-10 17:25+0000\n"
+"Last-Translator: Allan Sun <allan914@gmail.com>\n"
+"Language-Team: Chinese (Traditional) <https://translate-dev.freebsd.org/"
+"projects/documentation/bookshandbookx11_index/zh_TW/>\n"
+"Language: zh_TW\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Weblate 4.10.1\n"
+
+#. type: YAML Front Matter: description
+#: documentation/content/en/books/handbook/x11/_index.adoc:1
+#, no-wrap
+msgid "This chapter describes how to install and configure Xorg on FreeBSD, which provides the open source X Window System used to provide a graphical environment"
+msgstr ""
+
+#. type: YAML Front Matter: part
+#: documentation/content/en/books/handbook/x11/_index.adoc:1
+#, no-wrap
+msgid "Part I. Getting Started"
+msgstr ""
+
+#. type: YAML Front Matter: title
+#: documentation/content/en/books/handbook/x11/_index.adoc:1
+#, no-wrap
+msgid "Chapter 5. The X Window System"
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/books/handbook/x11/_index.adoc:14
+#, no-wrap
+msgid "The X Window System"
+msgstr "X Window 系統"
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/x11/_index.adoc:52
+#, no-wrap
+msgid "Synopsis"
+msgstr "概述"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:57
+#, fuzzy
+msgid ""
+"An installation of FreeBSD using bsdinstall does not automatically install a "
+"graphical user interface.  This chapter describes how to install and "
+"configure Xorg, which provides the open source X Window System used to "
+"provide a graphical environment.  It then describes how to find and install "
+"a desktop environment or window manager."
+msgstr ""
+"使用 <application>bsdinstall</application> 安裝 FreeBSD 並不會自動安裝圖型化"
+"使用者介面。本章將說明如何安裝並設定 <application>Xorg</application>，該應用"
+"程式提供開放源碼的 X Window 系統來提供圖型化環境。接著會說明如何找到並安裝桌"
+"面環境或視窗管理程式。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:59
+msgid "Before reading this chapter, you should:"
+msgstr "在開始閱讀這章之前，您需要："
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:61
+msgid ""
+"Know how to install additional third-party software as described in crossref:"
+"ports[ports,Installing Applications: Packages and Ports]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:63
+msgid "After reading this chapter, you will know:"
+msgstr "讀完這章，您將了解："
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:65
+msgid ""
+"The various components of the X Window System, and how they interoperate."
+msgstr "組成 X Window 系統的各種元件以及它們是如何相互運作。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:66
+msgid "How to install and configure Xorg."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:67
+msgid "How to use TrueType(R) fonts in Xorg."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:68
+msgid "How to set up your system for graphical logins (XDM)."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/x11/_index.adoc:70
+#, no-wrap
+msgid "Installing Xorg"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:73
+msgid "On FreeBSD, Xorg can be installed as a package or port."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:75
+#, fuzzy
+#| msgid ""
+#| "The binary package can be installed quickly but with fewer options for "
+#| "customization:"
+msgid ""
+"The binary meta package can be installed quickly but with fewer options for "
+"customization:"
+msgstr "使用 Binary 套件的安裝速度較快，但可用的自訂選項較少："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:79
+#, no-wrap
+msgid "# pkg install xorg\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:82
+msgid ""
+"Either of these installations results in the complete Xorg system being "
+"installed."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:85
+msgid ""
+"The current user must be a member of the `video` group.  To add a user to "
+"`video` group, execute the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:89
+#, no-wrap
+msgid "# pw groupmod video -m username\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:96
+#, fuzzy
+msgid ""
+"A smaller version of the X system suitable for experienced users is "
+"available in package:x11/xorg-minimal[].  Most of the documents, libraries, "
+"and applications will not be installed.  Some applications require these "
+"additional components to function."
+msgstr ""
+"較精簡版本的 X 系統適合給有經驗的使用者使用，可至 <package>x11/xorg-minimal</"
+"package> 取得。這個版本就不會安裝大多數的文件、函數庫以及應用程式，而部份應用"
+"程式會需要這些額外的元件才能運作。"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:102
+#, fuzzy
+msgid ""
+"Video cards, monitors, and input devices are automatically detected and do "
+"not require any manual configuration.  Do not create `xorg.conf` or run a `-"
+"configure` step unless automatic configuration fails."
+msgstr ""
+"顯示卡、顯示器以及輸入裝置會自動偵測，無須任何手動設置。除非自動設置失敗，否"
+"則請勿建立 <filename>xorg.conf</filename> 或執行 <option>-configure</option> "
+"步驟。"
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/x11/_index.adoc:105
+#, no-wrap
+msgid "Graphic card drivers"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:108
+msgid ""
+"The following table shows the different graphics cards supported by FreeBSD, "
+"which package should be installed and its corresponding module."
+msgstr ""
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:109
+#, no-wrap
+msgid "Graphic card packages"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:112
+#, no-wrap
+msgid "Brand"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:112
+#, no-wrap
+msgid "Type"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:112
+#: documentation/content/en/books/handbook/x11/_index.adoc:259
+#, no-wrap
+msgid "Package"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:114
+#, no-wrap
+msgid "Module"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:115
+#: documentation/content/en/books/handbook/x11/_index.adoc:190
+#, no-wrap
+msgid "Intel(R)"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:116
+#: documentation/content/en/books/handbook/x11/_index.adoc:121
+#: documentation/content/en/books/handbook/x11/_index.adoc:131
+#: documentation/content/en/books/handbook/x11/_index.adoc:136
+#: documentation/content/en/books/handbook/x11/_index.adoc:141
+#: documentation/content/en/books/handbook/x11/_index.adoc:146
+#, no-wrap
+msgid "Open Source"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:117
+#: documentation/content/en/books/handbook/x11/_index.adoc:122
+#, no-wrap
+msgid "drm-kmod"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:119
+#, no-wrap
+msgid "`i915kms`"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:120
+#: documentation/content/en/books/handbook/x11/_index.adoc:222
+#, no-wrap
+msgid "AMD(R)"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:124
+#, no-wrap
+msgid "`amdgpu` and `radeonkms`"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:125
+#: documentation/content/en/books/handbook/x11/_index.adoc:250
+#, no-wrap
+msgid "NVIDIA(R)"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:126
+#, no-wrap
+msgid "Proprietary"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:127
+#, no-wrap
+msgid "nvidia-driver"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:129
+#, no-wrap
+msgid "`nvidia` or `nvidia-modeset`"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:130
+#, no-wrap
+msgid "VESA"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:132
+#, no-wrap
+msgid "xf86-video-vesa"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:134
+#, no-wrap
+msgid "vesa"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:135
+#, no-wrap
+msgid "SCFB"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:137
+#, no-wrap
+msgid "xf86-video-scfb"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:139
+#, no-wrap
+msgid "scfb"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:140
+#, no-wrap
+msgid "Virtualbox"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:142
+#, no-wrap
+msgid "virtualbox-ose-additions"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:144
+#, no-wrap
+msgid "Virtualbox OSE additions include the `vboxvideo` driver."
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:145
+#, no-wrap
+msgid "VMware(R)"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:147
+#, no-wrap
+msgid "xf86-video-vmware"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:149
+#, no-wrap
+msgid "vmwgfx"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:152
+msgid ""
+"The following command can be used to identify which graphics card is "
+"installed in the system:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:156
+#, no-wrap
+msgid "% pciconf -lv|grep -B4 VGA\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:159
+#: documentation/content/en/books/handbook/x11/_index.adoc:182
+#: documentation/content/en/books/handbook/x11/_index.adoc:435
+#: documentation/content/en/books/handbook/x11/_index.adoc:492
+msgid "The output should be similar to the following:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:167
+#, no-wrap
+msgid ""
+"vgapci0@pci0:0:2:0:     class=0x030000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2a42 subvendor=0x17aa subdevice=0x20e4\n"
+"    vendor     = 'Intel Corporation'\n"
+"    device     = 'Mobile 4 Series Chipset Integrated Graphics Controller'\n"
+"    class      = display\n"
+"    subclass   = VGA\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:173
+msgid ""
+"If the graphics card is not supported by Intel(R), AMD(R) or NVIDIA(R) "
+"drivers, then VESA or SCFB modules should be used.  VESA module must be used "
+"when booting in BIOS mode and SCFB module must be used when booting in UEFI "
+"mode."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:175
+msgid "This command can be used to check the booting mode:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:179
+#, no-wrap
+msgid "% sysctl machdep.bootmethod\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:186
+#, no-wrap
+msgid "machdep.bootmethod: BIOS\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:194
+msgid ""
+"Intel(R) Graphics refers to the class of graphics chips that are integrated "
+"on the same die as an Intel(R) CPU.  Wikipedia offers link:https://en."
+"wikipedia.org/wiki/List_of_Intel_graphics_processing_units[a good overview "
+"of the variations and names used for generations of Intel HD Graphics]."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:197
+msgid ""
+"The package:graphics/drm-kmod[] package indirectly provides a range of "
+"kernel modules for use with Intel(R) Graphics cards.  The Intel(R) driver "
+"can be installed by executing the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:201
+#: documentation/content/en/books/handbook/x11/_index.adoc:233
+#, no-wrap
+msgid "# pkg install drm-kmod\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:204
+#: documentation/content/en/books/handbook/x11/_index.adoc:291
+msgid ""
+"Then add the module to `/etc/rc.conf` file, executing the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:208
+#, no-wrap
+msgid "# sysrc kld_list+=i915kms\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:214
+msgid ""
+"If a high CPU usage is noticed or excessive tearing with HD video, the "
+"installation of package:multimedia/libva-intel-driver[] may help.  To "
+"install the package execute the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:218
+#, no-wrap
+msgid "# pkg install libva-intel-driver mesa-libs mesa-dri\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:227
+msgid ""
+"The package:graphics/drm-kmod[] package indirectly provides a range of "
+"kernel modules for use with AMD(R) Graphics cards.  The modules `amdgpu` and "
+"`radeonkms` can be used depending the generation of the hardware.  The "
+"FreeBSD project maintains an link:https://wiki.freebsd.org/Graphics/AMD-GPU-"
+"Matrix[AMD graphics support matrix to determine which driver must be used]."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:229
+msgid "AMD(R) driver can be installed by executing the following command:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:236
+msgid ""
+"For post-HD7000 or Tahiti graphic cards add the module to `/etc/rc.conf` "
+"file, executing the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:240
+#, no-wrap
+msgid "# sysrc kld_list+=amdgpu\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:243
+msgid ""
+"For older graphic cards (pre-HD7000 or pre-Tahiti) add the module to `/etc/"
+"rc.conf` file, executing the following command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:247
+#, no-wrap
+msgid "# sysrc kld_list+=radeonkms\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:255
+msgid ""
+"FreeBSD supports different versions of the proprietary NVIDIA(R) driver.  "
+"Users of newer graphics cards should install the package:x11/nvidia-driver[] "
+"package.  Those with older cards will have to check below which version "
+"supports them."
+msgstr ""
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:256
+#, no-wrap
+msgid "Supported versions of NVIDIA(R) drivers"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:261
+#, no-wrap
+msgid "Supported hardware"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:262
+#, no-wrap
+msgid "x11/nvidia-driver-304"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:264
+#, no-wrap
+msgid "link:https://www.nvidia.com/Download/driverResults.aspx/123712/en-us/[supported hardware]"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:265
+#, no-wrap
+msgid "x11/nvidia-driver-340"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:267
+#, no-wrap
+msgid "link:https://www.nvidia.com/Download/driverResults.aspx/156167/en-us/[supported hardware]"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:268
+#, no-wrap
+msgid "x11/nvidia-driver-390"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:270
+#, no-wrap
+msgid "link:https://www.nvidia.com/Download/driverResults.aspx/191122/en-us/[supported hardware]"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:271
+#, no-wrap
+msgid "x11/nvidia-driver-470"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:273
+#, no-wrap
+msgid "link:https://www.nvidia.com/Download/driverResults.aspx/191234/en-us/[supported hardware]"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:274
+#, no-wrap
+msgid "x11/nvidia-driver"
+msgstr ""
+
+#. type: Table
+#: documentation/content/en/books/handbook/x11/_index.adoc:276
+#, no-wrap
+msgid "link:https://www.nvidia.com/Download/driverResults.aspx/187164/en-us/[supported hardware]"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:281
+msgid ""
+"Version 304 of the NVIDIA(R) graphics driver (nvidia-driver-304) does not "
+"support xorg-server 1.20 or later."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:284
+msgid ""
+"The latest NVIDIA(R) driver can be installed by running the following "
+"command:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:288
+#, no-wrap
+msgid "# pkg install nvidia-driver\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:295
+#, no-wrap
+msgid "# sysrc kld_list+=nvidia-modeset\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:300
+msgid ""
+"The `nvidia` driver must be used if the packages x11/nvidia-driver-304 or "
+"x11/nvidia-driver-340 have been installed."
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:304
+#, no-wrap
+msgid "# sysrc kld_list+=nvidia\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/x11/_index.adoc:308
+#, no-wrap
+msgid "Xorg Configuration"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:311
+msgid "Xorg supports most common video cards, keyboards, and pointing devices."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:316
+#, fuzzy
+msgid ""
+"Video cards, monitors, and input devices are automatically detected and do "
+"not require any manual configuration.  Do not create [.filename]#xorg.conf# "
+"or run a `Xorg -configure` step unless automatic configuration fails."
+msgstr ""
+"顯示卡、顯示器以及輸入裝置會自動偵測，無須任何手動設置。除非自動設置失敗，否"
+"則請勿建立 <filename>xorg.conf</filename> 或執行 <option>-configure</option> "
+"步驟。"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:319
+#, no-wrap
+msgid "Configuration Files"
+msgstr "設定檔"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:324
+#, fuzzy
+msgid ""
+"Xorg looks in several directories for configuration files.  [.filename]#/usr/"
+"local/etc/X11/# is the *recommended* directory for these files on FreeBSD.  "
+"Using this directory helps keep application files separate from operating "
+"system files."
+msgstr ""
+"<application>Xorg</application> 會查看數個目錄來尋找設定檔，在 FreeBSD 較建議"
+"使用 <filename>/usr/local/etc/X11/</filename> 來存放這些設定檔，使用這個目錄"
+"可以幫助將應用程式檔案與作業系統檔案分離。"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:326
+#, no-wrap
+msgid "Single or Multiple Files"
+msgstr "單檔或多檔"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:330
+#, fuzzy
+msgid ""
+"It is easier to use multiple files that each configure a specific setting "
+"than the traditional single [.filename]#xorg.conf#.  These files are stored "
+"in the [.filename]#/usr/local/etc/X11/xorg.conf.d/# subdirectory."
+msgstr ""
+"使用多檔，每一個檔案只設定一個指定項目會較傳統使用單一 <filename>xorg.conf</"
+"filename> 設定來的簡單。這些檔案會存放在主設定檔目錄下的 <filename>xorg.conf."
+"d/</filename> 子目錄，完整路徑通常為 <filename>/usr/local/etc/X11/xorg.conf."
+"d/</filename>。"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:334
+#, fuzzy
+msgid ""
+"The traditional single [.filename]#xorg.conf# still works, but is neither as "
+"clear nor as flexible as multiple files in the [.filename]#/usr/local/etc/"
+"X11/xorg.conf.d/# subdirectory."
+msgstr ""
+"傳統單一 <filename>xorg.conf</filename> 的方式仍可運作，但比起在 "
+"<filename>xorg.conf.d/</filename> 子目錄中的多檔設定方式較不明瞭且沒有彈性。"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:337
+#, no-wrap
+msgid "Video Cards"
+msgstr "顯示卡"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:340
+#, fuzzy
+msgid ""
+"The driver for the graphics card can be specified in the [.filename]#/usr/"
+"local/etc/X11/xorg.conf.d/# directory."
+msgstr ""
+"在新設定檔調整與測試過後，便可分開成較小的檔案放置到正常的位置 <filename>/"
+"usr/local/etc/X11/xorg.conf.d/</filename>。"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:342
+#, fuzzy
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "To configure the Intel(R) driver in a configuration file:"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:344
+#, no-wrap
+msgid "Select Intel(R) Video Driver in a File"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:348
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-intel.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:355
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"intel\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:359
+#, fuzzy
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "To configure the AMD(R) driver in a configuration file:"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:361
+#, fuzzy, no-wrap
+#| msgid "Select Radeon Video Driver in a File"
+msgid "Select AMD(R) Video Driver in a File"
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:365
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-radeon.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:372
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"radeon\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:376
+#, fuzzy
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "To configure the NVIDIA(R) driver in a configuration file:"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:378
+#, fuzzy, no-wrap
+#| msgid "Select Radeon Video Driver in a File"
+msgid "Select NVIDIA(R) Video Driver in a File"
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:382
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-nvidia.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:389
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"nvidia\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:393
+#, fuzzy
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "To configure the VESA driver in a configuration file:"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:395
+#, fuzzy, no-wrap
+#| msgid "Select Radeon Video Driver in a File"
+msgid "Select VESA Video Driver in a File"
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:399
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-vesa.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:406
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"vesa\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:410
+#, fuzzy
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "To configure the SCFB driver in a configuration file:"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:412
+#, fuzzy, no-wrap
+#| msgid "Select Radeon Video Driver in a File"
+msgid "Select SCFB Video Driver in a File"
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:416
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-scfb.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:423
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"scfb\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:428
+msgid ""
+"To configure multiple video cards, the `BusID` can be added.  A list of "
+"video card bus ``ID``s can be displayed by executing:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:432
+#, no-wrap
+msgid "% pciconf -lv | grep -B3 display\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:442
+#, no-wrap
+msgid ""
+"vgapci0@pci0:0:2:0:     class=0x030000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2a42 subvendor=0x17aa subdevice=0x20e4\n"
+"    vendor     = 'Intel Corporation'\n"
+"    device     = 'Mobile 4 Series Chipset Integrated Graphics Controller'\n"
+"    class      = display\n"
+"--\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:447
+#, no-wrap
+msgid ""
+"vgapci1@pci0:0:2:1:     class=0x038000 rev=0x07 hdr=0x00 vendor=0x8086 device=0x2a43 subvendor=0x17aa subdevice=0x20e4\n"
+"    vendor     = 'Intel Corporation'\n"
+"    device     = 'Mobile 4 Series Chipset Integrated Graphics Controller'\n"
+"    class      = display\n"
+msgstr ""
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:450
+#, fuzzy, no-wrap
+#| msgid "Select Radeon Video Driver in a File"
+msgid "Select Intel(R) Video Driver and NVIDIA(R) Video Driver in a File"
+msgstr "在單檔中選擇 Radeon 影像驅動程式"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:455
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/20-drivers.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:463
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"intel\"\n"
+"\tBusID     \"pci0:0:2:0\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:469
+#, no-wrap
+msgid ""
+"Section \"Device\"\n"
+"\tIdentifier \"Card0\"\n"
+"\tDriver     \"nvidia\"\n"
+"\tBusID     \"pci0:0:2:1\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:473
+#, no-wrap
+msgid "Monitors"
+msgstr "顯示器"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:478
+msgid ""
+"Almost all monitors support the Extended Display Identification Data "
+"standard (`EDID`).  Xorg uses `EDID` to communicate with the monitor and "
+"detect the supported resolutions and refresh rates.  Then it selects the "
+"most appropriate combination of settings to use with that monitor."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:480
+msgid ""
+"Other resolutions supported by the monitor can be chosen by setting the "
+"desired resolution in configuration files, or after the X server has been "
+"started with man:xrandr[1]."
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/books/handbook/x11/_index.adoc:482
+#, no-wrap
+msgid "Using RandR (Resize and Rotate)"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:485
+msgid ""
+"Run man:xrandr[1] without any parameters to see a list of video outputs and "
+"detected monitor modes:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:489
+#, no-wrap
+msgid "% xrandr\n"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:523
+#, no-wrap
+msgid ""
+"Screen 0: minimum 320 x 200, current 2560 x 960, maximum 8192 x 8192\n"
+"LVDS-1 connected 1280x800+0+0 (normal left inverted right x axis y axis) 261mm x 163mm\n"
+"   1280x800      59.99*+  59.81    59.91    50.00  \n"
+"   1280x720      59.86    59.74  \n"
+"   1024x768      60.00  \n"
+"   1024x576      59.90    59.82  \n"
+"   960x540       59.63    59.82  \n"
+"   800x600       60.32    56.25  \n"
+"   864x486       59.92    59.57  \n"
+"   640x480       59.94  \n"
+"   720x405       59.51    58.99  \n"
+"   640x360       59.84    59.32  \n"
+"VGA-1 connected primary 1280x960+1280+0 (normal left inverted right x axis y axis) 410mm x 257mm\n"
+"   1280x1024     75.02    60.02  \n"
+"   1440x900      74.98    60.07  \n"
+"   1280x960      60.00* \n"
+"   1280x800      74.93    59.81  \n"
+"   1152x864      75.00  \n"
+"   1024x768      75.03    70.07    60.00  \n"
+"   832x624       74.55  \n"
+"   800x600       72.19    75.00    60.32    56.25  \n"
+"   640x480       75.00    72.81    66.67    59.94  \n"
+"   720x400       70.08  \n"
+"HDMI-1 disconnected (normal left inverted right x axis y axis)\n"
+"DP-1 disconnected (normal left inverted right x axis y axis)\n"
+"HDMI-2 disconnected (normal left inverted right x axis y axis)\n"
+"DP-2 disconnected (normal left inverted right x axis y axis)\n"
+"DP-3 disconnected (normal left inverted right x axis y axis)\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:528
+msgid ""
+"This shows that the `VGA-1` output is being used to display a screen "
+"resolution of 1280x960 pixels at a refresh rate of about 60 Hz.  The "
+"`LVDS-1` is being used as a secondary monitor to display a screen resolution "
+"of 1280x800 pixels at a refresh rate of about 60 Hz.  Monitors are not "
+"attached to the `HDMI-1`, `HDMI-2`, `DP-1`, `DP-2` and `DP-3` connectors."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:531
+msgid ""
+"Any of the other display modes can be selected with man:xrandr[1].  For "
+"example, to switch to 1280x1024 at 60 Hz:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:535
+#, no-wrap
+msgid "% xrandr --output LVDS-1 --mode 1280x720 --rate 60\n"
+msgstr ""
+
+#. type: Title ====
+#: documentation/content/en/books/handbook/x11/_index.adoc:538
+#, fuzzy, no-wrap
+#| msgid "To set the Radeon driver in a configuration file:"
+msgid "Using the Xorg configuration file"
+msgstr "要在設定檔設定使用 Radeon 驅動程式："
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:541
+msgid "The monitor configuration can also be set in a configuration file."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:543
+msgid "To set a screen resolution of 1024x768 in a configuration file:"
+msgstr "在設定檔設定螢幕解析度為 1024x768："
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:544
+#, no-wrap
+msgid "Set Screen Resolution in a File"
+msgstr "在單檔中設定螢幕解析度"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:548
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/10-monitor.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:558
+#, no-wrap
+msgid ""
+"Section \"Screen\"\n"
+"\tIdentifier \"Screen0\"\n"
+"\tDevice     \"Card0\"\n"
+"\tSubSection \"Display\"\n"
+"\tModes      \"1024x768\"\n"
+"\tEndSubSection\n"
+"EndSection\n"
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:562
+#, no-wrap
+msgid "Input Devices"
+msgstr "輸入裝置"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:565
+msgid ""
+"Xorg supports the vast majority of input devices via package:x11/libinput[]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:570
+msgid ""
+"Some desktop environments (such as KDE Plasma) provide a graphical UI for "
+"setting these parameters.  Check if this is the case before resorting to "
+"manual configuration editing."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:574
+msgid "For example, to configure the keyboard layout:"
+msgstr ""
+
+#. type: Block title
+#: documentation/content/en/books/handbook/x11/_index.adoc:575
+#, no-wrap
+msgid "Setting a Keyboard Layout"
+msgstr "設定鍵盤配置"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:579
+msgid "[.filename]#/usr/local/etc/X11/xorg.conf.d/00-keyboard.conf#"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:590
+#, no-wrap
+msgid ""
+"Section \"InputClass\"\n"
+"        Identifier \"Keyboard1\"\n"
+"        MatchIsKeyboard \"on\"\n"
+"        Option \"XkbLayout\" \"es, fr\"\n"
+"        Option \"XkbModel\" \"pc104\"\n"
+"        Option \"XkbVariant\" \",qwerty\"\n"
+"        Option \"XkbOptions\" \"grp:win_space_toggle\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/x11/_index.adoc:594
+#, no-wrap
+msgid "Using Fonts in Xorg"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:599
+msgid ""
+"The default fonts that ship with Xorg are less than ideal for typical "
+"desktop publishing applications.  Large presentation fonts show up jagged "
+"and unprofessional looking, and small fonts are almost completely "
+"unintelligible.  However, there are several free, high quality Type1 "
+"(PostScript(R)) fonts available which can be readily used with Xorg."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:601
+#, no-wrap
+msgid "Type1 Fonts"
+msgstr "Type1 字型"
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:607
+msgid ""
+"The URW font collection (package:x11-fonts/urwfonts[]) includes high quality "
+"versions of standard type1 fonts (Times Roman(TM), Helvetica(TM), "
+"Palatino(TM) and others).  The Freefonts collection (package:x11-fonts/"
+"freefonts[]) includes many more fonts, but most of them are intended for use "
+"in graphics software such as the Gimp, and are not complete enough to serve "
+"as screen fonts.  In addition, Xorg can be configured to use TrueType(R) "
+"fonts with a minimum of effort.  For more details on this, see the man:X[7] "
+"manual page or <<truetype>>."
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:609
+msgid ""
+"To install the above Type1 font collections from binary packages, run the "
+"following commands:"
+msgstr "要由 Binary 套件安裝上述的 Type1 字型集可執行以下指令："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:613
+#, no-wrap
+msgid "# pkg install urwfonts\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:617
+#, fuzzy
+msgid ""
+"And likewise with the freefont or other collections.  To have the X server "
+"detect these fonts, add an appropriate line to the X server configuration "
+"file ([.filename]#/usr/local/etc/X11/xorg.conf.d/90-fonts.conf#), which "
+"reads:"
+msgstr ""
+"同樣的安裝方式也適用 Freefont 或其他字型集。要讓 X 伺服器偵測到這些新安裝的字"
+"型，可加入適當的設定到 X 伺服器設定檔 (<filename>/etc/X11/xorg.conf</"
+"filename>)，內容為："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:623
+#, no-wrap
+msgid ""
+"Section \"Files\"\n"
+"  FontPath \"/usr/local/share/fonts/urwfonts/\"\n"
+"EndSection\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:626
+msgid "Alternatively, at the command line in the X session run:"
+msgstr "或者在 X session 的指令列執行："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:631
+#, no-wrap
+msgid ""
+"% xset fp+ /usr/local/share/fonts/urwfonts\n"
+"% xset fp rehash\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:635
+msgid ""
+"This will work but will be lost when the X session is closed, unless it is "
+"added to the startup file ([.filename]#~/.xinitrc# for a normal `startx` "
+"session, or [.filename]#~/.xsession# when logging in through a graphical "
+"login manager like XDM).  A third way is to use the new [.filename]#/usr/"
+"local/etc/fonts/local.conf# as demonstrated in <<antialias>>."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:637
+#, no-wrap
+msgid "TrueType(R) Fonts"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:643
+msgid ""
+"Xorg has built in support for rendering TrueType(R) fonts.  There are two "
+"different modules that can enable this functionality.  The freetype module "
+"is used in this example because it is more consistent with the other font "
+"rendering back-ends.  To enable the freetype module just add the following "
+"line to the `\"Module\"` section of [.filename]#/usr/local/etc/X11/xorg.conf."
+"d/90-fonts.conf#."
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:647
+#, no-wrap
+msgid "Load  \"freetype\"\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:653
+msgid ""
+"Now make a directory for the TrueType(R) fonts (for example, [.filename]#/"
+"usr/local/share/fonts/TrueType#) and copy all of the TrueType(R) fonts into "
+"this directory.  Keep in mind that TrueType(R) fonts cannot be directly "
+"taken from an Apple(R) Mac(R); they must be in UNIX(R)/MS-DOS(R)/Windows(R) "
+"format for use by Xorg.  Once the files have been copied into this "
+"directory, use mkfontscale to create a [.filename]#fonts.dir#, so that the X "
+"font renderer knows that these new files have been installed.  `mkfontscale` "
+"can be installed as a package:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:657
+#, no-wrap
+msgid "# pkg install mkfontscale\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:660
+msgid "Then create an index of X font files in a directory:"
+msgstr "然後在目錄中建立 X 字型檔的索引："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:665
+#, no-wrap
+msgid ""
+"# cd /usr/local/share/fonts/TrueType\n"
+"# mkfontscale\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:669
+msgid ""
+"Now add the TrueType(R) directory to the font path.  This is just the same "
+"as described in <<type1>>:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:674
+#, no-wrap
+msgid ""
+"% xset fp+ /usr/local/share/fonts/TrueType\n"
+"% xset fp rehash\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:677
+msgid "or add a `FontPath` line to [.filename]#xorg.conf#."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:680
+msgid ""
+"Now Gimp, LibreOffice, and all of the other X applications should now "
+"recognize the installed TrueType(R) fonts.  Extremely small fonts (as with "
+"text in a high resolution display on a web page) and extremely large fonts "
+"(within LibreOffice) will look much better now."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/x11/_index.adoc:682
+#, no-wrap
+msgid "Anti-Aliased Fonts"
+msgstr "反鋸齒字型"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:685
+#, fuzzy
+msgid ""
+"All fonts in Xorg that are found in [.filename]#/usr/local/share/fonts/# and "
+"[.filename]#~/.fonts/# are automatically made available for anti-aliasing to "
+"Xft-aware applications. Most recent applications are Xft-aware, including "
+"KDE, GNOME, and Firefox."
+msgstr ""
+"如同前面所提到的，所有在 <filename>/usr/local/share/fonts/</filename> 與 "
+"<filename>~/.fonts/</filename> 的字型均可在 Xft-aware 的應用程式做反鋸齒效"
+"果，若您想要加入除了上兩者以外的目錄，可加入如下行設定到 <filename>/usr/"
+"local/etc/fonts/local.conf</filename>："
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:689
+msgid ""
+"To control which fonts are anti-aliased, or to configure anti-aliasing "
+"properties, create (or edit, if it already exists) the file [.filename]#/usr/"
+"local/etc/fonts/local.conf#.  Several advanced features of the Xft font "
+"system can be tuned using this file; this section describes only some simple "
+"possibilities.  For more details, please see man:fonts-conf[5]."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:693
+msgid ""
+"This file must be in XML format.  Pay careful attention to case, and make "
+"sure all tags are properly closed.  The file begins with the usual XML "
+"header followed by a DOCTYPE definition, and then the `<fontconfig>` tag:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:699
+#, no-wrap
+msgid ""
+"<?xml version=\"1.0\"?>\n"
+"      <!DOCTYPE fontconfig SYSTEM \"fonts.dtd\">\n"
+"      <fontconfig>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:703
+#, fuzzy
+msgid ""
+"As previously stated, all fonts in [.filename]#/usr/local/share/fonts/# as "
+"well as [.filename]#~/.fonts/# are already made available to Xft-aware "
+"applications.  To add another directory outside of these two directory "
+"trees, add a line like this to [.filename]#/usr/local/etc/fonts/local.conf#:"
+msgstr ""
+"如同前面所提到的，所有在 <filename>/usr/local/share/fonts/</filename> 與 "
+"<filename>~/.fonts/</filename> 的字型均可在 Xft-aware 的應用程式做反鋸齒效"
+"果，若您想要加入除了上兩者以外的目錄，可加入如下行設定到 <filename>/usr/"
+"local/etc/fonts/local.conf</filename>："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:707
+#, no-wrap
+msgid "<dir>/path/to/my/fonts</dir>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:710
+msgid ""
+"After adding new fonts, and especially new font directories, rebuild the "
+"font caches:"
+msgstr "加入新字型及額外的新字型目錄之後，需重新建立字型快取："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:714
+#, no-wrap
+msgid "# fc-cache -f\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:718
+#, fuzzy
+msgid ""
+"Anti-aliasing makes borders slightly fuzzy, which makes very small text more "
+"readable and removes \"staircases\" from large text, but can cause eyestrain "
+"if applied to normal text.  To exclude font sizes smaller than 14 point from "
+"anti-aliasing, include these lines:"
+msgstr ""
+"反鋸齒效果會讓文字的邊緣變模糊，這會讓非常小的文字更能閱讀且去除大型文字的 "
+"<quote>鋸齒</quote>，但套用在一般的文字可能會造成眼睛的疲勞。要排除小於 14 點"
+"的字型大小使用反鋸齒效果，可加入這些行："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:737
+#, no-wrap
+msgid ""
+"\t<match target=\"font\">\n"
+"\t    <test name=\"size\" compare=\"less\">\n"
+"\t\t<double>14</double>\n"
+"\t    </test>\n"
+"\t    <edit name=\"antialias\" mode=\"assign\">\n"
+"\t\t<bool>false</bool>\n"
+"\t    </edit>\n"
+"\t</match>\n"
+"\t<match target=\"font\">\n"
+"\t    <test name=\"pixelsize\" compare=\"less\" qual=\"any\">\n"
+"\t\t<double>14</double>\n"
+"\t    </test>\n"
+"\t    <edit mode=\"assign\" name=\"antialias\">\n"
+"\t\t<bool>false</bool>\n"
+"\t    </edit>\n"
+"\t</match>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:743
+msgid ""
+"Spacing for some monospaced fonts might also be inappropriate with anti-"
+"aliasing.  This seems to be an issue with KDE, in particular.  One possible "
+"fix is to force the spacing for such fonts to be 100.  Add these lines:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:762
+#, no-wrap
+msgid ""
+"\t<match target=\"pattern\" name=\"family\">\n"
+"\t   <test qual=\"any\" name=\"family\">\n"
+"\t       <string>fixed</string>\n"
+"\t   </test>\n"
+"\t   <edit name=\"family\" mode=\"assign\">\n"
+"\t       <string>mono</string>\n"
+"\t   </edit>\n"
+"\t</match>\n"
+"\t<match target=\"pattern\" name=\"family\">\n"
+"\t    <test qual=\"any\" name=\"family\">\n"
+"\t\t<string>console</string>\n"
+"\t    </test>\n"
+"\t    <edit name=\"family\" mode=\"assign\">\n"
+"\t\t<string>mono</string>\n"
+"\t    </edit>\n"
+"\t</match>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:765
+msgid ""
+"(this aliases the other common names for fixed fonts as `\"mono\"`), and "
+"then add:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:776
+#, no-wrap
+msgid ""
+"\t<match target=\"pattern\" name=\"family\">\n"
+"\t     <test qual=\"any\" name=\"family\">\n"
+"\t\t <string>mono</string>\n"
+"\t     </test>\n"
+"\t     <edit name=\"spacing\" mode=\"assign\">\n"
+"\t\t <int>100</int>\n"
+"\t     </edit>\n"
+"\t </match>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:782
+#, fuzzy
+msgid ""
+"Certain fonts, such as Helvetica, may have a problem when anti-aliased.  "
+"Usually this manifests itself as a font that seems cut in half vertically.  "
+"At worst, it may cause applications to crash.  To avoid this, consider "
+"adding the following to [.filename]#local.conf#:"
+msgstr ""
+"部份字型，如 Helvetica，在使用反鋸齒時可能會發生問題，通常會呈現像垂直切成兩"
+"半的字型，最差還可能會導致應用程式當掉。要避免這個問題，可考慮加入以下設定到 "
+"<filename>local.conf</filename>："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:793
+#, no-wrap
+msgid ""
+"\t<match target=\"pattern\" name=\"family\">\n"
+"\t     <test qual=\"any\" name=\"family\">\n"
+"\t\t <string>Helvetica</string>\n"
+"\t     </test>\n"
+"\t     <edit name=\"family\" mode=\"assign\">\n"
+"\t\t <string>sans-serif</string>\n"
+"\t     </edit>\n"
+"\t </match>\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:797
+msgid ""
+"After editing [.filename]#local.conf#, make certain to end the file with the "
+"`</fontconfig>` tag.  Not doing this will cause changes to be ignored."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:800
+msgid ""
+"Users can add personalized settings by creating their own [.filename]#~/."
+"config/fontconfig/fonts.conf#.  This file uses the same `XML` format "
+"described above."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:804
+#, fuzzy
+msgid ""
+"One last point: with an LCD screen, sub-pixel sampling may be desired.  This "
+"basically treats the (horizontally separated) red, green and blue components "
+"separately to improve the horizontal resolution; the results can be "
+"dramatic.  To enable this, add the line somewhere in [.filename]#local.conf#:"
+msgstr ""
+"最後一點：若有使用 LCD 螢幕，可能會想要使用子像素取樣 (Sub-pixel sampling)，"
+"這基本上會分開處理 (水平分隔)  紅、綠、藍色彩組成來提高垂直解析度，結果可能是"
+"無法預料的。要開啟這個功能，加入下行到 <filename>local.conf</filename> 的任一"
+"處："
+
+#. type: delimited block . 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:815
+#, no-wrap
+msgid ""
+"\t <match target=\"font\">\n"
+"\t     <test qual=\"all\" name=\"rgba\">\n"
+"\t\t <const>unknown</const>\n"
+"\t     </test>\n"
+"\t     <edit name=\"rgba\" mode=\"assign\">\n"
+"\t\t <const>rgb</const>\n"
+"\t     </edit>\n"
+"\t </match>\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/handbook/x11/_index.adoc:820
+msgid ""
+"Depending on the sort of display, `rgb` may need to be changed to `bgr`, "
+"`vrgb` or `vbgr`: experiment and see which works best."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/x11/_index.adoc:822
+msgid ""
+"For more information about how to install and configure fonts on FreeBSD, "
+"please read the article link:{fonts}[Fonts and FreeBSD]."
+msgstr ""
+
+#~ msgid ""
+#~ "How to install and configure several window managers and desktop "
+#~ "environments."
+#~ msgstr "如何安裝並設定各種視窗管理程式與桌面環境。"
+
+#, no-wrap
+#~ msgid "Terminology"
+#~ msgstr "術語"
+
+#~ msgid ""
+#~ "While it is not necessary to understand all of the details of the various "
+#~ "components in the X Window System and how they interact, some basic "
+#~ "knowledge of these components can be useful."
+#~ msgstr ""
+#~ "雖然 X 各元件的所有細節及運作方式，並不是必須要知道的。 但對它們有些基本概"
+#~ "念會更容易上手。"
+
+#, no-wrap
+#~ msgid "X server"
+#~ msgstr "X 伺服器 (X Server)"
+
+#, fuzzy
+#~ msgid ""
+#~ "X was designed from the beginning to be network-centric, and adopts a "
+#~ "\"client-server\" model.  In this model, the \"X server\" runs on the "
+#~ "computer that has the keyboard, monitor, and mouse attached.  The "
+#~ "server's responsibility includes tasks such as managing the display, "
+#~ "handling input from the keyboard and mouse, and handling input or output "
+#~ "from other devices such as a tablet or a video projector.  This confuses "
+#~ "some people, because the X terminology is exactly backward to what they "
+#~ "expect.  They expect the \"X server\" to be the big powerful machine down "
+#~ "the hall, and the \"X client\" to be the machine on their desk."
+#~ msgstr ""
+#~ "X 最初設計是以網路為中心，採用 <quote>client-server</quote> 架構。在此架構"
+#~ "下 <quote>X 伺服器</quote> 在有鍵盤、螢幕、滑鼠的電腦上運作。該伺服器負責"
+#~ "的工作包含管理顯示、處理來自鍵盤、滑鼠的輸入及來自其他設備 (如平板或或影像"
+#~ "投影機) 的輸入或輸出。這點可能會讓人感到困惑，因為 X 使用的術語與一般的認"
+#~ "知剛好相反。 一般認知會以為 <quote>X 伺服器</quote> 是要在最強悍的主機上執"
+#~ "行，而 <quote>X 客戶端</quote> 才是在桌機上面執行，實際上卻是相反。"
+
+#, no-wrap
+#~ msgid "X client"
+#~ msgstr "X 客戶端 (X Client)"
+
+#, fuzzy
+#~| msgid ""
+#~| "In a home or small office environment, the X server and the X clients "
+#~| "commonly run on the same computer. It is also possible to run the X "
+#~| "server on a less powerful computer and to run the X applications on a "
+#~| "more powerful system. In this scenario, the communication between the X "
+#~| "client and server takes place over the network."
+#~ msgid ""
+#~ "In a home or small office environment, the X server and the X clients "
+#~ "commonly run on the same computer.  It is also possible to run the X "
+#~ "server on a less powerful computer and to run the X applications on a "
+#~ "more powerful system.  In this scenario, the communication between the X "
+#~ "client and server takes place over the network."
+#~ msgstr ""
+#~ "在家庭或小型辦公室環境，通常 X 伺服器跟 X 客戶端都是在同一台電腦上執行。也"
+#~ "可以在比較慢的電腦上執行 X 伺服器， 並在比較強、比較貴的系統上執行 X 應用"
+#~ "程式。 在這種情景，X 客戶端與伺服器之間的溝通就需透過網路來進行。"
+
+#, no-wrap
+#~ msgid "window manager"
+#~ msgstr "視窗管理程式 (Window Manager)"
+
+#, fuzzy
+#~ msgid ""
+#~ "X does not dictate what windows should look like on-screen, how to move "
+#~ "them around with the mouse, which keystrokes should be used to move "
+#~ "between windows, what the title bars on each window should look like, "
+#~ "whether or not they have close buttons on them, and so on.  Instead, X "
+#~ "delegates this responsibility to a separate window manager application.  "
+#~ "There are http://www.xwinman.org/[dozens of window managers] available.  "
+#~ "Each window manager provides a different look and feel: some support "
+#~ "virtual desktops, some allow customized keystrokes to manage the desktop, "
+#~ "some have a \"Start\" button, and some are themeable, allowing a complete "
+#~ "change of the desktop's look-and-feel.  Window managers are available in "
+#~ "the [.filename]#x11-wm# category of the Ports Collection."
+#~ msgstr ""
+#~ "X 並不規定螢幕上的視窗該長什麼樣、要如何移動滑鼠指標、 要用什麼鍵來在視窗"
+#~ "切換、每個視窗的標題列長相，及是否該有關閉按鈕，等等。事實上，X 把這部分交"
+#~ "給所謂的視窗管理程式來管理。可用的<link xlink:href=\"http://www.xwinman."
+#~ "org/\">視窗管理程式有很多種</link>，每一種視窗管理程式都提供不同的使用介面"
+#~ "風格：有些支援虛擬桌面，有些允許自訂組合鍵來管理桌面，有些有 <quote>開始</"
+#~ "quote> 鈕，有些則是可更換佈景主題，可自行安裝新的佈景主題以更換外觀。 視窗"
+#~ "管理程式可在 Port 套件集的 <filename>x11-wm</filename> 分類找到。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Each window manager uses a different configuration mechanism. Some "
+#~| "expect configuration file written by hand while others provide graphical "
+#~| "tools for most configuration tasks."
+#~ msgid ""
+#~ "Each window manager uses a different configuration mechanism.  Some "
+#~ "expect configuration file written by hand while others provide graphical "
+#~ "tools for most configuration tasks."
+#~ msgstr ""
+#~ "每個視窗管理程式也各有其不同的設定機制，有些需要手動修改設定檔， 而有的則"
+#~ "可透過圖型化工具來完成大部分的設定工作。"
+
+#, no-wrap
+#~ msgid "desktop environment"
+#~ msgstr "桌面環境 (Desktop Environment)"
+
+#, no-wrap
+#~ msgid "focus policy"
+#~ msgstr "聚焦政策 (Focus Policy)"
+
+#, fuzzy
+#~| msgid ""
+#~| "The window manager is responsible for the mouse focus policy. This "
+#~| "policy provides some means for choosing which window is actively "
+#~| "receiving keystrokes and it should also visibly indicate which window is "
+#~| "currently active."
+#~ msgid ""
+#~ "The window manager is responsible for the mouse focus policy.  This "
+#~ "policy provides some means for choosing which window is actively "
+#~ "receiving keystrokes and it should also visibly indicate which window is "
+#~ "currently active."
+#~ msgstr ""
+#~ "視窗管理程式負責滑鼠指標的聚焦政策。 聚焦政策指的是如何決定使用中及接收鍵"
+#~ "盤輸入的視窗。"
+
+#, fuzzy
+#~ msgid ""
+#~ "One focus policy is called \"click-to-focus\".  In this model, a window "
+#~ "becomes active upon receiving a mouse click.  In the \"focus-follows-mouse"
+#~ "\" policy, the window that is under the mouse pointer has focus and the "
+#~ "focus is changed by pointing at another window.  If the mouse is over the "
+#~ "root window, then this window is focused.  In the \"sloppy-focus\" model, "
+#~ "if the mouse is moved over the root window, the most recently used window "
+#~ "still has the focus.  With sloppy-focus, focus is only changed when the "
+#~ "cursor enters a new window, and not when exiting the current window.  In "
+#~ "the \"click-to-focus\" policy, the active window is selected by mouse "
+#~ "click.  The window may then be raised and appear in front of all other "
+#~ "windows.  All keystrokes will now be directed to this window, even if the "
+#~ "cursor is moved to another window."
+#~ msgstr ""
+#~ "通常較為人熟悉的聚焦政策叫做 <quote>click-to-focus</quote>，這個模式中，滑"
+#~ "鼠點選到的視窗便會處於作用中 (Active) 的狀態。在 <quote>focus-follows-"
+#~ "mouse</quote> 模式滑鼠指標所在的視窗便是作用中的視窗，只要把滑鼠移到其他視"
+#~ "窗就可以改變作用中的視窗，若滑鼠移到根視窗 (Root Window)，則會聚焦在根視"
+#~ "窗。在 <quote>sloppy-focus</quote> 模式，既使滑鼠移到根視窗，仍然會聚焦在"
+#~ "最後聚焦的視窗上，此模式只有當滑鼠進入新的視窗時才會聚焦於該視窗，而非離開"
+#~ "目前視窗時。<quote>click-to-focus</quote> 模式用滑鼠點擊來決定作用中的視"
+#~ "窗，且該視窗會被置頂到所有其他視窗之前，即使滑鼠移到其他視窗，所有的鍵盤輸"
+#~ "入仍會由該視窗所接收。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Different window managers support different focus models. All of them "
+#~| "support click-to-focus, and the majority of them also support other "
+#~| "policies. Consult the documentation for the window manager to determine "
+#~| "which focus models are available."
+#~ msgid ""
+#~ "Different window managers support different focus models.  All of them "
+#~ "support click-to-focus, and the majority of them also support other "
+#~ "policies.  Consult the documentation for the window manager to determine "
+#~ "which focus models are available."
+#~ msgstr ""
+#~ "不同的視窗管理程式支援不同的聚焦模式，全部都支援 click-to-focus 且其中大部"
+#~ "份支援其他模式，請查看視窗管理程式的說明文件來了解可用的聚焦模式。"
+
+#, no-wrap
+#~ msgid "widgets"
+#~ msgstr "視窗元件 (Widget)"
+
+#, fuzzy
+#~ msgid ""
+#~ "Widget is a term for all of the items in the user interface that can be "
+#~ "clicked or manipulated in some way.  This includes buttons, check boxes, "
+#~ "radio buttons, icons, and lists.  A widget toolkit is a set of widgets "
+#~ "used to create graphical applications.  There are several popular widget "
+#~ "toolkits, including Qt, used by KDE, and GTK+, used by GNOME.  As a "
+#~ "result, applications will have a different look and feel, depending upon "
+#~ "which widget toolkit was used to create the application."
+#~ msgstr ""
+#~ "視窗元件指的是在所有在使用者介面上可被點選或操作的項目，這包括按鈕、核選方"
+#~ "塊、單選按鈕、圖示及清單。 視窗元件工具包 (Widget toolkit) 是指用來建立圖"
+#~ "型化應用程式的一系列的視窗元件。目前有數個有名的視窗元件工具包，包含 "
+#~ "<application>KDE</application> 所使用的 Qt、<application>GNOME</"
+#~ "application> 所使用的 GTK+。 因此應用程式會依其開發時所選用的視窗元件工具"
+#~ "包而有不同的外觀。"
+
+#~ msgid "To build and install from the Ports Collection:"
+#~ msgstr "要從 Port 套件集編譯與安裝："
+
+#, no-wrap
+#~ msgid "Quick Start"
+#~ msgstr "快速開始"
+
+#, no-wrap
+#~ msgid "User Group for Accelerated Video"
+#~ msgstr "可加速影像處理的使用者群組"
+
+#, fuzzy
+#~| msgid ""
+#~| "Manual configuration is usually not necessary. Please do not manually "
+#~| "create configuration files unless autoconfiguration does not work."
+#~ msgid ""
+#~ "Manual configuration is usually not necessary.  Please do not manually "
+#~ "create configuration files unless autoconfiguration does not work."
+#~ msgstr ""
+#~ "通常不需要做手動設置，除非自動設置無法運作，否則請不要手動建立設定檔。"
+
+#, no-wrap
+#~ msgid "Directory"
+#~ msgstr "目錄"
+
+#, fuzzy
+#~ msgid ""
+#~ "Storing configuration files in the legacy [.filename]#/etc/X11/# still "
+#~ "works.  However, this mixes application files with the base FreeBSD files "
+#~ "and is not recommended."
+#~ msgstr ""
+#~ "儲存設定檔在傳統的 <filename>/etc/X11/</filename> 仍可運作，但並不建議將應"
+#~ "用程式檔案與基礎 FreeBSD 檔案混合在一起存放。"
+
+#~ msgid "Examples of these files are shown later in this section."
+#~ msgstr "於本節稍後會有這些檔案的範例。"
+
+#~ msgid ""
+#~ "2D and 3D acceleration is supported on Radeon cards up to and including "
+#~ "the HD6000 series."
+#~ msgstr "Radeon 顯示卡支援 2D 及 3D 加速，最新到 HD6000 系列。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Several NVIDIA drivers are available in the [.filename]#x11# category of "
+#~ "the Ports Collection.  Install the driver that matches the video card."
+#~ msgstr ""
+#~ "有數個 NVIDIA 驅動程式可於 Port 套件集中的 <filename>x11</filename> 分類取"
+#~ "得，請安裝其中與顯示卡相符的驅動程式。"
+
+#, no-wrap
+#~ msgid "Hybrid Combination Graphics"
+#~ msgstr "混合組合繪圖晶片"
+
+#, no-wrap
+#~ msgid "Other Video Cards"
+#~ msgstr "其他顯示卡"
+
+#, fuzzy
+#~ msgid ""
+#~ "Drivers for some less-common video cards can be found in the [."
+#~ "filename]#x11-drivers# directory of the Ports Collection."
+#~ msgstr ""
+#~ "較不常見的顯示卡驅動程式可在 Port 套件集的 <filename>x11-drivers</"
+#~ "filename> 目錄找到。"
+
+#, no-wrap
+#~ msgid "Setting the Video Driver in a File"
+#~ msgstr "在檔案中設定影像驅動程式"
+
+#~ msgid ""
+#~ "A common task is using the external video output on a notebook computer "
+#~ "for a video projector."
+#~ msgstr "在筆記型電腦使用外部顯示輸出到投影機是常見的作業。"
+
+#, no-wrap
+#~ msgid "Setting Monitor Resolution in a File"
+#~ msgstr "在檔案中設定螢幕解析度"
+
+#, no-wrap
+#~ msgid "Manually Setting Monitor Frequencies"
+#~ msgstr "手動設定顯示器頻率"
+
+#, no-wrap
+#~ msgid "Keyboards"
+#~ msgstr "鍵盤"
+
+#, no-wrap
+#~ msgid "Keyboard Layout"
+#~ msgstr "鍵盤配置"
+
+#, no-wrap
+#~ msgid "Setting Multiple Keyboard Layouts"
+#~ msgstr "設定多個鍵盤配置"
+
+#, fuzzy
+#~ msgid ""
+#~ "X can be closed with a combination of keys.  By default, that key "
+#~ "combination is not set because it conflicts with keyboard commands for "
+#~ "some applications.  Enabling this option requires changes to the keyboard "
+#~ "`InputDevice` section:"
+#~ msgstr ""
+#~ "X 可以使用組合鍵來關閉，預設並未設定組合鍵，因為該組合鍵與部份應用程式的鍵"
+#~ "盤指令衝突。要開啟這個選項需要更改鍵盤 <literal>InputDevice</literal> 節："
+
+#, no-wrap
+#~ msgid "Enabling Keyboard Exit from X"
+#~ msgstr "開啟鍵盤離開 X 功能"
+
+#, no-wrap
+#~ msgid "Mice and Pointing Devices"
+#~ msgstr "滑鼠與指標裝置"
+
+#, no-wrap
+#~ msgid "Mouse Buttons"
+#~ msgstr "滑鼠按鍵"
+
+#, no-wrap
+#~ msgid "Setting the Number of Mouse Buttons"
+#~ msgstr "設定滑鼠按鍵數"
+
+#, no-wrap
+#~ msgid "Manual Configuration"
+#~ msgstr "手動設定"
+
+#, fuzzy
+#~| msgid ""
+#~| "Do not create manual configuration files unless required. Unnecessary "
+#~| "manual configuration can prevent proper operation."
+#~ msgid ""
+#~ "Do not create manual configuration files unless required.  Unnecessary "
+#~ "manual configuration can prevent proper operation."
+#~ msgstr "非必要請勿手動建立設定檔，非必要的手動設置會造成運作不正常。"
+
+#~ msgid ""
+#~ "Alternatively, to build from the Ports Collection, run the following "
+#~ "commands:"
+#~ msgstr "或由 Port 套件集編譯，可執行以下指令："
+
+#, no-wrap
+#~ msgid "The X Display Manager"
+#~ msgstr "X 顯示管理程式"
+
+#, no-wrap
+#~ msgid "XDM Configuration Files"
+#~ msgstr "XDM 設定檔"
+
+#, no-wrap
+#~ msgid "Configuring Remote Access"
+#~ msgstr "設定遠端存取"
+
+#, no-wrap
+#~ msgid "Desktop Environments"
+#~ msgstr "桌面環境"
+
+#, fuzzy
+#~ msgid ""
+#~ "This section describes how to install three popular desktop environments "
+#~ "on a FreeBSD system.  A desktop environment can range from a simple "
+#~ "window manager to a complete suite of desktop applications.  Over a "
+#~ "hundred desktop environments are available in the [.filename]#x11-wm# "
+#~ "category of the Ports Collection."
+#~ msgstr ""
+#~ "本節將介紹如何在 FreeBSD 系統安裝三種熱門的桌面環境。一套桌面環境的範圍可"
+#~ "從簡單的視窗管理程式到完整的桌面應用程式集。有上百套的桌面環境可在 Port 套"
+#~ "件集的 <filename>x11-wm</filename> 分類取得。"
+
+#, fuzzy
+#~ msgid ""
+#~ "GNOME is a user-friendly desktop environment.  It includes a panel for "
+#~ "starting applications and displaying status, a desktop, a set of tools "
+#~ "and applications, and a set of conventions that make it easy for "
+#~ "applications to cooperate and be consistent with each other.  More "
+#~ "information regarding GNOME on FreeBSD can be found at https://www."
+#~ "FreeBSD.org/gnome[https://www.FreeBSD.org/gnome].  That web site contains "
+#~ "additional documentation about installing, configuring, and managing "
+#~ "GNOME on FreeBSD."
+#~ msgstr ""
+#~ "<application>GNOME</application> 是一個擁有友善使用者介面的的桌面環境，它"
+#~ "包括用於啟動應用程式和顯示狀態的面板、一系列工具與應用程序及一套可讓應用程"
+#~ "式更容易進行合作、相互一致的協定。更多有關 FreeBSD <application>GNOME</"
+#~ "application> 的訊息可在 <link xlink:href=\"https://www.FreeBSD.org/gnome"
+#~ "\">https://www.FreeBSD.org/gnome</link> 取得，該網站包含了有關在 FreeBSD "
+#~ "安裝、設定和管理 <application>GNOME</application> 的額外文件。"
+
+#~ msgid "This desktop environment can be installed from a package:"
+#~ msgstr "這套桌面環境可以從套件安裝："
+
+#, fuzzy
+#~ msgid ""
+#~ "To instead build GNOME from ports, use the following command.  GNOME is a "
+#~ "large application and will take some time to compile, even on a fast "
+#~ "computer."
+#~ msgstr ""
+#~ "或者要使用 <application>KDE</application> Port 編譯，可使用以下指令，採用 "
+#~ "Port 方式安裝會有選單可以選擇要安裝的元件。<application>KDE</application> "
+#~ "是一個大型的應用程式，即使在較快的電腦上仍需要花費一段時間來編譯。"
+
+#, fuzzy
+#~ msgid ""
+#~ "A second method for starting GNOME is to type `startx` from the command-"
+#~ "line after configuring [.filename]#~/.xinitrc#.  If this file already "
+#~ "exists, replace the line that starts the current window manager with one "
+#~ "that starts [.filename]#/usr/local/bin/gnome-session#.  If this file does "
+#~ "not exist, create it with this command:"
+#~ msgstr ""
+#~ "第二種啟動 <application>GNOME</application> 的方法是在設定完 <filename>~/."
+#~ "xinitrc</filename> 後在指令列輸入 <command>startx</command>。若這個檔案已"
+#~ "經存在，替換啟動目前視窗管理程式的那一行，改為啟動 <filename>/usr/local/"
+#~ "bin/gnome-session</filename>。若檔案不存在，則使用以下指令建立一個："
+
+#, fuzzy
+#~ msgid ""
+#~ "KDE is another easy-to-use desktop environment.  This desktop provides a "
+#~ "suite of applications with a consistent look and feel, a standardized "
+#~ "menu and toolbars, keybindings, color-schemes, internationalization, and "
+#~ "a centralized, dialog-driven desktop configuration.  More information on "
+#~ "KDE can be found at http://www.kde.org/[http://www.kde.org/].  For "
+#~ "FreeBSD-specific information, consult http://freebsd.kde.org/[http://"
+#~ "freebsd.kde.org]."
+#~ msgstr ""
+#~ "<application>KDE</application> 是另一套易於使用的桌面環境。這個桌面環境提"
+#~ "供了一致外觀的應用程式、標準化的選單和工具列、組合鍵、配色方案、國際化與集"
+#~ "中、對話框導向的桌面設定。更多有關 <application>KDE</application> 可在 "
+#~ "<link xlink:href=\"http://www.kde.org/\">http://www.kde.org/</link> 取得。"
+#~ "要取得 FreeBSD 特定的資訊，則可參考 <link xlink:href=\"http://freebsd.kde."
+#~ "org/\">http://freebsd.kde.org</link>。"
+
+#, fuzzy
+#~ msgid ""
+#~ "To instead build the KDE port, use the following command.  Installing the "
+#~ "port will provide a menu for selecting which components to install.  KDE "
+#~ "is a large application and will take some time to compile, even on a fast "
+#~ "computer."
+#~ msgstr ""
+#~ "或者要使用 <application>KDE</application> Port 編譯，可使用以下指令，採用 "
+#~ "Port 方式安裝會有選單可以選擇要安裝的元件。<application>KDE</application> "
+#~ "是一個大型的應用程式，即使在較快的電腦上仍需要花費一段時間來編譯。"
+
+#, fuzzy
+#~ msgid ""
+#~ "Xfce is a desktop environment based on the GTK+ toolkit used by GNOME.  "
+#~ "However, it is more lightweight and provides a simple, efficient, easy-to-"
+#~ "use desktop.  It is fully configurable, has a main panel with menus, "
+#~ "applets, and application launchers, provides a file manager and sound "
+#~ "manager, and is themeable.  Since it is fast, light, and efficient, it is "
+#~ "ideal for older or slower machines with memory limitations.  More "
+#~ "information on Xfce can be found at http://www.xfce.org/[http://www.xfce."
+#~ "org]."
+#~ msgstr ""
+#~ "<application>Xfce</application> 是以 <application>GNOME</application> 使用"
+#~ "的 GTK +工具包做為基礎所開發的桌面環境，但是它更輕巧且提供了一種簡單、高"
+#~ "效、易於使用的桌面。它可完全自訂設定、附有選單、Applet 及應用程式啟動器的"
+#~ "主面板、提供檔案管理程式和音效管理程式並且可設定主題。由於它是快速、輕巧、"
+#~ "高效的桌面環境，因此它非常適合有記憶體限制的較舊或較慢機器。更多有關 "
+#~ "<application>Xfce</application> 的資訊可至 <link xlink:href=\"http://www."
+#~ "xfce.org/\">http://www.xfce.org</link> 取得。"
+
+#~ msgid "Alternatively, to build the port:"
+#~ msgstr "或者使用 Port 編譯："
+
+#, no-wrap
+#~ msgid "Installing Compiz Fusion"
+#~ msgstr "安裝 Compiz Fusion"
+
+#~ msgid ""
+#~ "One way to make using a desktop computer more pleasant is with nice 3D "
+#~ "effects."
+#~ msgstr "要令使用桌面電腦更令人愉快的方法是用炫麗的 3D 效果。"
+
+#, no-wrap
+#~ msgid "Setting up the FreeBSD nVidia Driver"
+#~ msgstr "設定 FreeBSD nVidia 驅動程式"
+
+#, fuzzy
+#~ msgid ""
+#~ "Desktop effects can cause quite a load on the graphics card.  For an "
+#~ "nVidia-based graphics card, the proprietary driver is required for good "
+#~ "performance.  Users of other graphics cards can skip this section and "
+#~ "continue with the [.filename]#xorg.conf# configuration."
+#~ msgstr ""
+#~ "桌面特效需要使用相當程度的顯示卡，對於以 nVidia 為基礎的顯示卡，需要使用專"
+#~ "用的驅動程序來取得較佳的性能。其他顯示卡的使用可以跳過這一節，並繼續 "
+#~ "<filename>xorg.conf</filename> 設定。"
+
+#~ msgid ""
+#~ "Having determined the correct driver to use for your card, installation "
+#~ "is as simple as installing any other package."
+#~ msgstr ""
+#~ "知道您的顯示卡要使用那種驅動程式才是正確的之後，接下來的安裝程序跟安裝其他"
+#~ "套件一樣簡單。"
+
+#~ msgid "For example, to install the latest driver:"
+#~ msgstr "例如，要安裝最新的驅動程式："
+
+#, fuzzy
+#~ msgid ""
+#~ "The driver will create a kernel module, which needs to be loaded at "
+#~ "system startup.  Use man:sysrc[8] to load the module at startup:"
+#~ msgstr ""
+#~ "驅動程式會建立一個需要在系統啟動時載入的核心模組，加入下行到 <filename>/"
+#~ "boot/loader.conf</filename>："
+
+#, fuzzy
+#~ msgid ""
+#~ "Alternatively, add the following line to [.filename]#/boot/loader.conf#:"
+#~ msgstr ""
+#~ "驅動程式會建立一個需要在系統啟動時載入的核心模組，加入下行到 <filename>/"
+#~ "boot/loader.conf</filename>："
+
+#, fuzzy
+#~ msgid ""
+#~ "To immediately load the kernel module into the running kernel issue a "
+#~ "command like `kldload nvidia`.  However, it has been noted that some "
+#~ "versions of Xorg will not function properly if the driver is not loaded "
+#~ "at boot time.  After editing [.filename]#/boot/loader.conf#, a reboot is "
+#~ "recommended.  Improper settings in [.filename]#/boot/loader.conf# can "
+#~ "cause the system not to boot properly."
+#~ msgstr ""
+#~ "要立即載入核心模組到執行中的核心可以下 <command>kldload nvidia</command> "
+#~ "指令，但是需要注意，若不是在開機時載入，某些 <application>Xorg</"
+#~ "application> 版本會無法正常運作。因此編輯完 <filename>/boot/loader.conf</"
+#~ "filename> 之後建議要重新開機。"
+
+#, fuzzy
+#~ msgid ""
+#~ "With the kernel module loaded, you normally only need to change a single "
+#~ "line in [.filename]#xorg.conf# to enable the proprietary driver:"
+#~ msgstr ""
+#~ "核心模組載入之後，您只需要更改 <filename>xorg.conf</filename> 的其中一行來"
+#~ "開啟專用的驅動程式："
+
+#~ msgid "and change it to:"
+#~ msgstr "然後更改該行為："
+
+#, fuzzy
+#~| msgid ""
+#~| "Start the GUI as usual, and you should be greeted by the nVidia splash. "
+#~| "Everything should work as usual."
+#~ msgid ""
+#~ "Start the GUI as usual, and you should be greeted by the nVidia splash.  "
+#~ "Everything should work as usual."
+#~ msgstr ""
+#~ "如往常般啟動 GUI，您應該會看到 nVidia 的啟動畫面，其他東西應如往常般運作。"
+
+#~ msgid "Add the following section to enable composite effects:"
+#~ msgstr "加入以下 Section 來開啟合成特效："
+
+#, fuzzy
+#~ msgid ""
+#~ "Locate the \"Subsection\" that refers to the screen resolution that you "
+#~ "wish to use.  For example, if you wish to use 1280x1024, locate the "
+#~ "section that follows.  If the desired resolution does not appear in any "
+#~ "subsection, you may add the relevant entry by hand:"
+#~ msgstr ""
+#~ "找到您欲使用的螢幕解析度所在的 <quote>Subsection</quote>，例如，您想要使"
+#~ "用 1280x1024，則找到如下所示的 Section。若想要使用的解析度不在任何 "
+#~ "Subsection 之中，您可以手動加入對應的項目："
+
+#~ msgid ""
+#~ "When the installation is finished, start your graphic desktop and at a "
+#~ "terminal, enter the following commands (as a normal user):"
+#~ msgstr ""
+#~ "安裝完成之後，開啟您的圖型化桌面，然後在終端機的畫面輸入以下指令 (使用一般"
+#~ "使用者)："
+
+#, fuzzy
+#~ msgid ""
+#~ "Save this in your home directory as, for example, [.filename]#start-"
+#~ "compiz# and make it executable:"
+#~ msgstr ""
+#~ "儲存這個 Script 到您的家目錄所在位置，例如 <filename>start-compiz</"
+#~ "filename>，然後讓該檔案可以執行："
+
+#, no-wrap
+#~ msgid "Troubleshooting"
+#~ msgstr "疑難排解"
+
+#~ msgid ""
+#~ "Input devices may then be configured as in previous versions, along with "
+#~ "any other options needed (e.g., keyboard layout switching)."
+#~ msgstr ""
+#~ "輸入裝置便可如先前版本一樣設定，連同其他所需的選項 (如：切換鍵盤配置)。"
+
+#, fuzzy
+#~ msgid ""
+#~ "For example if, one wants to use a PC 102 keys keyboard coming with a "
+#~ "french layout, we have to create a keyboard configuration file for hald "
+#~ "called [.filename]#x11-input.fdi# and saved in the [.filename]#/usr/local/"
+#~ "etc/hal/fdi/policy# directory.  This file should contain the following "
+#~ "lines:"
+#~ msgstr ""
+#~ "舉例來說，若有人想要使用 PC 102 鍵的鍵盤，採用法語 (French) 配置，我們便需"
+#~ "要建立一個給 <application>hald</application> 的鍵盤設定檔，名稱為 "
+#~ "<filename>x11-input.fdi</filename>，然後儲存到 <filename>/usr/local/etc/"
+#~ "hal/fdi/policy</filename> 目錄。這個檔案中應要有以下幾行："
+
+#~ msgid ""
+#~ "If this file already exists, just copy and add to your file the lines "
+#~ "regarding the keyboard configuration."
+#~ msgstr ""
+#~ "若這個檔案已經存在，只需要複製並貼上您的檔案中有關鍵盤設定的那幾行。"
+
+#~ msgid ""
+#~ "It is possible to do the same configuration from an X terminal or a "
+#~ "script with this command line:"
+#~ msgstr "也是可以從 X 終端機或 Script 下指令來做同樣的設定："
+
+#, fuzzy
+#~ msgid ""
+#~ "[.filename]#/usr/local/share/X11/xkb/rules/base.lst# lists the various "
+#~ "keyboard, layouts and options available."
+#~ msgstr ""
+#~ "<filename>/usr/local/share/X11/xkb/rules/base.lst</filename> 中列出了各種"
+#~ "可用的鍵盤、配置與設定。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Most monitors support sync frequency autodetection, making manual entry "
+#~| "of these values unnecessary. For the few monitors that do not support "
+#~| "autodetection, avoid potential damage by only entering values provided "
+#~| "by the manufacturer."
+#~ msgid ""
+#~ "Most monitors support sync frequency autodetection, making manual entry "
+#~ "of these values unnecessary.  For the few monitors that do not support "
+#~ "autodetection, avoid potential damage by only entering values provided by "
+#~ "the manufacturer."
+#~ msgstr ""
+#~ "多數顯示器都支援自動偵測同步頻率，並不需要手動設定這些數值。對於那些不支援"
+#~ "自動偵測的顯示器，請輸入由製造商提供的數值來避免損壞顯示器。"
+
+#~ msgid ""
+#~ "Finally, write the configuration file and test it using the test mode "
+#~ "given above."
+#~ msgstr "最後，儲存設定檔並使用測試模式來測試上述的設定。"
+
+#, no-wrap
+#~ msgid "Adding a Widescreen Flatpanel to the Mix"
+#~ msgstr "加入寬螢幕平板顯示器到設定檔"
+
+#, fuzzy
+#~| msgid ""
+#~| "This section assumes a bit of advanced configuration knowledge. If "
+#~| "attempts to use the standard configuration tools above have not resulted "
+#~| "in a working configuration, there is information enough in the log files "
+#~| "to be of use in getting the setup working. Use of a text editor will be "
+#~| "necessary."
+#~ msgid ""
+#~ "This section assumes a bit of advanced configuration knowledge.  If "
+#~ "attempts to use the standard configuration tools above have not resulted "
+#~ "in a working configuration, there is information enough in the log files "
+#~ "to be of use in getting the setup working.  Use of a text editor will be "
+#~ "necessary."
+#~ msgstr ""
+#~ "此章節會需要有一些進階的設定知識，若嘗試使用上述的標準設定工具仍無法產生可"
+#~ "運作的設定，在日誌檔中應有足夠的資訊可運用來讓顯示卡運作。在此會需要使用文"
+#~ "字編輯器。"
+
+#, fuzzy
+#~| msgid ""
+#~| "Current widescreen (WSXGA, WSXGA+, WUXGA, WXGA, WXGA+, et.al.) formats "
+#~| "support 16:10 and 10:9 formats or aspect ratios that can be problematic. "
+#~| "Examples of some common screen resolutions for 16:10 aspect ratios are:"
+#~ msgid ""
+#~ "Current widescreen (WSXGA, WSXGA+, WUXGA, WXGA, WXGA+, et.al.) formats "
+#~ "support 16:10 and 10:9 formats or aspect ratios that can be problematic.  "
+#~ "Examples of some common screen resolutions for 16:10 aspect ratios are:"
+#~ msgstr ""
+#~ "目前使用寬螢幕 (WSXGA, WSXGA+, WUXGA, WXGA, WXGA+, et.al.) 格式支援的 "
+#~ "16:10 及 10:9 格式或其他的寬高比可會有問題。例如一些 16:10 寬高比常見的螢"
+#~ "幕解析度："
+
+#~ msgid ""
+#~ "Now having completed these simple editing steps, X should start on your "
+#~ "new widescreen monitor."
+#~ msgstr "便完成編輯的步驟，接著需要在您的寬螢幕顯示器啟動 X。"
+
+#, fuzzy
+#~ msgid ""
+#~ "If you check [.filename]#/var/log/Xorg.0.log#, you will probably find "
+#~ "error messages during the X startup.  The most common would be:"
+#~ msgstr ""
+#~ "若您檢查 <filename>/var/log/Xorg.0.log</filename>，您可能可以找到當 X 啟動"
+#~ "時所發生的錯誤訊息。最常發生的錯誤會是："
+
+#~ msgid ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[] include::shared/"
+#~ "{{% lang %}}/teams.adoc[] include::shared/{{% lang %}}/mailing-lists."
+#~ "adoc[] include::shared/{{% lang %}}/urls.adoc[]"
+#~ msgstr ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[] include::shared/"
+#~ "{{% lang %}}/teams.adoc[] include::shared/{{% lang %}}/mailing-lists."
+#~ "adoc[] include::shared/{{% lang %}}/urls.adoc[]"
+
+#, fuzzy
+#~ msgid ""
+#~ "Because of changes made in recent versions of FreeBSD, it is now possible "
+#~ "to use graphics drivers provided by the Ports framework or as packages. "
+#~ "As such, users can use one of the following drivers available from "
+#~ "package:graphics/drm-kmod[]."
+#~ msgstr ""
+#~ "由於最近 FreeBSD 版本所做的變更，現在可以使用由 Port 或套件所提供的繪圖驅"
+#~ "動程式，所以使用者可以使用下列來自 <package>graphics/drm-kmod</package> 的"
+#~ "驅動程式。"

@@ -1,0 +1,705 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# Fernando  Apesteguía <fernando.apesteguia@gmail.com>, 2021.
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2022-02-01 09:20-0300\n"
+"PO-Revision-Date: 2023-01-26 16:00+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"documentation/booksfdp-primertranslations_index/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1\n"
+
+#. type: YAML Front Matter: description
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:1
+#, no-wrap
+msgid "FAQ about the translation process in the FreeBSD Documentation Project"
+msgstr ""
+"Preguntas frecuentes sobre el proceso de traducción en el Proyecto de "
+"Documentación de FreeBSD"
+
+#. type: YAML Front Matter: title
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:1
+#, no-wrap
+msgid "Chapter 8. Translations"
+msgstr "Capítulo 8. Traducciones"
+
+#. type: Title =
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:13
+#, no-wrap
+msgid "Translations"
+msgstr "Traducciones"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:51
+msgid ""
+"This is the FAQ for people translating the FreeBSD documentation (FAQ, "
+"Handbook, tutorials, manual pages, and others) to different languages."
+msgstr ""
+"Este es el apartado de preguntas frecuentes para la gente que traduce la "
+"documentación de FreeBSD (FAQ, Manual, tutoriales, páginas de manual y otros)"
+" a diferentes idiomas."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:55
+msgid ""
+"It is _very_ heavily based on the translation FAQ from the FreeBSD German "
+"Documentation Project, originally written by Frank Gründer mailto:"
+"elwood@mc5sys.in-berlin.de[elwood@mc5sys.in-berlin.de] and translated back "
+"to English by Bernd Warken mailto:bwarken@mayn.de[bwarken@mayn.de]."
+msgstr ""
+"Está _muy_ basado en la traducción de Preguntas Frecuentes del Proyecto de "
+"Documentación Alemán de FreeBSD, escrito originalmente por Frank Gründer "
+"mailto:elwood@mc5sys.in-berlin.de[elwood@mc5sys.in-berlin.de] y traducido al "
+"inglés por Bernd Warken mailto:bwarken@mayn.de[bwarken@mayn.de]."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:56
+#, no-wrap
+msgid "What do i18n and l10n mean?"
+msgstr "¿Qué significan i18n y l10n?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:60
+msgid ""
+"i18n means internationalization and l10n means localization.  They are just "
+"a convenient shorthand."
+msgstr ""
+"i18n significa internacionalización y l10n significa localización.  Son sólo "
+"una abreviatura conveniente."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:63
+msgid ""
+"i18n can be read as \"i\" followed by 18 letters, followed by \"n\".  "
+"Similarly, l10n is \"l\" followed by 10 letters, followed by \"n\"."
+msgstr ""
+"i18n puede leerse como \"i\" seguida de 18 letras, seguida de \"n\".  Del "
+"mismo modo, l10n es \"l\" seguida de 10 letras, seguida de \"n\"."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:64
+#, no-wrap
+msgid "Is there a mailing list for translators?"
+msgstr "¿Existe una lista de correo para traductores?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:69
+msgid ""
+"Yes. Different translation groups have their own mailing lists.  The https://"
+"www.freebsd.org/docproj/translations[list of translation projects] has more "
+"information about the mailing lists and web sites run by each translation "
+"project.  In addition there is mailto:freebsd-translators@freebsd."
+"org[freebsd-translators@freebsd.org] for general translation discussion."
+msgstr ""
+"Sí. Los distintos grupos de traducción tienen sus propias listas de correo.  "
+"En https://www.freebsd.org/docproj/translations[lista de proyectos de "
+"traducción] hay más información sobre las listas de correo y los sitios web "
+"gestionados por cada proyecto de traducción.  Además, existe mailto:freebsd-"
+"translators@freebsd.org[freebsd-translators@freebsd.org] para discusiones "
+"generales sobre traducción."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:70
+#, no-wrap
+msgid "Are more translators needed?"
+msgstr "¿Se necesitan más traductores?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:73
+msgid ""
+"Yes. The more people that work on translation the faster it gets done, and "
+"the faster changes to the English documentation are mirrored in the "
+"translated documents."
+msgstr ""
+"Sí. Cuantas más personas trabajen en la traducción, más rápido se hará y más "
+"rápido se reflejarán los cambios en la documentación en inglés en los "
+"documentos traducidos."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:75
+msgid "You do not have to be a professional translator to be able to help."
+msgstr "No hace falta ser traductor profesional para poder ayudar."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:76
+#, no-wrap
+msgid "What languages do I need to know?"
+msgstr "¿Qué idiomas necesito saber?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:79
+msgid ""
+"Ideally, you will have a good knowledge of written English, and obviously "
+"you will need to be fluent in the language you are translating to."
+msgstr ""
+"Lo ideal es tener buenos conocimientos de inglés escrito y, obviamente, "
+"dominar el idioma al que se traduce."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:82
+msgid ""
+"English is not strictly necessary.  For example, you could do a Hungarian "
+"translation of the FAQ from the Spanish translation."
+msgstr ""
+"El inglés no es estrictamente necesario.  Por ejemplo, podría hacer una "
+"traducción al húngaro de las Preguntas frecuentes a partir de la traducción "
+"al español."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:83
+#, no-wrap
+msgid "What software do I need to know?"
+msgstr "¿Qué programas necesito saber?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:87
+msgid ""
+"It is strongly recommended that you maintain a local copy of the FreeBSD Git "
+"repository (at least the documentation part).  This can be done by running:"
+msgstr ""
+"Se recomienda encarecidamente que mantenga una copia local del repositorio "
+"Git de FreeBSD (al menos de la parte de documentación).  Esto puede hacerse "
+"ejecutando:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:91
+#, no-wrap
+msgid "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
+msgstr "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:94
+msgid "https://git.FreeBSD.org/[git.FreeBSD.org] is a public `git` server."
+msgstr "https://git.FreeBSD.org/[git.FreeBSD.org] es un servidor `git` público."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:98
+msgid "This will require the package:git-lite[] package to be installed."
+msgstr "Esto requerirá que el paquete package:git-lite[] esté instalado."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:102
+msgid ""
+"You should be comfortable using git.  This will allow you to see what has "
+"changed between different versions of the files that make up the "
+"documentation."
+msgstr ""
+"Deberías sentirte cómodo utilizando git.  Esto le permitirá ver lo que ha "
+"cambiado entre las diferentes versiones de los archivos que componen la "
+"documentación."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:104
+msgid ""
+"For example, to view the differences between revisions `abff932fe8` and "
+"`2191c44469` of [.filename]#documentation/content/en/articles/committers-"
+"guide/_index.adoc#, run:"
+msgstr ""
+"Por ejemplo, para ver las diferencias entre las revisiones `abff932fe8` y "
+"`2191c44469` de [.filename]#documentation/content/en/articles/"
+"committers-guide/_index.adoc#, ejecute:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:108
+#, no-wrap
+msgid "% git diff abff932fe8 2191c44469 documentation/content/en/articles/committers-guide/_index.adoc\n"
+msgstr ""
+"% git diff abff932fe8 2191c44469 documentation/content/es/articles/"
+"committers-guide/_index.adoc\n"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:111
+msgid ""
+"Please see the complete explanation of using Git in FreeBSD in the extref:"
+"{handbook}mirrors[FreeBSD Handbook, git]."
+msgstr ""
+"Consulte la explicación completa del uso de Git en FreeBSD en el "
+"extref:{handbook}mirrors[FreeBSD Handbook, git]."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:112
+#, no-wrap
+msgid "How do I find out who else might be translating to the same language?"
+msgstr "¿Cómo puedo saber quién más traduce al mismo idioma?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:117
+msgid ""
+"The https://www.FreeBSD.org/docproj/translations/[Documentation Project "
+"translations page] lists the translation efforts that are currently known "
+"about.  If others are already working on translating documentation to your "
+"language, please do not duplicate their efforts.  Instead, contact them to "
+"see how you can help."
+msgstr ""
+"En https://www.FreeBSD.org/docproj/translations/[Página de traducciones del "
+"Proyecto de Documentación] se enumeran los esfuerzos de traducción que se "
+"conocen actualmente.  Si ya hay otras personas trabajando en la traducción "
+"de la documentación a su idioma, no duplique sus esfuerzos.  Póngase en "
+"contacto con ellos para ver cómo puede ayudar."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:119
+msgid ""
+"If no one is listed on that page as translating for your language, then send "
+"a message to the {freebsd-doc} in case someone else is thinking of doing a "
+"translation, but has not announced it yet."
+msgstr ""
+"Si nadie aparece en esa página como traductor para su idioma, envíe un "
+"mensaje al {freebsd-doc} por si alguien está pensando en hacer una "
+"traducción, pero aún no lo ha anunciado."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:120
+#, no-wrap
+msgid "No one else is translating to my language. What do I do?"
+msgstr "Nadie traduce a mi idioma. ¿Qué puedo hacer?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:124
+msgid ""
+"Congratulations, you have just started the \"FreeBSD _your-language-here_ "
+"Documentation Translation Project\".  Welcome aboard."
+msgstr ""
+"Enhorabuena, acaba de iniciar el \"Proyecto de traducción de documentación "
+"de FreeBSD _su-idioma-aquí_\".  Bienvenido a bordo."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:127
+msgid ""
+"First, decide whether or not you have got the time to spare.  Since you are "
+"the only person working on your language at the moment it is going to be "
+"your responsibility to publicize your work and coordinate any volunteers "
+"that might want to help you."
+msgstr ""
+"En primer lugar, decide si tienes tiempo o no.  Puesto que usted es la única "
+"persona que trabaja en su lengua por el momento, será su responsabilidad dar "
+"a conocer su trabajo y coordinar a los voluntarios que quieran ayudarle."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:129
+msgid ""
+"Write an email to the Documentation Project mailing list, announcing that "
+"you are going to translate the documentation, so the Documentation Project "
+"translations page can be maintained."
+msgstr ""
+"Escriba un correo electrónico a la lista de correo del Proyecto de "
+"Documentación, anunciando que va a traducir la documentación, para que se "
+"pueda mantener la página de traducciones del Proyecto de Documentación."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:131
+msgid ""
+"If there is already someone in your country providing FreeBSD mirroring "
+"services you should contact them and ask if you can have some webspace for "
+"your project, and possibly an email address or mailing list services."
+msgstr ""
+"Si ya hay alguien en su país que proporcione servicios de mirroring de "
+"FreeBSD debería ponerse en contacto con ellos y preguntarles si puede tener "
+"algo de espacio web para su proyecto, y posiblemente una dirección de correo "
+"electrónico o servicios de listas de correo."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:134
+msgid ""
+"Then pick a document and start translating.  It is best to start with "
+"something fairly small - either the FAQ, or one of the tutorials."
+msgstr ""
+"A continuación, elija un documento y empiece a traducirlo.  Lo mejor es "
+"empezar con algo bastante pequeño: las Preguntas frecuentes o uno de los "
+"tutoriales."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:135
+#, no-wrap
+msgid "I have translated some documentation, where do I send it?"
+msgstr "He traducido documentación, ¿dónde la envío?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:139
+msgid ""
+"That depends.  If you are already working with a translation team (such as "
+"the Japanese team, or the German team) then they will have their own "
+"procedures for handling submitted documentation, and these will be outlined "
+"on their web pages."
+msgstr ""
+"Depende.  Si ya está trabajando con un equipo de traducción (como el equipo "
+"japonés o el alemán), ellos tendrán sus propios procedimientos para "
+"gestionar la documentación enviada, y estarán descritos en sus páginas web."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:141
+msgid ""
+"If you are the only person working on a particular language (or you are "
+"responsible for a translation project and want to submit your changes back "
+"to the FreeBSD project) then you should send your translation to the FreeBSD "
+"project (see the next question)."
+msgstr ""
+"Si usted es la única persona que trabaja en un idioma en particular (o es "
+"responsable de un proyecto de traducción y quiere enviar sus cambios al "
+"proyecto FreeBSD) entonces debería enviar su traducción al proyecto FreeBSD ("
+"vea la siguiente pregunta)."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:142
+#, no-wrap
+msgid "I am the only person working on translating to this language, how do I submit my translation?"
+msgstr ""
+"Soy la única persona que trabaja en la traducción a este idioma, ¿cómo "
+"presento mi traducción?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:146
+msgid ""
+"First, make sure your translation is organized properly.  This means that it "
+"should drop into the existing documentation tree and build straight away."
+msgstr ""
+"En primer lugar, asegúrese de que su traducción está organizada "
+"correctamente.  Esto significa que debe integrarse en el árbol de "
+"documentación existente y construirse de inmediato."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:149
+msgid ""
+"Directories below this are named according to the language code they are "
+"written in, as defined in ISO639 ([.filename]#/usr/share/misc/iso639# on a "
+"version of FreeBSD newer than 20th January 1999)."
+msgstr ""
+"Los directorios por debajo de éste se nombran según el código de idioma en "
+"el que están escritos, tal y como se define en ISO639 ([.filename]#/usr/"
+"share/misc/iso639# en una versión de FreeBSD anterior al 20 de enero de "
+"1999)."
+
+#. type: delimited block = 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:154
+msgid ""
+"Hugo need the language codes in lowercase.  For example, instead of `pt_BR` "
+"Hugo uses `pt-br`."
+msgstr ""
+"Hugo necesita los códigos de idioma en minúsculas.  Por ejemplo, en lugar de "
+"`pt_BR` Hugo utiliza `pt-br`."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:158
+msgid ""
+"Currently, the FreeBSD documentation is stored in a top level directory "
+"called [.filename]#documentation/#.  Directories below this are named "
+"according to the language code they are written in, as defined in ISO639 ([."
+"filename]#/usr/share/misc/iso639# on a version of FreeBSD newer than 20th "
+"January 1999)."
+msgstr ""
+"Actualmente, la documentación de FreeBSD se almacena en un directorio de "
+"nivel superior llamado [.filename]#documentation/#.  Los directorios por "
+"debajo de éste se nombran según el código de lenguaje en el que están "
+"escritos, tal y como se define en ISO639 ([.filename]#/usr/share/misc/iso639#"
+" en una versión de FreeBSD anterior al 20 de enero de 1999)."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:160
+msgid ""
+"If your language can be encoded in different ways (for example, Chinese) "
+"then there should be directories below this, one for each encoding format "
+"you have provided."
+msgstr ""
+"Si su idioma puede codificarse de diferentes maneras (por ejemplo, chino), "
+"entonces debería haber directorios debajo de este, uno para cada formato de "
+"codificación que haya proporcionado."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:162
+msgid "Finally, you should have directories for each document."
+msgstr "Por último, debe tener directorios para cada documento."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:164
+msgid "For example, a hypothetical Swedish translation might look like:"
+msgstr "Por ejemplo, una hipotética traducción al sueco podría ser así:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:173
+#, no-wrap
+msgid ""
+"documentation/\n"
+"  content/\n"
+"    sv/\n"
+"      books/\n"
+"        faq/\n"
+"          _index.adoc\n"
+msgstr ""
+"documentation/\n"
+"  content/\n"
+"    sv/\n"
+"      books/\n"
+"        faq/\n"
+"          _index.adoc\n"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:177
+msgid ""
+"`sv` is the name of the translation, in [.filename]#lang# form.  Note the "
+"two Makefiles, which will be used to build the documentation."
+msgstr ""
+"`sv` es el nombre de la traducción, en forma [.nombrearchivo]#lang#.  Tenga "
+"en cuenta los dos Makefiles, que se utilizarán para construir la "
+"documentación."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:179
+msgid ""
+"Use git diff command to generate a diff and send it to the link:reviews."
+"freebsd.org/[reviews system]."
+msgstr ""
+"Utilice el comando git diff para generar un diff y enviarlo al enlace:reviews"
+".freebsd.org/[reviews system]."
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:183
+#, no-wrap
+msgid "% git diff > sv-faq.diff\n"
+msgstr "% git diff > sv-faq.diff\n"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:187
+msgid ""
+"You should use Bugzilla to link:https://bugs.freebsd.org/bugzilla/enter_bug."
+"cgi[submit a report] indicating that you have submitted the documentation.  "
+"It would be very helpful if you could get other people to look over your "
+"translation and double check it first, since it is unlikely that the person "
+"committing it will be fluent in the language."
+msgstr ""
+"Deberías usar Bugzilla para enlazar:https://bugs.freebsd.org/bugzilla/"
+"enter_bug.cgi[submit a report] indicando que has enviado la documentación.  "
+"Sería muy útil que otras personas revisaran tu traducción y la comprobaran "
+"primero, ya que es poco probable que la persona que la envíe domine el "
+"idioma."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:190
+msgid ""
+"Someone (probably the Documentation Project Manager, currently {doceng}) "
+"will then take your translation and confirm that it builds.  In particular, "
+"the following things will be looked at:"
+msgstr ""
+"Alguien (probablemente el Gestor de Proyectos de Documentación, actualmente "
+"{doceng}) tomará entonces su traducción y confirmará que se construye.  En "
+"particular, se comprobarán las siguientes cosas:"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:192
+msgid "Does `make` in the [.filename]#root# directory work correctly?"
+msgstr "Does `make` in the [.filename]#root# directory work correctly?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:194
+msgid ""
+"If there are any problems then whoever is looking at the submission will get "
+"back to you to work them out."
+msgstr ""
+"Si hay algún problema, la persona encargada de examinar la solicitud se "
+"pondrá en contacto con usted para resolverlo."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:196
+msgid ""
+"If there are no problems your translation will be committed as soon as "
+"possible."
+msgstr "Si no hay problemas, su traducción se entregará lo antes posible."
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:197
+#, no-wrap
+msgid "Can I include language or country specific text in my translation?"
+msgstr "¿Puedo incluir texto específico de un idioma o país en mi traducción?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:200
+msgid "We would prefer that you did not."
+msgstr "Preferiríamos que no lo hiciera."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:202
+msgid ""
+"For example, suppose that you are translating the Handbook to Korean, and "
+"want to include a section about retailers in Korea in your Handbook."
+msgstr ""
+"Por ejemplo, supongamos que está traduciendo el Manual al coreano y quiere "
+"incluir en él una sección sobre los minoristas de Corea."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:206
+msgid ""
+"There is no real reason why that information should not be in the English "
+"(or German, or Spanish, or Japanese, or ...) versions as well.  It is "
+"feasible that an English speaker in Korea might try to pick up a copy of "
+"FreeBSD whilst over there.  It also helps increase FreeBSD's perceived "
+"presence around the globe, which is not a bad thing."
+msgstr ""
+"No hay ninguna razón real por la que esa información no deba estar también "
+"en las versiones inglesa (o alemana, o española, o japonesa, o...).  Es "
+"posible que un angloparlante en Corea intente hacerse con una copia de "
+"FreeBSD mientras está allí.  También ayuda a aumentar la presencia percibida "
+"de FreeBSD en todo el mundo, lo cual no es malo."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:208
+msgid ""
+"If you have country specific information, please submit it as a change to "
+"the English Handbook (using Bugzilla) and then translate the change back to "
+"your language in the translated Handbook."
+msgstr ""
+"Si tiene información específica de un país, envíela como cambio al Manual en "
+"inglés (utilizando Bugzilla) y luego traduzca el cambio a su idioma en el "
+"Manual traducido."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:210
+msgid "Thanks."
+msgstr "Gracias."
+
+#. type: Title ===
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:211
+#, no-wrap
+msgid "Addressing the reader"
+msgstr "Dirigirse al lector"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:214
+msgid ""
+"In the English documents, the reader is addressed as \"you\", there is no "
+"formal/informal distinction as there is in some languages."
+msgstr ""
+"En los documentos en inglés, el lector se dirige a él como \"you\", no hay "
+"distinción formal/informal como en algunos idiomas."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:217
+msgid ""
+"If you are translating to a language which does distinguish, use whichever "
+"form is typically used in other technical documentation in your language.  "
+"If in doubt, use a mildly polite form."
+msgstr ""
+"Si está traduciendo a un idioma que sí distingue, utilice la forma que se "
+"emplee habitualmente en otra documentación técnica en su idioma.  En caso de "
+"duda, utilice una forma ligeramente cortés."
+
+#. type: Title ===
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:218
+#, no-wrap
+msgid "Do I need to include any additional information in my translations?"
+msgstr "¿Debo incluir información adicional en mis traducciones?"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:221
+msgid "Yes."
+msgstr "Si."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:223
+msgid ""
+"The header of the English version of each document will look something like "
+"this:"
+msgstr ""
+"El encabezamiento de la versión inglesa de cada documento tendrá el "
+"siguiente aspecto:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:231
+#, no-wrap
+msgid ""
+" ---\n"
+" title: Why you should use a BSD style license for your Open Source Project\n"
+" releaseinfo: \"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml 53942 2020-03-01 12:23:40Z carlavilla $\"\n"
+" trademarks: [\"freebsd\", \"intel\", \"general\"]\n"
+" ---\n"
+msgstr ""
+" ---\n"
+" title: Why you should use a BSD style license for your Open Source Project\n"
+" releaseinfo: \"$FreeBSD: head/en_US.ISO8859-1/articles/bsdl-gpl/article.xml "
+"53942 2020-03-01 12:23:40Z carlavilla $\"\n"
+" trademarks: [\"freebsd\", \"intel\", \"general\"]\n"
+" ---\n"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:233
+#, no-wrap
+msgid " = Why you should use a BSD style license for your Open Source Project\n"
+msgstr ""
+" = Por qué debería utilizar una licencia de estilo BSD para su proyecto de "
+"código abierto\n"
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:237
+msgid ""
+"The exact boilerplate may change, but it will always include a $FreeBSD$ "
+"line and the phrase `The FreeBSD Documentation Project`.  Note that the "
+"$FreeBSD$ part is expanded automatically by Git, so it should be empty (just "
+"`$FreeBSD$`) for new files."
+msgstr ""
+"El boilerplate exacto puede cambiar, pero siempre incluirá una línea "
+"$FreeBSD$ y la frase `The FreeBSD Documentation Project`.  Tenga en cuenta "
+"que la parte $FreeBSD$ es expandida automáticamente por Git, por lo que "
+"debería estar vacía (sólo `$FreeBSD$`) para los archivos nuevos."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:239
+msgid ""
+"Your translated documents should include their own FreeBSD line, and change "
+"the `FreeBSD Documentation Project` line to `The FreeBSD _language_ "
+"Documentation Project`."
+msgstr ""
+"Sus documentos traducidos deben incluir su propia línea FreeBSD, y cambiar "
+"la línea `FreeBSD Documentation Project` por `The FreeBSD _language_ "
+"Documentation Project`."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:241
+msgid ""
+"In addition, you should add a third line which indicates which revision of "
+"the English text this is based on."
+msgstr ""
+"Además, debe añadir una tercera línea que indique en qué revisión del texto "
+"inglés se basa."
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:243
+msgid "So, the Spanish version of this file might start:"
+msgstr "Por lo tanto, la versión española de este archivo podría comenzar:"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:250
+#, no-wrap
+msgid ""
+" ---\n"
+" title: Soporte para segundos intercalares en FreeBSD\n"
+" releaseinfo: \"$FreeBSD: head/es_ES.ISO8859-1/articles/leap-seconds/article.xml 53090 2019-06-01 17:52:59Z carlavilla $\"\n"
+" ---\n"
+msgstr ""
+" ---\n"
+" title: Soporte para segundos intercalares en FreeBSD\n"
+" releaseinfo: \"$FreeBSD: head/es_ES.ISO8859-1/articles/leap-seconds/"
+"article.xml 53090 2019-06-01 17:52:59Z carlavilla $\"\n"
+" ---\n"
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/translations/_index.adoc:252
+#, no-wrap
+msgid " = Soporte para segundos intercalares en FreeBSD\n"
+msgstr " = Soporte para segundos intercalares en FreeBSD\n"
+
+#~ msgid ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[] include::shared/"
+#~ "{{% lang %}}/teams.adoc[] include::shared/{{% lang %}}/mailing-lists."
+#~ "adoc[] include::shared/{{% lang %}}/urls.adoc[]"
+#~ msgstr ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[]\n"
+#~ "include::shared/{{% lang %}}/teams.adoc[]\n"
+#~ "include::shared/{{% lang %}}/mailing-lists.adoc[]\n"
+#~ "include::shared/{{% lang %}}/urls.adoc[]"

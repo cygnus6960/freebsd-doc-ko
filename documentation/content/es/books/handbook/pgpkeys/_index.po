@@ -1,0 +1,104 @@
+# SOME DESCRIPTIVE TITLE
+# Copyright (C) YEAR The FreeBSD Project
+# This file is distributed under the same license as the FreeBSD Documentation package.
+# Fernando  Apesteguía <fernando.apesteguia@gmail.com>, 2021, 2022.
+# Daniel Pérez <steew0x8@protonmail.com>, 2021.
+# Juan David Jaramillo Ortiz <juanda097@protonmail.ch>, 2023.
+msgid ""
+msgstr ""
+"Project-Id-Version: FreeBSD Documentation VERSION\n"
+"POT-Creation-Date: 2023-01-21 20:00-0300\n"
+"PO-Revision-Date: 2023-01-26 16:00+0000\n"
+"Last-Translator: Juan David Jaramillo Ortiz <juanda097@protonmail.ch>\n"
+"Language-Team: Spanish <https://translate-dev.freebsd.org/projects/"
+"documentation/bookshandbookpgpkeys_index/es/>\n"
+"Language: es\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Weblate 4.15.1\n"
+
+#. type: YAML Front Matter: description
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
+#, no-wrap
+msgid "List of OpenPGP keys of the FreeBSD officers are shown here"
+msgstr "La lista de claves OpenPGP de los oficiales de FreeBSD se muestra aquí"
+
+#. type: YAML Front Matter: part
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
+#, no-wrap
+msgid "Part V. Appendices"
+msgstr "Parte V. Anexos"
+
+#. type: YAML Front Matter: title
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:1
+#, no-wrap
+msgid "Appendix D. OpenPGP Keys"
+msgstr "Anexo D. Claves OpenPGP"
+
+#. type: Title =
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:15
+#, no-wrap
+msgid "OpenPGP Keys"
+msgstr "Claves OpenPGP"
+
+#. type: Plain text
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:60
+msgid ""
+"The OpenPGP keys of the `FreeBSD.org` officers are shown here.  These keys "
+"can be used to verify a signature or send encrypted email to one of the "
+"officers.  A full list of FreeBSD OpenPGP keys is available in the extref:"
+"{pgpkeys}[PGP Keys] article.  The complete keyring can be downloaded at link:"
+"https://docs.FreeBSD.org/pgpkeys/pgpkeys.txt[pgpkeyring.txt]."
+msgstr ""
+"Aquí se muestran las claves OpenPGP de los funcionarios de `FreeBSD.org`.  "
+"Estas claves pueden usarse para verificar una firma o enviar un correo "
+"electrónico cifrado a uno de los funcionarios.  La lista completa de claves "
+"OpenPGP de FreeBSD está disponible en el artículo extref:{pgpkeys}[Claves "
+"PGP].  El llavero completo puede descargarse en link:https://docs.FreeBSD."
+"org/pgpkeys/pgpkeys.txt[pgpkeyring.txt]."
+
+#. type: Title ==
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:62
+#, no-wrap
+msgid "Officers"
+msgstr "Oficiales"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:64
+#, no-wrap
+msgid "{security-officer-name} `<{security-officer-email}>`"
+msgstr "{security-officer-name} `<{security-officer-email}>`"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:67
+#, no-wrap
+msgid "{core-secretary-name} `<{core-secretary-email}>`"
+msgstr "{core-secretary-name} `<{core-secretary-email}>`"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:70
+#, no-wrap
+msgid "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
+msgstr "{portmgr-secretary-name} `<{portmgr-secretary-email}>`"
+
+#. type: Title ===
+#: documentation/content/en/books/handbook/pgpkeys/_index.adoc:73
+#, no-wrap
+msgid "`{doceng-secretary-email}`"
+msgstr "`{doceng-secretary-email}`"
+
+#, no-wrap
+#~ msgid "{secteam-secretary-name} `<{secteam-secretary-email}>`"
+#~ msgstr "{secteam-secretary-name} `<{secteam-secretary-email}>`"
+
+#~ msgid ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[] include::shared/"
+#~ "{{% lang %}}/teams.adoc[] include::shared/{{% lang %}}/mailing-lists."
+#~ "adoc[] include::shared/{{% lang %}}/urls.adoc[]"
+#~ msgstr ""
+#~ "include::shared/attributes/attributes-{{% lang %}}.adoc[]\n"
+#~ "include::shared/{{% lang %}}/teams.adoc[]\n"
+#~ "include::shared/{{% lang %}}/mailing-lists.adoc[]\n"
+#~ "include::shared/{{% lang %}}/urls.adoc[]"
