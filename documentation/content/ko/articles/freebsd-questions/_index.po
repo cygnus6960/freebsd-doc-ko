@@ -1,12 +1,13 @@
 # SOME DESCRIPTIVE TITLE
 # Copyright (C) YEAR The FreeBSD Project
 # This file is distributed under the same license as the FreeBSD Documentation package.
-# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023.
+# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023, 2024.
+# Minsoo Choo <minsoochoo0122@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2022-02-01 09:21-0300\n"
-"PO-Revision-Date: 2023-04-26 20:24+0000\n"
+"POT-Creation-Date: 2023-09-09 18:13-0300\n"
+"PO-Revision-Date: 2024-01-13 04:45+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/articlesfreebsd-questions_index/ko/>\n"
@@ -22,12 +23,12 @@ msgstr ""
 #: documentation/content/en/articles/freebsd-questions/_index.adoc:11
 #, no-wrap
 msgid "How to get Best Results from the FreeBSD-questions Mailing List"
-msgstr ""
+msgstr "FreeBSD-questions 메일링 리스트에서 최고의 답변을 받는 방법"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-questions/_index.adoc:44
 msgid "Abstract"
-msgstr "요약"
+msgstr "개요"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-questions/_index.adoc:47
@@ -52,7 +53,7 @@ msgstr "'''"
 #: documentation/content/en/articles/freebsd-questions/_index.adoc:54
 #, no-wrap
 msgid "Introduction"
-msgstr ""
+msgstr "소개"
 
 #. type: Plain text
 #: documentation/content/en/articles/freebsd-questions/_index.adoc:58
@@ -243,8 +244,7 @@ msgid ""
 "list. You can browse and/or search the mailing list archives at https://www."
 "FreeBSD.org/mail[https://www.FreeBSD.org/mail] and https://www.FreeBSD.org/"
 "search/#mailinglists[https://www.FreeBSD.org/search/#mailinglists] "
-"respectively. This can be done at other WWW sites as well, for example at "
-"http://marc.theaimsgroup.com[http://marc.theaimsgroup.com]."
+"respectively."
 msgstr ""
 
 #. type: Plain text

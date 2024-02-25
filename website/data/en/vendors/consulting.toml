@@ -111,7 +111,7 @@ id = "Stacey"
 category = "europe"
 name = "Julian Stacey"
 url = "http://www.berklix.com/~jhs/cv/"
-description = "<a href=\"http://berklix.com/\">Net services & systems engineering</a>, UNIX since 1978, Maintains a <a href=\"http://berklix.com/~jhs/consultants/\">FreeBSD Commercial Consultants Index</a> (<strong>sorted geographically & by full & part timers)</strong>. Be sure to visit his page!"
+description = "<a href=\"http://berklix.com/\">Net services & systems engineering</a>, UNIX since 1978, Maintains a <a href=\"http://www.berklix.com/consultants/\">FreeBSD Commercial Consultants Index</a> (<strong>sorted geographically & by full & part timers)</strong>. Be sure to visit his page!"
 
 [[consulting]]
 id = "Klara"
@@ -285,7 +285,7 @@ description = "We offer IT consulting, systems integration, corporate informatio
 id = "BSDPIE"
 category = "europe"
 name = "BSD Professionals In Europe (BSDPIE)"
-url = "http://bsdpie.com/"
+url = "http://www.bsdpie.eu/"
 description = "We are BSD based co-operating consultants offering Consultancy, Support, Development, Installation and Internet Services located in Munich, Germany."
 
 [[consulting]]
@@ -429,8 +429,15 @@ url = "https://www.amglabs.net"
 description = "We are a software development and server management company operating in the market since 2014. We work with the development of customized web systems and the deployment and management of servers based on open source technologies such as CentOS, Debian, FreeBSD, OpenBSD and Ubuntu Server."
 
 [[consulting]]
-id = "rxtx"
+id = "miletic"
 category = "europe"
-name = "RxTx"
-url = "https://www.rxtx.tech/"
-description = "RxTx offers scientific software development, maintenance, integration, and deployment services. Specific expertise is the cross-platform porting of scientific applications and libraries, including from and to FreeBSD. Contact us via our website <a href=\"https://www.rxtx.tech/#contact-us\">www.rxtx.tech</a> or by email <a href=\"mailto:info@rxtx.tech\">info@rxtx.tech</a>."
+name = "Miletic"
+url = "https://www.miletic.net/"
+description = "Miletic offers scientific software development, maintenance, integration, and deployment services. Specific expertise is the cross-platform porting of scientific applications and libraries, including from and to FreeBSD. Contact via our website <a href=\"https://www.miletic.net/#contact\">www.miletic.net</a> or by email <a href=\"mailto:info@miletic.net\">info@miletic.net</a>."
+
+[[consulting]]
+id = "System Goats"
+category = "namerica"
+name = "System Goats"
+url = "https://systemgoats.com"
+description = "System Goats provides system configuration, networking, guidance and training for organizations interested in Data Science infrastructure."

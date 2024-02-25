@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2023-04-20 20:56-0300\n"
-"PO-Revision-Date: 2023-05-08 10:45+0000\n"
+"POT-Creation-Date: 2023-07-15 16:41-0300\n"
+"PO-Revision-Date: 2023-08-26 02:56+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/bookshandbookppp-and-slip_index/ko/>\n"
@@ -22,9 +22,7 @@ msgstr ""
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:1
 #, no-wrap
 msgid "FreeBSD supports the Point-to-Point (PPP) protocol which can be used to establish a network or Internet connection using a dial-up modem"
-msgstr ""
-"FreeBSD는 전화 접속 모뎀을 사용하여 네트워크 또는 인터넷 연결을 설정하는 데 "
-"사용할 수 있는 Point-to-Point (PPP) 프로토콜을 지원합니다"
+msgstr "FreeBSD는 전화 접속 모뎀을 사용하여 네트워크 또는 인터넷 연결을 설정하는 데 사용할 수 있는 Point-to-Point (PPP) 프로토콜을 지원합니다"
 
 #. type: YAML Front Matter: part
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:1
@@ -35,8 +33,8 @@ msgstr "IV. 네트워크 통신"
 #. type: YAML Front Matter: title
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:1
 #, no-wrap
-msgid "Chapter 29. PPP"
-msgstr "29장. PPP"
+msgid "Chapter 30. PPP"
+msgstr "30장. PPP"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:14
@@ -58,9 +56,9 @@ msgid ""
 "chapter describes how to configure modem-based communication services in "
 "FreeBSD."
 msgstr ""
-"FreeBSD는 전화 접속 모뎀을 사용하여 네트워크나 인터넷 연결을 설정하는 데 "
-"사용할 수 있는 지점간(Point-to-Point, PPP) 프로토콜을 지원합니다.  이 "
-"장에서는 FreeBSD에서 모뎀 기반 통신 서비스를 구성하는 방법을 설명합니다."
+"FreeBSD는 전화 접속 모뎀을 사용하여 네트워크나 인터넷 연결을 설정하는 데 사용"
+"할 수 있는 지점간(Point-to-Point, PPP) 프로토콜을 지원합니다.  이 장에서는 "
+"FreeBSD에서 모뎀 기반 통신 서비스를 구성하는 방법을 설명합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:58
@@ -113,11 +111,11 @@ msgid ""
 "configuration files containing examples are provided.  Finally, `ppp` is "
 "used to start and manage connections."
 msgstr ""
-"FreeBSD는 man:ppp[8]를 사용하여 전화 접속 PPP 연결을 관리하기 위한 내장 "
-"지원을 제공합니다.  기본 FreeBSD 커널은 모뎀 하드웨어와 상호 작용하는 데 "
-"사용되는 [.filename]#tun# 에 대한 지원을 제공합니다.  구성은 하나 이상의 "
-"구성 파일을 편집하여 수행되며, 예제가 포함된 구성 파일이 제공됩니다.  "
-"마지막으로 `ppp` 는 연결을 시작하고 관리하는 데 사용됩니다."
+"FreeBSD는 man:ppp[8]를 사용하여 전화 접속 PPP 연결을 관리하기 위한 내장 지원"
+"을 제공합니다.  기본 FreeBSD 커널은 모뎀 하드웨어와 상호 작용하는 데 사용되"
+"는 [.filename]#tun# 에 대한 지원을 제공합니다.  구성은 하나 이상의 구성 파일"
+"을 편집하여 수행되며, 예제가 포함된 구성 파일이 제공됩니다.  마지막으로 "
+"`ppp` 는 연결을 시작하고 관리하는 데 사용됩니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:77
@@ -150,9 +148,8 @@ msgid ""
 "The IP address of one or more DNS servers. Normally, the ISP provides these "
 "addresses. If it did not, FreeBSD can be configured to use DNS negotiation."
 msgstr ""
-"하나 이상의 DNS 서버의 IP 주소. 일반적으로 ISP가 이 주소를 제공합니다. "
-"제공하지 않는 경우, DNS 네고시에이션을 사용하도록 FreeBSD를 구성할 수 "
-"있습니다."
+"하나 이상의 DNS 서버의 IP 주소. 일반적으로 ISP가 이 주소를 제공합니다. 제공하"
+"지 않는 경우, DNS 네고시에이션을 사용하도록 FreeBSD를 구성할 수 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:85
@@ -163,7 +160,8 @@ msgstr "필수 정보 중 하나라도 누락된 것이 있으면 ISP에 문의�
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:87
 msgid ""
 "The following information may be supplied by the ISP, but is not necessary:"
-msgstr "다음 정보는 ISP에서 제공할 수 있지만 반드시 제공해야 하는 것은 아닙니다:"
+msgstr ""
+"다음 정보는 ISP에서 제공할 수 있지만 반드시 제공해야 하는 것은 아닙니다:"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:89
@@ -172,8 +170,8 @@ msgid ""
 "ISP will automatically provide the correct value during connection setup. "
 "When configuring PPP on FreeBSD, this address is referred to as `HISADDR`."
 msgstr ""
-"기본 게이트웨이의 IP 주소. 이 정보를 알 수 없는 경우, 연결 설정 중에 ISP가 "
-"자동으로 올바른 값을 제공합니다. FreeBSD에서 PPP를 구성할 때, 이 주소를 "
+"기본 게이트웨이의 IP 주소. 이 정보를 알 수 없는 경우, 연결 설정 중에 ISP가 자"
+"동으로 올바른 값을 제공합니다. FreeBSD에서 PPP를 구성할 때, 이 주소를 "
 "`HISADDR` 이라고 합니다."
 
 #. type: Plain text
@@ -192,8 +190,8 @@ msgid ""
 "into the configuration file. Otherwise, this information will be "
 "automatically provided during connection setup."
 msgstr ""
-"ISP가 고정 IP 주소와 호스트 이름을 할당했다면 이를 구성 파일에 입력해야 "
-"합니다. 그렇지 않으면 연결 설정 중에 이 정보가 자동으로 제공됩니다."
+"ISP가 고정 IP 주소와 호스트 이름을 할당했다면 이를 구성 파일에 입력해야 합니"
+"다. 그렇지 않으면 연결 설정 중에 이 정보가 자동으로 제공됩니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:96
@@ -203,10 +201,10 @@ msgid ""
 "etc/ppp/ppp.conf# and additional files and examples are available in [."
 "filename]#/usr/share/examples/ppp/#."
 msgstr ""
-"이 섹션의 나머지 부분에서는 일반적인 PPP 연결 시나리오에 맞게 FreeBSD를 "
-"구성하는 방법을 설명합니다.  필요한 구성 파일은 [.filename]#/etc/ppp/ppp."
-"conf# 이며, 추가 파일과 예제는 [.filename]#/usr/share/examples/ppp/# 에서 "
-"확인할 수 있습니다."
+"이 섹션의 나머지 부분에서는 일반적인 PPP 연결 시나리오에 맞게 FreeBSD를 구성"
+"하는 방법을 설명합니다.  필요한 구성 파일은 [.filename]#/etc/ppp/ppp.conf# 이"
+"며, 추가 파일과 예제는 [.filename]#/usr/share/examples/ppp/# 에서 확인할 수 "
+"있습니다."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:101
@@ -215,9 +213,9 @@ msgid ""
 "These line numbers have been added to make it easier to follow the "
 "discussion and are not meant to be placed in the actual file."
 msgstr ""
-"이 섹션 전체에 걸쳐 많은 파일 예제에는 줄 번호가 표시됩니다.  이러한 줄 "
-"번호는 설명을 더 쉽게 따라갈 수 있도록 추가한 것으로 실제 파일에 배치하기 "
-"위한 것이 아닙니다."
+"이 섹션 전체에 걸쳐 많은 파일 예제에는 줄 번호가 표시됩니다.  이러한 줄 번호"
+"는 설명을 더 쉽게 따라갈 수 있도록 추가한 것으로 실제 파일에 배치하기 위한 것"
+"이 아닙니다."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:104
@@ -227,8 +225,8 @@ msgid ""
 "all other lines should be indented as shown using spaces or tabs."
 msgstr ""
 "구성 파일을 편집할 때는 적절한 들여쓰기가 중요합니다.  `:` 로 끝나는 줄은 첫 "
-"번째 열(줄의 시작 부분)에서 시작하고 다른 모든 줄은 공백이나 탭을 사용하여 "
-"표시된 대로 들여쓰기해야 합니다."
+"번째 열(줄의 시작 부분)에서 시작하고 다른 모든 줄은 공백이나 탭을 사용하여 표"
+"시된 대로 들여쓰기해야 합니다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:107
@@ -274,8 +272,7 @@ msgstr ""
 "4       set device /dev/cuau0\n"
 "5       set speed 115200\n"
 "6       set dial \"ABORT BUSY ABORT NO\\\\sCARRIER TIMEOUT 5 \\\n"
-"7                 \\\"\\\" AT OK-AT-OK ATE1Q0 OK \\\\dATDT\\\\T TIMEOUT 40 "
-"CONNECT\"\n"
+"7                 \\\"\\\" AT OK-AT-OK ATE1Q0 OK \\\\dATDT\\\\T TIMEOUT 40 CONNECT\"\n"
 "8       set timeout 180\n"
 "9       enable dns\n"
 "10\n"
@@ -298,8 +295,9 @@ msgstr "Line 1"
 msgid ""
 "Identifies the `default` entry.  Commands in this entry (lines 2 through 9) "
 "are executed automatically when `ppp` is run."
-msgstr "`default` 항목을 식별합니다.  이 항목의 명령(2~9행)은 `ppp` 가 실행될 때 "
-"자동으로 실행됩니다."
+msgstr ""
+"`default` 항목을 식별합니다.  이 항목의 명령(2~9행)은 `ppp` 가 실행될 때 자동"
+"으로 실행됩니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:137
@@ -312,8 +310,9 @@ msgstr "Line 2"
 msgid ""
 "Enables verbose logging parameters for testing the connection.  Once the "
 "configuration is working satisfactorily, this line should be reduced to:"
-msgstr "연결 테스트를 위한 자세한 로깅 매개변수를 활성화합니다.  구성이 만족스럽게 "
-"작동하면 이 줄을 줄여야 합니다:"
+msgstr ""
+"연결 테스트를 위한 자세한 로깅 매개변수를 활성화합니다.  구성이 만족스럽게 작"
+"동하면 이 줄을 줄여야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:144
@@ -332,7 +331,8 @@ msgstr "Line 3"
 msgid ""
 "Displays the version of man:ppp[8] to the PPP software running on the other "
 "side of the connection."
-msgstr "연결의 반대편에서 실행 중인 PPP 소프트웨어에 man:ppp[8]의 버전을 표시합니다."
+msgstr ""
+"연결의 반대편에서 실행 중인 PPP 소프트웨어에 man:ppp[8]의 버전을 표시합니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:149
@@ -361,7 +361,8 @@ msgstr "Line 5"
 msgid ""
 "Sets the connection speed.  If `115200` does not work on an older modem, try "
 "`38400` instead."
-msgstr "연결 속도를 설정합니다.  `115200` 이 구형 모뎀에서 작동하지 않는 경우 대신 "
+msgstr ""
+"연결 속도를 설정합니다.  `115200` 이 구형 모뎀에서 작동하지 않는 경우 대신 "
 "`38400` 을 사용해 보세요."
 
 #. type: Labeled list
@@ -375,7 +376,8 @@ msgstr "Lines 6 & 7"
 msgid ""
 "The dial string written as an expect-send syntax.  Refer to man:chat[8] for "
 "more information."
-msgstr "Expect-Send 구문으로 작성된 다이얼 문자열입니다.  자세한 내용은 man:chat[8]"
+msgstr ""
+"Expect-Send 구문으로 작성된 다이얼 문자열입니다.  자세한 내용은 man:chat[8]"
 "을 참조하세요."
 
 #. type: Plain text
@@ -412,9 +414,9 @@ msgid ""
 "running its own DNS server, this line should be commented out, by adding a `"
 "+#+` at the beginning of the line, or removed."
 msgstr ""
-"피어에게 DNS 설정을 확인하도록 지시합니다.  로컬 네트워크에서 자체 DNS "
-"서버를 실행 중인 경우 이 줄의 시작 부분에 `+#+` 를 추가하여 주석을 달거나 "
-"제거해야 합니다."
+"피어에게 DNS 설정을 확인하도록 지시합니다.  로컬 네트워크에서 자체 DNS 서버"
+"를 실행 중인 경우 이 줄의 시작 부분에 `+#+` 를 추가하여 주석을 달거나 제거해"
+"야 합니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:170
@@ -458,12 +460,11 @@ msgid ""
 "the pipe character.  Always enclose the entire set of phone numbers between "
 "quotation marks (`\"`) to prevent dialing failures."
 msgstr ""
-"ISP의 전화번호를 사용합니다.  콜론( `:` ) 또는 파이프 문자( `|` )를 구분 "
-"기호로 사용하여 여러 전화번호를 지정할 수 있습니다.  번호를 순환하려면 "
-"콜론을 사용합니다.  항상 첫 번째 번호로 먼저 전화를 걸고 첫 번째 번호가 "
-"실패할 경우에만 다른 번호를 사용하려면 파이프 문자를 사용합니다.  전화 걸기 "
-"실패를 방지하려면 항상 전체 전화번호 집합을 따옴표( `\"` ) 사이에 묶어야 "
-"합니다."
+"ISP의 전화번호를 사용합니다.  콜론( `:` ) 또는 파이프 문자( `|` )를 구분 기호"
+"로 사용하여 여러 전화번호를 지정할 수 있습니다.  번호를 순환하려면 콜론을 사"
+"용합니다.  항상 첫 번째 번호로 먼저 전화를 걸고 첫 번째 번호가 실패할 경우에"
+"만 다른 번호를 사용하려면 파이프 문자를 사용합니다.  전화 걸기 실패를 방지하"
+"려면 항상 전체 전화번호 집합을 따옴표( `\"` ) 사이에 묶어야 합니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:184
@@ -490,9 +491,9 @@ msgid ""
 "example, the connection will be closed automatically after 300 seconds of "
 "inactivity.  To prevent a timeout, set this value to zero."
 msgstr ""
-"연결의 기본 유휴 시간 제한을 초 단위로 설정합니다.  이 예에서는 300초 동안 "
-"활동이 없으면 연결이 자동으로 닫힙니다.  시간 초과를 방지하려면 이 값을 "
-"0으로 설정합니다."
+"연결의 기본 유휴 시간 제한을 초 단위로 설정합니다.  이 예에서는 300초 동안 활"
+"동이 없으면 연결이 자동으로 닫힙니다.  시간 초과를 방지하려면 이 값을 0으로 "
+"설정합니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:192
@@ -507,8 +508,8 @@ msgid ""
 "IP address has been obtained from the ISP or if it instead negotiates a "
 "dynamic IP address during connection."
 msgstr ""
-"인터페이스 주소를 설정합니다.  사용되는 값은 ISP로부터 고정 IP 주소를 "
-"받았는지 또는 연결 중에 동적 IP 주소를 협상하는지 여부에 따라 달라집니다."
+"인터페이스 주소를 설정합니다.  사용되는 값은 ISP로부터 고정 IP 주소를 받았는"
+"지 또는 연결 중에 동적 IP 주소를 협상하는지 여부에 따라 달라집니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:198
@@ -518,10 +519,10 @@ msgid ""
 "of the default gateway.  If the ISP has only provided a static IP address "
 "without a gateway address, replace _y.y.y.y_ with `10.0.0.2/0`."
 msgstr ""
-"ISP가 고정 IP 주소와 기본 게이트웨이를 할당했다면 _x.x.x.x_ 를 고정 IP "
-"주소로 바꾸고 _y.y.y.y_ 를 기본 게이트웨이의 IP 주소로 바꾸세요.  ISP가 "
-"게이트웨이 주소 없이 고정 IP 주소만 제공한 경우, _y.y.y.y_ 를 `10.0.0.2/0` "
-"으로 바꾸세요."
+"ISP가 고정 IP 주소와 기본 게이트웨이를 할당했다면 _x.x.x.x_ 를 고정 IP 주소"
+"로 바꾸고 _y.y.y.y_ 를 기본 게이트웨이의 IP 주소로 바꾸세요.  ISP가 게이트웨"
+"이 주소 없이 고정 IP 주소만 제공한 경우, _y.y.y.y_ 를 `10.0.0.2/0` 으로 바꾸"
+"세요."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:201
@@ -530,9 +531,9 @@ msgid ""
 "the following value.  This tells man:ppp[8] to use the IP Configuration "
 "Protocol (IPCP) to negotiate a dynamic IP address:"
 msgstr ""
-"연결할 때마다 IP 주소가 변경되는 경우 이 줄을 다음 값으로 변경합니다.  "
-"이렇게 하면 man:ppp[8]가 IPCP(IP 구성 프로토콜)를 사용하여 동적 IP 주소를 "
-"협상하도록 지시합니다:"
+"연결할 때마다 IP 주소가 변경되는 경우 이 줄을 다음 값으로 변경합니다.  이렇"
+"게 하면 man:ppp[8]가 IPCP(IP 구성 프로토콜)를 사용하여 동적 IP 주소를 협상하"
+"도록 지시합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:205
@@ -554,8 +555,8 @@ msgid ""
 "on line 16.  It is important that this line appears after line 16."
 msgstr ""
 "이 줄은 게이트웨이에 기본 경로를 추가하므로 그대로 유지합니다.  `HISADDR` 은 "
-"자동으로 16줄에 지정된 게이트웨이 주소로 바뀝니다.  이 줄은 16줄 뒤에 "
-"표시되는 것이 중요합니다."
+"자동으로 16줄에 지정된 게이트웨이 주소로 바뀝니다.  이 줄은 16줄 뒤에 표시되"
+"는 것이 중요합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:217
@@ -570,11 +571,11 @@ msgid ""
 "conf#."
 msgstr ""
 "man:ppp[8]가 수동으로 시작되는지 자동으로 시작되는지에 따라 다음 줄이 포함된 "
-"[.filename]#/etc/ppp/ppp.linkup# 을 생성해야 할 수도 있습니다.  이 파일은 "
-"`-auto` 모드에서 `ppp` 를 실행할 때 필요합니다.  이 파일은 연결이 설정된 "
-"후에 사용됩니다.  이 시점에서 IP 주소가 할당되고 이제 라우팅 테이블 항목을 "
-"추가할 수 있습니다.  이 파일을 만들 때 _provider_ 가 [.filename]#ppp.conf# "
-"의 11번째 줄에 표시된 값과 일치하는지 확인하세요."
+"[.filename]#/etc/ppp/ppp.linkup# 을 생성해야 할 수도 있습니다.  이 파일은 `-"
+"auto` 모드에서 `ppp` 를 실행할 때 필요합니다.  이 파일은 연결이 설정된 후에 "
+"사용됩니다.  이 시점에서 IP 주소가 할당되고 이제 라우팅 테이블 항목을 추가할 "
+"수 있습니다.  이 파일을 만들 때 _provider_ 가 [.filename]#ppp.conf# 의 11번"
+"째 줄에 표시된 값과 일치하는지 확인하세요."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:222
@@ -597,9 +598,9 @@ msgid ""
 msgstr ""
 "이 파일은 고정 IP 주소 구성에서 기본 게이트웨이 주소가 \"추측\"되는 경우에도 "
 "필요합니다.  이 경우 [.filename]#ppp.conf# 에서 17번째 줄을 삭제하고 위의 두 "
-"줄을 사용하여 [.filename]#/etc/ppp/ppp.linkup# 을 생성합니다.  이 파일에 "
-"대한 더 많은 예제는 [.filename]#/usr/share/examples/ppp/# 에서 찾을 수 "
-"있습니다."
+"줄을 사용하여 [.filename]#/etc/ppp/ppp.linkup# 을 생성합니다.  이 파일에 대"
+"한 더 많은 예제는 [.filename]#/usr/share/examples/ppp/# 에서 찾을 수 있습니"
+"다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:230
@@ -619,10 +620,10 @@ msgid ""
 "ppp.conf# with `allow`.  For example, to give `fred` and `mary` permission "
 "to only the `provider:` entry, add this line to the `provider:` section:"
 msgstr ""
-"그런 다음 `allow` 를 사용하여 사용자에게 [.filename]#/etc/ppp/ppp.conf# 의 "
-"하나 이상의 항목에 대한 액세스 권한을 부여합니다.  예를 들어, `fred` 및 "
-"`mary` 에게 `provider:` 항목에 대한 권한만 부여하려면 `provider:` 섹션에 이 "
-"줄을 추가합니다:"
+"그런 다음 `allow` 를 사용하여 사용자에게 [.filename]#/etc/ppp/ppp.conf# 의 하"
+"나 이상의 항목에 대한 액세스 권한을 부여합니다.  예를 들어, `fred` 및 `mary` "
+"에게 `provider:` 항목에 대한 권한만 부여하려면 `provider:` 섹션에 이 줄을 추"
+"가합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:237
@@ -635,8 +636,9 @@ msgstr "allow users fred mary\n"
 msgid ""
 "To give the specified users access to all entries, put that line in the "
 "`default` section instead."
-msgstr "지정된 사용자에게 모든 항목에 대한 액세스 권한을 부여하려면 대신 `default` "
-"섹션에 해당 줄을 입력합니다."
+msgstr ""
+"지정된 사용자에게 모든 항목에 대한 액세스 권한을 부여하려면 대신 `default` 섹"
+"션에 해당 줄을 입력합니다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:241
@@ -649,8 +651,9 @@ msgstr "고급 구성"
 msgid ""
 "It is possible to configure PPP to supply DNS and NetBIOS nameserver "
 "addresses on demand."
-msgstr "필요에 따라 DNS 및 NetBIOS 네임서버 주소를 제공하도록 PPP를 구성할 수 "
-"있습니다."
+msgstr ""
+"필요에 따라 DNS 및 NetBIOS 네임서버 주소를 제공하도록 PPP를 구성할 수 있습니"
+"다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:246
@@ -658,8 +661,8 @@ msgid ""
 "To enable these extensions with PPP version 1.x, the following lines might "
 "be added to the relevant section of [.filename]#/etc/ppp/ppp.conf#."
 msgstr ""
-"PPP 버전 1.x에서 이러한 확장 기능을 사용하려면 [.filename]#/etc/ppp/ppp.conf#"
-" 의 관련 섹션에 다음 줄을 추가하면 됩니다."
+"PPP 버전 1.x에서 이러한 확장 기능을 사용하려면 [.filename]#/etc/ppp/ppp."
+"conf# 의 관련 섹션에 다음 줄을 추가하면 됩니다."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:252
@@ -695,8 +698,9 @@ msgstr ""
 msgid ""
 "This will tell the clients the primary and secondary name server addresses, "
 "and a NetBIOS nameserver host."
-msgstr "이렇게 하면 클라이언트에 기본 및 보조 네임 서버 주소와 NetBIOS 네임 서버 "
-"호스트가 알려집니다."
+msgstr ""
+"이렇게 하면 클라이언트에 기본 및 보조 네임 서버 주소와 NetBIOS 네임 서버 호스"
+"트가 알려집니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:266
@@ -733,9 +737,9 @@ msgid ""
 "down a serial line only.  There is not much room for crackers to \"eavesdrop"
 "\"."
 msgstr ""
-"PAP는 CHAP보다 보안성이 떨어지지만, 비밀번호가 PAP를 통해 일반 텍스트로 "
-"전송되더라도 직렬 회선으로만 전송되기 때문에 일반적으로 보안은 문제가 되지 "
-"않습니다.  크래커가 \"도청\"할 수 있는 여지가 많지 않습니다."
+"PAP는 CHAP보다 보안성이 떨어지지만, 비밀번호가 PAP를 통해 일반 텍스트로 전송"
+"되더라도 직렬 회선으로만 전송되기 때문에 일반적으로 보안은 문제가 되지 않습니"
+"다.  크래커가 \"도청\"할 수 있는 여지가 많지 않습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:277
@@ -765,8 +769,9 @@ msgstr "Line 13"
 msgid ""
 "This line specifies the PAP/CHAP user name.Insert the correct value for "
 "_MyUserName_."
-msgstr "이 줄은 PAP/CHAP 사용자 이름을 지정합니다. _MyUserName_ 에 올바른 값을 "
-"입력합니다."
+msgstr ""
+"이 줄은 PAP/CHAP 사용자 이름을 지정합니다. _MyUserName_ 에 올바른 값을 입력합"
+"니다."
 
 #. type: Labeled list
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:288
@@ -780,8 +785,8 @@ msgid ""
 "This line specifies the PAP/CHAP password.  Insert the correct value for "
 "_MyPassword_.  You may want to add an additional line, such as:"
 msgstr ""
-"이 줄은 PAP/CHAP 비밀번호를 지정합니다.  _MyPassword_ 에 올바른 값을 "
-"입력합니다.  다음과 같이 추가 줄을 추가할 수 있습니다:"
+"이 줄은 PAP/CHAP 비밀번호를 지정합니다.  _MyPassword_ 에 올바른 값을 입력합니"
+"다.  다음과 같이 추가 줄을 추가할 수 있습니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:296
@@ -805,8 +810,9 @@ msgstr "16      accept CHAP\n"
 msgid ""
 "to make it obvious that this is the intention, but PAP and CHAP are both "
 "accepted by default."
-msgstr "를 추가하여 이러한 의도를 분명히 하되, PAP와 CHAP는 모두 기본적으로 "
-"허용됩니다."
+msgstr ""
+"를 추가하여 이러한 의도를 분명히 하되, PAP와 CHAP는 모두 기본적으로 허용됩니"
+"다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:310
@@ -814,8 +820,8 @@ msgid ""
 "The ISP will not normally require a login to the server when using PAP or "
 "CHAP.  Therefore, disable the \"set login\" string."
 msgstr ""
-"ISP는 일반적으로 PAP 또는 CHAP을 사용할 때 서버에 로그인을 요구하지 "
-"않습니다.  따라서 \"set login\" 문자열을 비활성화합니다."
+"ISP는 일반적으로 PAP 또는 CHAP을 사용할 때 서버에 로그인을 요구하지 않습니"
+"다.  따라서 \"set login\" 문자열을 비활성화합니다."
 
 #. type: Title ====
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:312
@@ -830,8 +836,8 @@ msgid ""
 "This functionality may be enabled by the following line in [.filename]#/etc/"
 "ppp/ppp.conf#:"
 msgstr ""
-"PPP에는 커널 우회 기능 없이 내부 NAT를 사용할 수 있는 기능이 있습니다.  이 "
-"기능은 [.filename]#/etc/ppp/ppp.conf# 의 다음 줄에서 활성화할 수 있습니다:"
+"PPP에는 커널 우회 기능 없이 내부 NAT를 사용할 수 있는 기능이 있습니다.  이 기"
+"능은 [.filename]#/etc/ppp/ppp.conf# 의 다음 줄에서 활성화할 수 있습니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:320
@@ -846,9 +852,8 @@ msgid ""
 "also [.filename]#/etc/rc.conf# knob named `ppp_nat`, which is enabled by "
 "default."
 msgstr ""
-"또는 명령줄 옵션 `-nat` 로 NAT를 활성화할 수 있습니다.  기본적으로 "
-"활성화되어 있는 `ppp_nat` 라는 이름의 [.filename]#/etc/rc.conf# 노브도 "
-"있습니다."
+"또는 명령줄 옵션 `-nat` 로 NAT를 활성화할 수 있습니다.  기본적으로 활성화되"
+"어 있는 `ppp_nat` 라는 이름의 [.filename]#/etc/rc.conf# 노브도 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:326
@@ -892,16 +897,18 @@ msgstr "최종 시스템 구성"
 msgid ""
 "While `ppp` is now configured, some edits still need to be made to [."
 "filename]#/etc/rc.conf#."
-msgstr "이제 `ppp` 가 구성되었지만 [.filename]#/etc/rc.conf# 의 일부를 편집해야 "
-"합니다."
+msgstr ""
+"이제 `ppp` 가 구성되었지만 [.filename]#/etc/rc.conf# 의 일부를 편집해야 합니"
+"다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:346
 msgid ""
 "Working from the top down in this file, make sure the `hostname=` line is "
 "set:"
-msgstr "이 파일에서 위에서 아래로 작업하면서 `hostname=` 줄이 설정되어 있는지 "
-"확인합니다:"
+msgstr ""
+"이 파일에서 위에서 아래로 작업하면서 `hostname=` 줄이 설정되어 있는지 확인합"
+"니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:350
@@ -914,7 +921,8 @@ msgstr "hostname=\"foo.example.com\"\n"
 msgid ""
 "If the ISP has supplied a static IP address and name, use this name as the "
 "host name."
-msgstr "ISP가 고정 IP 주소와 이름을 제공한 경우 이 이름을 호스트 이름으로 사용합니다."
+msgstr ""
+"ISP가 고정 IP 주소와 이름을 제공한 경우 이 이름을 호스트 이름으로 사용합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:356
@@ -923,9 +931,9 @@ msgid ""
 "the ISP on demand, make sure the [.filename]#tun0# device is added to the "
 "list, otherwise remove it."
 msgstr ""
-"`network_interfaces` 변수를 찾습니다.  필요에 따라 ISP에 전화를 걸도록 "
-"시스템을 구성하려면 [.filename]#tun0# 장치가 목록에 추가되어 있는지 "
-"확인하고, 그렇지 않은 경우 제거하세요."
+"`network_interfaces` 변수를 찾습니다.  필요에 따라 ISP에 전화를 걸도록 시스템"
+"을 구성하려면 [.filename]#tun0# 장치가 목록에 추가되어 있는지 확인하고, 그렇"
+"지 않은 경우 제거하세요."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:361
@@ -943,8 +951,8 @@ msgid ""
 "The `ifconfig_tun0` variable should be empty, and a file called [.filename]#/"
 "etc/start_if.tun0# should be created.  This file should contain the line:"
 msgstr ""
-"`ifconfig_tun0` 변수는 비어 있어야 하며 [.filename]#/etc/start_if.tun0# "
-"이라는 파일을 만들어야 합니다.  이 파일에는 해당 줄이 포함되어야 합니다:"
+"`ifconfig_tun0` 변수는 비어 있어야 하며 [.filename]#/etc/start_if.tun0# 이라"
+"는 파일을 만들어야 합니다.  이 파일에는 해당 줄이 포함되어야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:371
@@ -959,17 +967,18 @@ msgid ""
 "daemon in automatic mode.  If this machine acts as a gateway, consider "
 "including `-alias`. Refer to the manual page for further details."
 msgstr ""
-"이 스크립트는 네트워크 구성 시 실행되어 자동 모드에서 ppp 데몬을 "
-"시작합니다.  이 머신이 게이트웨이 역할을 하는 경우 `-alias` 를 포함하는 것이 "
-"좋습니다. 자세한 내용은 매뉴얼 페이지를 참조하세요."
+"이 스크립트는 네트워크 구성 시 실행되어 자동 모드에서 ppp 데몬을 시작합니"
+"다.  이 머신이 게이트웨이 역할을 하는 경우 `-alias` 를 포함하는 것이 좋습니"
+"다. 자세한 내용은 매뉴얼 페이지를 참조하세요."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:378
 msgid ""
 "Make sure that the router program is set to `NO` with the following line in "
 "[.filename]#/etc/rc.conf#:"
-msgstr "라우터 프로그램이 [.filename]#/etc/rc.conf# 에서 다음 줄과 함께 `NO` 로 "
-"설정되어 있는지 확인합니다:"
+msgstr ""
+"라우터 프로그램이 [.filename]#/etc/rc.conf# 에서 다음 줄과 함께 `NO` 로 설정"
+"되어 있는지 확인합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:382
@@ -983,8 +992,8 @@ msgid ""
 "It is important that the `routed` daemon is not started, as `routed` tends "
 "to delete the default routing table entries created by `ppp`."
 msgstr ""
-"`routed` 데몬은 `ppp` 에 의해 생성된 기본 라우팅 테이블 항목을 삭제하는 "
-"경향이 있으므로 `routed` 데몬이 시작되지 않도록 하는 것이 중요합니다."
+"`routed` 데몬은 `ppp` 에 의해 생성된 기본 라우팅 테이블 항목을 삭제하는 경향"
+"이 있으므로 `routed` 데몬이 시작되지 않도록 하는 것이 중요합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:388
@@ -994,9 +1003,9 @@ msgid ""
 "lookup every now and then, possibly causing your machine to dial out.  You "
 "may try:"
 msgstr ""
-"`sendmail_flags` 줄에 `-q` 옵션이 포함되어 있지 않은지 확인하는 것이 "
-"좋습니다. 그렇지 않으면 `sendmail` 이 때때로 네트워크 조회를 시도하여 "
-"컴퓨터가 전화를 끊을 수 있기 때문입니다.  시도해 보세요:"
+"`sendmail_flags` 줄에 `-q` 옵션이 포함되어 있지 않은지 확인하는 것이 좋습니"
+"다. 그렇지 않으면 `sendmail` 이 때때로 네트워크 조회를 시도하여 컴퓨터가 전화"
+"를 끊을 수 있기 때문입니다.  시도해 보세요:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:392
@@ -1011,9 +1020,9 @@ msgid ""
 "whenever the ppp link.  To automate this, include `!bg` in [.filename]#ppp."
 "linkup#:"
 msgstr ""
-"단점은 `sendmail` 이 ppp 링크가 연결될 때마다 메일 대기열을 다시 검사해야 "
-"한다는 것입니다.  이 작업을 자동화하려면 [.filename]#ppp.linkup# 에 `!bg` 를 "
-"포함하세요:"
+"단점은 `sendmail` 이 ppp 링크가 연결될 때마다 메일 대기열을 다시 검사해야 한"
+"다는 것입니다.  이 작업을 자동화하려면 [.filename]#ppp.linkup# 에 `!bg` 를 포"
+"함하세요:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:403
@@ -1034,7 +1043,8 @@ msgstr ""
 msgid ""
 "An alternative is to set up a \"dfilter\" to block SMTP traffic.  Refer to "
 "the sample files for further details."
-msgstr "다른 방법은 \"dfilter\"를 설정하여 SMTP 트래픽을 차단하는 것입니다.  자세한 "
+msgstr ""
+"다른 방법은 \"dfilter\"를 설정하여 SMTP 트래픽을 차단하는 것입니다.  자세한 "
 "내용은 샘플 파일을 참조하세요."
 
 #. type: Title ===
@@ -1047,7 +1057,8 @@ msgstr "`ppp` 사용하기"
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:412
 msgid ""
 "All that is left is to reboot the machine.  After rebooting, either type:"
-msgstr "남은 것은 컴퓨터를 재부팅하는 것뿐입니다.  재부팅 후 어느 쪽이든 입력합니다:"
+msgstr ""
+"남은 것은 컴퓨터를 재부팅하는 것뿐입니다.  재부팅 후 어느 쪽이든 입력합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:416
@@ -1063,9 +1074,9 @@ msgid ""
 "establish sessions automatically when there is outbound traffic and [."
 "filename]#start_if.tun0# does not exist, type:"
 msgstr ""
-"그리고 나서 `dial provider` 로 PPP 세션을 시작하거나, 아웃바운드 트래픽이 "
-"있고 [.filename]#start_if.tun0# 이 존재하지 않을 때 세션을 자동으로 "
-"설정하도록 `ppp` 를 구성하려면 다음과 같이 입력합니다:"
+"그리고 나서 `dial provider` 로 PPP 세션을 시작하거나, 아웃바운드 트래픽이 있"
+"고 [.filename]#start_if.tun0# 이 존재하지 않을 때 세션을 자동으로 설정하도록 "
+"`ppp` 를 구성하려면 다음과 같이 입력합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:423
@@ -1080,9 +1091,8 @@ msgid ""
 "background, but only if a suitable diagnostic port has been set up.  To do "
 "this, add the following line to the configuration:"
 msgstr ""
-"백그라운드에서 실행 중인 `ppp` 프로그램과 대화할 수 있지만, 적절한 진단 "
-"포트가 설정된 경우에만 가능합니다.  이렇게 하려면 구성에 다음 줄을 "
-"추가합니다:"
+"백그라운드에서 실행 중인 `ppp` 프로그램과 대화할 수 있지만, 적절한 진단 포트"
+"가 설정된 경우에만 가능합니다.  이렇게 하려면 구성에 다음 줄을 추가합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:431
@@ -1097,17 +1107,18 @@ msgid ""
 "clients for the specified password before allowing access.  The `%d` in the "
 "name is replaced with the [.filename]#tun# device number that is in use."
 msgstr ""
-"이렇게 하면 PPP가 지정된 UNIX(R) 도메인 소켓을 수신 대기하여 액세스를 "
-"허용하기 전에 클라이언트에게 지정된 암호를 묻습니다.  이름에 있는 `%d` 는 "
-"사용 중인 [.filename]#tun# 장치 번호로 대체됩니다."
+"이렇게 하면 PPP가 지정된 UNIX(R) 도메인 소켓을 수신 대기하여 액세스를 허용하"
+"기 전에 클라이언트에게 지정된 암호를 묻습니다.  이름에 있는 `%d` 는 사용 중"
+"인 [.filename]#tun# 장치 번호로 대체됩니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:437
 msgid ""
 "Once a socket has been set up, the man:pppctl[8] program may be used in "
 "scripts that wish to manipulate the running program."
-msgstr "소켓이 설정되면 실행 중인 프로그램을 조작하려는 스크립트에서 man:pppctl[8] "
-"프로그램을 사용할 수 있습니다."
+msgstr ""
+"소켓이 설정되면 실행 중인 프로그램을 조작하려는 스크립트에서 man:pppctl[8] 프"
+"로그램을 사용할 수 있습니다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:439
@@ -1121,8 +1132,8 @@ msgid ""
 "crossref:serialcomms[dialup,“Dial-in Service”] provides a good description "
 "on enabling dial-up services using man:getty[8]."
 msgstr ""
-"crossref:serialcomms[dialup,“Dial-in Service”]는 man:getty[8]를 사용하여 "
-"전화 접속 서비스를 활성화하는 방법에 대해 잘 설명합니다."
+"crossref:serialcomms[dialup,“Dial-in Service”]는 man:getty[8]를 사용하여 전"
+"화 접속 서비스를 활성화하는 방법에 대해 잘 설명합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:444
@@ -1130,8 +1141,8 @@ msgid ""
 "An alternative to `getty` is package:comms/mgetty+sendfax[] port), a smarter "
 "version of `getty` designed with dial-up lines in mind."
 msgstr ""
-"`getty` 의 대안으로 다이얼업 회선을 염두에 두고 설계된 `getty` 의 더 "
-"스마트한 버전인 package:comms/mgetty+sendfax[] port를 사용할 수 있습니다."
+"`getty` 의 대안으로 다이얼업 회선을 염두에 두고 설계된 `getty` 의 더 스마트"
+"한 버전인 package:comms/mgetty+sendfax[] port를 사용할 수 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:446
@@ -1140,8 +1151,8 @@ msgid ""
 "meaning if port is turned off in [.filename]#/etc/ttys# then the modem will "
 "not answer the phone."
 msgstr ""
-"`mgetty` 를 사용하면 모뎀과 활발하게 _대화_ 하므로 [.filename]#/etc/ttys# "
-"에서 포트가 꺼져 있으면 모뎀이 전화를 받지 않는다는 이점이 있습니다."
+"`mgetty` 를 사용하면 모뎀과 활발하게 _대화_ 하므로 [.filename]#/etc/ttys# 에"
+"서 포트가 꺼져 있으면 모뎀이 전화를 받지 않는다는 이점이 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:448
@@ -1150,8 +1161,8 @@ msgid ""
 "automatic detection of PPP streams, allowing clients scriptless access to "
 "the server."
 msgstr ""
-"이후 버전의 `mgetty` (0.99베타 이상)는 PPP 스트림의 자동 감지를 지원하여 "
-"클라이언트가 스크립트 없이 서버에 액세스할 수 있도록 합니다."
+"이후 버전의 `mgetty` (0.99베타 이상)는 PPP 스트림의 자동 감지를 지원하여 클라"
+"이언트가 스크립트 없이 서버에 액세스할 수 있도록 합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:450
@@ -1173,8 +1184,8 @@ msgid ""
 msgstr ""
 "기본적으로 package:comms/mgetty+sendfax[] 포트는 `AUTO_PPP` 옵션이 활성화된 "
 "상태로 제공되어 `mgetty` 가 PPP 연결의 LCP 단계를 감지하고 자동으로 ppp 셸을 "
-"생성할 수 있도록 합니다.  그러나 기본 로그인/비밀번호 시퀀스가 발생하지 "
-"않으므로 PAP 또는 CHAP을 사용하여 사용자를 인증해야 합니다."
+"생성할 수 있도록 합니다.  그러나 기본 로그인/비밀번호 시퀀스가 발생하지 않으"
+"므로 PAP 또는 CHAP을 사용하여 사용자를 인증해야 합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:455
@@ -1182,8 +1193,8 @@ msgid ""
 "This section assumes the user has successfully compiled, and installed the "
 "package:comms/mgetty+sendfax[] port on his system."
 msgstr ""
-"이 섹션에서는 사용자가 성공적으로 컴파일하고 시스템에 package:comms/"
-"mgetty+sendfax[] 포트를 설치했다고 가정합니다."
+"이 섹션에서는 사용자가 성공적으로 컴파일하고 시스템에 package:comms/mgetty"
+"+sendfax[] 포트를 설치했다고 가정합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:457
@@ -1191,8 +1202,8 @@ msgid ""
 "Ensure that [.filename]#/usr/local/etc/mgetty+sendfax/login.config# has the "
 "following:"
 msgstr ""
-"[.filename]#/usr/local/etc/mgetty+sendfax/login.config# 에 다음이 있는지 "
-"확인합니다:"
+"[.filename]#/usr/local/etc/mgetty+sendfax/login.config# 에 다음이 있는지 확인"
+"합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:461
@@ -1214,8 +1225,9 @@ msgstr ""
 msgid ""
 "Create an executable file called [.filename]#/etc/ppp/ppp-pap-dialup# "
 "containing the following:"
-msgstr "다음을 포함하는 [.filename]#/etc/ppp/ppp-pap-dialup# 이라는 실행 파일을 "
-"만듭니다:"
+msgstr ""
+"다음을 포함하는 [.filename]#/etc/ppp/ppp-pap-dialup# 이라는 실행 파일을 만듭"
+"니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:471
@@ -1259,9 +1271,9 @@ msgid ""
 "in [.filename]#/etc/ppp/ppp.secret#, or alternatively add the following "
 "option to authenticate users via PAP from [.filename]#/etc/passwd#."
 msgstr ""
-"이 방법으로 로그인하는 각 사용자는 [.filename]#/etc/ppp/ppp.secret# 에 "
-"사용자 이름/비밀번호를 입력하거나 [.filename]#/etc/passwd# 에서 PAP를 통해 "
-"사용자를 인증하는 다음 옵션을 추가해야 합니다."
+"이 방법으로 로그인하는 각 사용자는 [.filename]#/etc/ppp/ppp.secret# 에 사용"
+"자 이름/비밀번호를 입력하거나 [.filename]#/etc/passwd# 에서 PAP를 통해 사용자"
+"를 인증하는 다음 옵션을 추가해야 합니다."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:489
@@ -1296,10 +1308,10 @@ msgid ""
 "connecting manually as described in this section."
 msgstr ""
 "이 섹션에서는 모뎀 연결을 통해 PPP를 사용할 때 발생할 수 있는 몇 가지 문제를 "
-"다룹니다.  일부 ISP는 `ssword` 프롬프트를 표시하는 반면 다른 ISP는 `password`"
-" 를 표시합니다.  `PPP` 스크립트가 적절하게 작성되지 않으면 로그인 시도가 "
-"실패합니다.  `PPP` 연결을 디버깅하는 가장 일반적인 방법은 이 섹션에 설명된 "
-"대로 수동으로 연결하는 것입니다."
+"다룹니다.  일부 ISP는 `ssword` 프롬프트를 표시하는 반면 다른 ISP는 "
+"`password` 를 표시합니다.  `PPP` 스크립트가 적절하게 작성되지 않으면 로그인 "
+"시도가 실패합니다.  `PPP` 연결을 디버깅하는 가장 일반적인 방법은 이 섹션에 설"
+"명된 대로 수동으로 연결하는 것입니다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:502
@@ -1312,7 +1324,8 @@ msgstr "디바이스 노드 확인"
 msgid ""
 "When using a custom kernel, make sure to include the following line in the "
 "kernel configuration file:"
-msgstr "사용자 정의 커널을 사용하는 경우 커널 구성 파일에 다음 줄을 포함해야 합니다:"
+msgstr ""
+"사용자 정의 커널을 사용하는 경우 커널 구성 파일에 다음 줄을 포함해야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:509
@@ -1327,9 +1340,9 @@ msgid ""
 "no additional steps are necessary in this case.  Just check the `dmesg` "
 "output for the modem device with:"
 msgstr ""
-"[.filename]#uart# 장치는 이미 `GENERIC` 커널에 포함되어 있으므로 이 경우 "
-"추가 단계가 필요하지 않습니다.  모뎀 장치에 대한 `dmesg` 출력을 확인하기만 "
-"하면 됩니다:"
+"[.filename]#uart# 장치는 이미 `GENERIC` 커널에 포함되어 있으므로 이 경우 추"
+"가 단계가 필요하지 않습니다.  모뎀 장치에 대한 `dmesg` 출력을 확인하기만 하"
+"면 됩니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:517
@@ -1368,11 +1381,11 @@ msgid ""
 "Note that in all of our examples we will use _example_ as the hostname of "
 "the machine running PPP.  To start `ppp`:"
 msgstr ""
-"수동으로 `ppp` 를 제어하여 인터넷에 연결하는 것은 빠르고 쉬우며, 연결을 "
-"디버깅하거나 ISP가 `ppp` 클라이언트 연결을 처리하는 방식에 대한 정보를 얻을 "
-"수 있는 좋은 방법입니다.  명령줄에서 PPP를 시작하겠습니다.  모든 예제에서는 "
-"PPP를 실행하는 컴퓨터의 호스트 이름으로 _example_ 을 사용한다는 점에 "
-"유의하세요.  `PPP` 를 시작하려면:"
+"수동으로 `ppp` 를 제어하여 인터넷에 연결하는 것은 빠르고 쉬우며, 연결을 디버"
+"깅하거나 ISP가 `ppp` 클라이언트 연결을 처리하는 방식에 대한 정보를 얻을 수 있"
+"는 좋은 방법입니다.  명령줄에서 PPP를 시작하겠습니다.  모든 예제에서는 PPP를 "
+"실행하는 컴퓨터의 호스트 이름으로 _example_ 을 사용한다는 점에 유의하세요.  "
+"`PPP` 를 시작하려면:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:540
@@ -1452,7 +1465,8 @@ msgstr ""
 msgid ""
 "Use `at` to initialize the modem, then use `atdt` and the number for the ISP "
 "to begin the dial in process."
-msgstr "`at` 를 사용하여 모뎀을 초기화한 다음 `atdt` 와 ISP 번호를 사용하여 다이얼링 "
+msgstr ""
+"`at` 를 사용하여 모뎀을 초기화한 다음 `atdt` 와 ISP 번호를 사용하여 다이얼링 "
 "프로세스를 시작하세요."
 
 #. type: delimited block . 4
@@ -1467,8 +1481,9 @@ msgid ""
 "Confirmation of the connection, if we are going to have any connection "
 "problems, unrelated to hardware, here is where we will attempt to resolve "
 "them."
-msgstr "연결 확인. 하드웨어와 관련이 없는 연결 문제가 있는 경우 여기서 문제를 "
-"해결하려고 시도합니다."
+msgstr ""
+"연결 확인. 하드웨어와 관련이 없는 연결 문제가 있는 경우 여기서 문제를 해결하"
+"려고 시도합니다."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:591
@@ -1495,8 +1510,8 @@ msgid ""
 "At this prompt, reply with the password that was provided by the ISP.  Just "
 "like logging into FreeBSD, the password will not echo."
 msgstr ""
-"이 메시지가 표시되면 ISP에서 제공한 비밀번호를 입력합니다.  FreeBSD에 "
-"로그인할 때와 마찬가지로 비밀번호는 에코되지 않습니다."
+"이 메시지가 표시되면 ISP에서 제공한 비밀번호를 입력합니다.  FreeBSD에 로그인"
+"할 때와 마찬가지로 비밀번호는 에코되지 않습니다."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:606
@@ -1511,9 +1526,9 @@ msgid ""
 "asking whether to use a shell on the provider or to start `ppp`.  In this "
 "example, `ppp` was selected in order to establish an Internet connection."
 msgstr ""
-"ISP에 따라 이 프롬프트가 표시되지 않을 수도 있습니다.  이 프롬프트가 "
-"표시되면 공급자의 셸을 사용할지 아니면 `ppp` 를 시작할지 묻는 것입니다.  이 "
-"예에서는 인터넷 연결을 설정하기 위해 `ppp` 를 선택했습니다."
+"ISP에 따라 이 프롬프트가 표시되지 않을 수도 있습니다.  이 프롬프트가 표시되"
+"면 공급자의 셸을 사용할지 아니면 `ppp` 를 시작할지 묻는 것입니다.  이 예에서"
+"는 인터넷 연결을 설정하기 위해 `ppp` 를 선택했습니다."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:615
@@ -1527,8 +1542,9 @@ msgstr "Ppp ON example>\n"
 msgid ""
 "Notice that in this example the first `p` has been capitalized.  This shows "
 "that we have successfully connected to the ISP."
-msgstr "이 예제에서는 첫 번째 `p` 가 대문자로 표시되어 있습니다.  이는 ISP에 "
-"성공적으로 연결되었음을 나타냅니다."
+msgstr ""
+"이 예제에서는 첫 번째 `p` 가 대문자로 표시되어 있습니다.  이는 ISP에 성공적으"
+"로 연결되었음을 나타냅니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:626
@@ -1566,9 +1582,9 @@ msgid ""
 "connection and it will negotiate a new route accordingly."
 msgstr ""
 "여기에 기본 경로를 추가하는데, 현재 설정된 유일한 연결은 피어와의 연결이므로 "
-"외부와 대화하기 전에 이 작업을 수행해야 합니다.  기존 경로로 인해 연결이 "
-"실패하면 `add` 앞에 느낌표 `!` 를 넣으세요.  또는 실제 연결하기 전에 이 값을 "
-"설정하면 그에 따라 새 경로를 협상합니다."
+"외부와 대화하기 전에 이 작업을 수행해야 합니다.  기존 경로로 인해 연결이 실패"
+"하면 `add` 앞에 느낌표 `!` 를 넣으세요.  또는 실제 연결하기 전에 이 값을 설정"
+"하면 그에 따라 새 경로를 협상합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:647
@@ -1579,11 +1595,11 @@ msgid ""
 "because it shows the connection status.  Capital P's represent a connection "
 "to the ISP and lowercase p's show that the connection has been lost."
 msgstr ""
-"모든 것이 잘 되었다면 이제 인터넷에 대한 활성 연결이 있어야 하며, "
-"kbd:[CTRL+z]를 사용하여 백그라운드로 던질 수 있습니다.  `PPP` 가 `ppp` 로 "
-"돌아오면 연결이 끊어진 것입니다.  이는 연결 상태를 보여주기 때문에 알아두면 "
-"좋습니다.  대문자 P는 ISP에 연결되었음을 나타내고 소문자 P는 연결이 "
-"끊어졌음을 나타냅니다."
+"모든 것이 잘 되었다면 이제 인터넷에 대한 활성 연결이 있어야 하며, kbd:[CTRL"
+"+z]를 사용하여 백그라운드로 던질 수 있습니다.  `PPP` 가 `ppp` 로 돌아오면 연"
+"결이 끊어진 것입니다.  이는 연결 상태를 보여주기 때문에 알아두면 좋습니다.  "
+"대문자 P는 ISP에 연결되었음을 나타내고 소문자 P는 연결이 끊어졌음을 나타냅니"
+"다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:648
@@ -1605,11 +1621,11 @@ msgid ""
 msgstr ""
 "연결이 되지 않는 경우, `set ctsrts off` 를 사용하여 하드웨어 흐름 CTS/RTS를 "
 "끄십시오.  이는 주로 일부 PPP 지원 터미널 서버에 연결할 때 발생하는데, PPP가 "
-"통신 링크에 데이터를 쓰려고 시도할 때 중단되고 절대 오지 않을 수 있는 CTS("
-"Clear To Send) 신호를 기다리는 경우입니다.  이 옵션을 사용할 때는 특정 "
-"문자를 끝에서 끝까지 전달하는 데 의존하는 하드웨어를 무력화해야 할 수 "
-"있으므로 `set accmap` 을 포함하세요(대부분의 경우 XON/XOFF).  이 옵션과 사용 "
-"방법에 대한 자세한 내용은 man:ppp[8]을 참조하세요."
+"통신 링크에 데이터를 쓰려고 시도할 때 중단되고 절대 오지 않을 수 있는 "
+"CTS(Clear To Send) 신호를 기다리는 경우입니다.  이 옵션을 사용할 때는 특정 문"
+"자를 끝에서 끝까지 전달하는 데 의존하는 하드웨어를 무력화해야 할 수 있으므로 "
+"`set accmap` 을 포함하세요(대부분의 경우 XON/XOFF).  이 옵션과 사용 방법에 대"
+"한 자세한 내용은 man:ppp[8]을 참조하세요."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:657
@@ -1618,9 +1634,9 @@ msgid ""
 "default, but is used for error checking with a large increase in traffic, on "
 "older modems."
 msgstr ""
-"구형 모뎀은 `set parity even` 이 필요할 수 있습니다.  패리티는 기본적으로 "
-"없음으로 설정되어 있지만 구형 모뎀에서 트래픽이 크게 증가할 때 오류 확인을 "
-"위해 사용됩니다."
+"구형 모뎀은 `set parity even` 이 필요할 수 있습니다.  패리티는 기본적으로 없"
+"음으로 설정되어 있지만 구형 모뎀에서 트래픽이 크게 증가할 때 오류 확인을 위"
+"해 사용됩니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:660
@@ -1629,9 +1645,9 @@ msgid ""
 "where the ISP is waiting for negotiating to begin.  At this point, using "
 "`~p` will force ppp to start sending the configuration information."
 msgstr ""
-"PPP가 명령 모드로 돌아가지 않을 수 있는데, 이는 일반적으로 ISP가 협상이 "
-"시작되기를 기다리는 협상 오류입니다.  이 때 `~p` 를 사용하면 PPP가 구성 정보 "
-"전송을 시작하도록 강제합니다."
+"PPP가 명령 모드로 돌아가지 않을 수 있는데, 이는 일반적으로 ISP가 협상이 시작"
+"되기를 기다리는 협상 오류입니다.  이 때 `~p` 를 사용하면 PPP가 구성 정보 전송"
+"을 시작하도록 강제합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:663
@@ -1640,9 +1656,9 @@ msgid ""
 "required.  To use PAP or CHAP, add the following options to PPP before going "
 "into terminal mode:"
 msgstr ""
-"로그인 프롬프트가 나타나지 않는다면 PAP 또는 CHAP 인증이 필요할 가능성이 "
-"높습니다.  PAP 또는 CHAP을 사용하려면 터미널 모드로 전환하기 전에 PPP에 다음 "
-"옵션을 추가하세요:"
+"로그인 프롬프트가 나타나지 않는다면 PAP 또는 CHAP 인증이 필요할 가능성이 높습"
+"니다.  PAP 또는 CHAP을 사용하려면 터미널 모드로 전환하기 전에 PPP에 다음 옵션"
+"을 추가하세요:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:667
@@ -1683,8 +1699,8 @@ msgstr ""
 "연결이 설정되었지만 도메인 이름을 찾을 수 없는 경우, IP 주소로 man:ping[8]을 "
 "시도해 보세요.  패킷 손실이 100%인 경우 기본 경로가 할당되지 않았을 가능성이 "
 "높습니다.  연결 중에 `add default HISADDR` 가 설정되었는지 다시 확인하세요.  "
-"원격 IP 주소에 연결할 수 있는 경우 [.filename]#/etc/resolv.conf# 에 리졸버 "
-"주소가 추가되지 않았을 수 있습니다.  이 파일은 다음과 같아야 합니다:"
+"원격 IP 주소에 연결할 수 있는 경우 [.filename]#/etc/resolv.conf# 에 리졸버 주"
+"소가 추가되지 않았을 수 있습니다.  이 파일은 다음과 같아야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:689
@@ -1703,7 +1719,8 @@ msgstr ""
 msgid ""
 "Where _x.x.x.x_ and _y.y.y.y_ should be replaced with the IP address of the "
 "ISP's DNS servers."
-msgstr "여기서 _x.x.x.x_ 및 _y.y.y.y_ 는 ISP의 DNS 서버의 IP 주소로 대체해야 합니다."
+msgstr ""
+"여기서 _x.x.x.x_ 및 _y.y.y.y_ 는 ISP의 DNS 서버의 IP 주소로 대체해야 합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:694
@@ -1799,8 +1816,7 @@ msgid ""
 msgstr ""
 "ppp_enable=\"YES\"\n"
 "ppp_mode=\"ddial\"\n"
-"ppp_nat=\"YES\"\t# if you want to enable nat for your local network, "
-"otherwise NO\n"
+"ppp_nat=\"YES\"\t# if you want to enable nat for your local network, otherwise NO\n"
 "ppp_profile=\"name_of_service_provider\"\n"
 
 #. type: Title ===
@@ -1816,8 +1832,8 @@ msgid ""
 "connection.  Service tags are used to distinguish between different PPPoE "
 "servers attached to a given network."
 msgstr ""
-"연결을 설정하기 위해 서비스 태그를 사용해야 하는 경우가 있습니다.  서비스 "
-"태그는 특정 네트워크에 연결된 여러 PPPoE 서버를 구분하는 데 사용됩니다."
+"연결을 설정하기 위해 서비스 태그를 사용해야 하는 경우가 있습니다.  서비스 태"
+"그는 특정 네트워크에 연결된 여러 PPPoE 서버를 구분하는 데 사용됩니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:746
@@ -1836,11 +1852,11 @@ msgid ""
 "the program.  The name of the profile should be listed there.  It is usually "
 "_ISP_."
 msgstr ""
-"최후의 수단으로 package:net/rr-pppoe[] 패키지 또는 포트를 설치해 볼 수 "
-"있습니다.  하지만 이렇게 하면 모뎀의 프로그래밍이 해제되어 쓸모없게 될 수 "
-"있으므로 신중하게 생각하세요.  모뎀과 함께 제공된 프로그램을 설치하기만 하면 "
-"됩니다.  그런 다음 프로그램에서 menu:System[] 메뉴에 액세스합니다.  프로필 "
-"이름이 나열되어 있어야 합니다.  보통 _ISP_ 입니다."
+"최후의 수단으로 package:net/rr-pppoe[] 패키지 또는 포트를 설치해 볼 수 있습니"
+"다.  하지만 이렇게 하면 모뎀의 프로그래밍이 해제되어 쓸모없게 될 수 있으므로 "
+"신중하게 생각하세요.  모뎀과 함께 제공된 프로그램을 설치하기만 하면 됩니다.  "
+"그런 다음 프로그램에서 menu:System[] 메뉴에 액세스합니다.  프로필 이름이 나열"
+"되어 있어야 합니다.  보통 _ISP_ 입니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:756
@@ -1850,8 +1866,8 @@ msgid ""
 "man:ppp[8] for full details. It should look like this:"
 msgstr ""
 "프로필 이름(서비스 태그)은 [.filename]#ppp.conf# 의 PPPoE 구성 항목에서 `set "
-"device` 의 공급자 부분으로 사용됩니다.  자세한 내용은 man:ppp[8]을 "
-"참조하세요. 다음과 같이 표시되어야 합니다:"
+"device` 의 공급자 부분으로 사용됩니다.  자세한 내용은 man:ppp[8]을 참조하세"
+"요. 다음과 같이 표시되어야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:760
@@ -1876,8 +1892,8 @@ msgid ""
 "For additional information, refer to http://renaud.waldura.com/doc/freebsd/"
 "pppoe/[Cheaper Broadband with FreeBSD on DSL] by Renaud Waldura."
 msgstr ""
-"자세한 내용은 Renaud Waldura의 http://renaud.waldura.com/doc/freebsd/pppoe/["
-"저렴한 광대역과 DSL의 FreeBSD]를 참조하세요."
+"자세한 내용은 Renaud Waldura의 http://renaud.waldura.com/doc/freebsd/pppoe/"
+"[저렴한 광대역과 DSL의 FreeBSD]를 참조하세요."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:769
@@ -1891,8 +1907,8 @@ msgid ""
 "This modem does not follow the PPPoE specification defined in http://www."
 "faqs.org/rfcs/rfc2516.html[RFC 2516]."
 msgstr ""
-"이 모뎀은 http://www.faqs.org/rfcs/rfc2516.html[RFC 2516]에 정의된 PPPoE "
-"사양을 따르지 않습니다."
+"이 모뎀은 http://www.faqs.org/rfcs/rfc2516.html[RFC 2516]에 정의된 PPPoE 사양"
+"을 따르지 않습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:775
@@ -1901,9 +1917,9 @@ msgid ""
 "must be set.  This can be done automatically at boot time by updating [."
 "filename]#/etc/sysctl.conf#:"
 msgstr ""
-"FreeBSD가 이 장치와 통신할 수 있게 하려면 sysctl을 설정해야 합니다.  이 "
-"설정은 부팅 시 [.filename]#/etc/sysctl.conf# 를 업데이트하여 자동으로 수행할 "
-"수 있습니다:"
+"FreeBSD가 이 장치와 통신할 수 있게 하려면 sysctl을 설정해야 합니다.  이 설정"
+"은 부팅 시 [.filename]#/etc/sysctl.conf# 를 업데이트하여 자동으로 수행할 수 "
+"있습니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:779
@@ -1944,8 +1960,8 @@ msgid ""
 "The following describes how to set up PPP over ATM (PPPoA).  PPPoA is a "
 "popular choice among European DSL providers."
 msgstr ""
-"다음은 PPPoA(PPP over ATM)를 설정하는 방법을 설명합니다.  PPPoA는 유럽 DSL "
-"제공업체들 사이에서 인기 있는 방식입니다."
+"다음은 PPPoA(PPP over ATM)를 설정하는 방법을 설명합니다.  PPPoA는 유럽 DSL 제"
+"공업체들 사이에서 인기 있는 방식입니다."
 
 #. type: Title ===
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:796
@@ -1961,9 +1977,9 @@ msgid ""
 "package or port.  Many ADSL modems require that a PPTP tunnel is created "
 "between the modem and computer."
 msgstr ""
-"mpd 애플리케이션은 다양한 서비스, 특히 PPTP 서비스에 연결하는 데 사용할 수 "
-"있습니다.  package:net/mpd5[] 패키지 또는 포트를 사용하여 설치할 수 "
-"있습니다.  많은 ADSL 모뎀은 모뎀과 컴퓨터 사이에 PPTP 터널을 만들어야 합니다."
+"mpd 애플리케이션은 다양한 서비스, 특히 PPTP 서비스에 연결하는 데 사용할 수 있"
+"습니다.  package:net/mpd5[] 패키지 또는 포트를 사용하여 설치할 수 있습니다.  "
+"많은 ADSL 모뎀은 모뎀과 컴퓨터 사이에 PPTP 터널을 만들어야 합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:807
@@ -1978,9 +1994,9 @@ msgstr ""
 "설치가 완료되면 공급자의 설정에 맞게 mpd를 구성합니다.  포트는 [.filename]#/"
 "usr/local/etc/mpd/# 에 잘 문서화된 샘플 구성 파일 세트를 이용해 배치합니다.  "
 "mpd 구성에 대한 전체 가이드는 [.filename]#/usr/ports/shared/doc/mpd/# 에서 "
-"HTML 형식으로 확인할 수 있습니다.  다음은 mpd를 사용하여 ADSL 서비스에 "
-"연결하기 위한 샘플 구성입니다.  구성은 두 개의 파일에 분산되어 있는데, 첫 "
-"번째 파일은 [.filename]#mpd.conf# 입니다:"
+"HTML 형식으로 확인할 수 있습니다.  다음은 mpd를 사용하여 ADSL 서비스에 연결하"
+"기 위한 샘플 구성입니다.  구성은 두 개의 파일에 분산되어 있는데, 첫 번째 파일"
+"은 [.filename]#mpd.conf# 입니다:"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:811
@@ -2074,8 +2090,8 @@ msgid ""
 "filename]#mpd.links#.  An example [.filename]#mpd.links# to accompany the "
 "above example is given beneath:"
 msgstr ""
-"설정할 링크 또는 링크에 대한 정보는 [.filename]#mpd.links# 에 있습니다.  "
-"위의 예와 함께 제공되는 [.filename]#mpd.links# 의 예가 아래에 나와 있습니다:"
+"설정할 링크 또는 링크에 대한 정보는 [.filename]#mpd.links# 에 있습니다.  위"
+"의 예와 함께 제공되는 [.filename]#mpd.links# 의 예가 아래에 나와 있습니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:854
@@ -2105,7 +2121,8 @@ msgstr "mpd를 실행하는 FreeBSD 컴퓨터의 IP 주소."
 msgid ""
 "The IP address of the ADSL modem. The Alcatel SpeedTouch(TM) Home defaults "
 "to `10.0.0.138`."
-msgstr "ADSL 모뎀의 IP 주소입니다. Alcatel SpeedTouch(TM) 홈의 기본값은 `10.0.0.138` "
+msgstr ""
+"ADSL 모뎀의 IP 주소입니다. Alcatel SpeedTouch(TM) 홈의 기본값은 `10.0.0.138` "
 "입니다."
 
 #. type: Plain text
@@ -2156,8 +2173,8 @@ msgid ""
 "It is also possible to use FreeBSD to connect to other PPPoA services using "
 "package:net/pptpclient[]."
 msgstr ""
-"package:net/pptpclient[]를 사용하여 다른 PPPoA 서비스에 연결하기 위해 "
-"FreeBSD를 사용할 수도 있습니다."
+"package:net/pptpclient[]를 사용하여 다른 PPPoA 서비스에 연결하기 위해 FreeBSD"
+"를 사용할 수도 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:884
@@ -2167,10 +2184,10 @@ msgid ""
 "section of [.filename]#ppp.conf# is given below.  For further information on "
 "[.filename]#ppp.conf# options consult man:ppp[8]."
 msgstr ""
-"package:net/pptpclient[]를 사용하여 DSL 서비스에 연결하려면 포트 또는 "
-"패키지를 설치한 다음 [.filename]#/etc/ppp/ppp.conf# 를 편집합니다.  아래는 [."
-"filename]#ppp.conf# 의 예시 섹션입니다.  [.filename]#ppp.conf# 옵션에 대한 "
-"자세한 내용은 man:ppp[8]을 참조하세요."
+"package:net/pptpclient[]를 사용하여 DSL 서비스에 연결하려면 포트 또는 패키지"
+"를 설치한 다음 [.filename]#/etc/ppp/ppp.conf# 를 편집합니다.  아래는 [."
+"filename]#ppp.conf# 의 예시 섹션입니다.  [.filename]#ppp.conf# 옵션에 대한 자"
+"세한 내용은 man:ppp[8]을 참조하세요."
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:895
@@ -2210,8 +2227,8 @@ msgid ""
 "Since the account's password is added to [.filename]#ppp.conf# in plain text "
 "form, make sure nobody can read the contents of this file:"
 msgstr ""
-"계정의 비밀번호는 [.filename]#ppp.conf# 에 일반 텍스트 형식으로 추가되므로 "
-"아무도 이 파일의 내용을 읽을 수 없도록 해야 합니다:"
+"계정의 비밀번호는 [.filename]#ppp.conf# 에 일반 텍스트 형식으로 추가되므로 아"
+"무도 이 파일의 내용을 읽을 수 없도록 해야 합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:909
@@ -2232,10 +2249,10 @@ msgid ""
 "documentation should list the address the device uses.  To open the tunnel "
 "and start a PPP session:"
 msgstr ""
-"이렇게 하면 DSL 라우터에 대한 PPP 세션용 터널이 열립니다.  이더넷 DSL "
-"모뎀에는 연결할 사전 구성된 LAN IP 주소가 있습니다.  Alcatel SpeedTouch(TM) "
-"Home의 경우, 이 주소는 `10.0.0.138` 입니다.  라우터 설명서에 장치가 사용하는 "
-"주소가 나와 있어야 합니다.  터널을 열고 PPP 세션을 시작하려면:"
+"이렇게 하면 DSL 라우터에 대한 PPP 세션용 터널이 열립니다.  이더넷 DSL 모뎀에"
+"는 연결할 사전 구성된 LAN IP 주소가 있습니다.  Alcatel SpeedTouch(TM) Home의 "
+"경우, 이 주소는 `10.0.0.138` 입니다.  라우터 설명서에 장치가 사용하는 주소가 "
+"나와 있어야 합니다.  터널을 열고 PPP 세션을 시작하려면:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:922
@@ -2248,7 +2265,8 @@ msgstr "# pptp address adsl\n"
 msgid ""
 "If an ampersand (\"&\") is added to the end of this command, pptp will "
 "return the prompt."
-msgstr "이 명령의 끝에 앰퍼샌드(\"&\")를 추가하면 pptp가 프롬프트를 반환합니다."
+msgstr ""
+"이 명령의 끝에 앰퍼샌드(\"&\")를 추가하면 pptp가 프롬프트를 반환합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:932
@@ -2257,9 +2275,9 @@ msgid ""
 "between the pptp and ppp processes.  Once the prompt is returned, or the "
 "pptp process has confirmed a connection, examine the tunnel:"
 msgstr ""
-"pptp 프로세스와 ppp 프로세스 간의 상호 작용을 위해 [.filename]#tun# 가상 "
-"터널 장치가 생성됩니다.  프롬프트가 반환되거나 pptp 프로세스가 연결을 "
-"확인하려면 터널을 검사합니다:"
+"pptp 프로세스와 ppp 프로세스 간의 상호 작용을 위해 [.filename]#tun# 가상 터"
+"널 장치가 생성됩니다.  프롬프트가 반환되거나 pptp 프로세스가 연결을 확인하려"
+"면 터널을 검사합니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/ppp-and-slip/_index.adoc:939

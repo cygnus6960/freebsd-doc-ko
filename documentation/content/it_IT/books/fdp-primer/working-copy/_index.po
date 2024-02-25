@@ -5,8 +5,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2022-02-01 09:20-0300\n"
-"PO-Revision-Date: 2023-05-02 13:52+0000\n"
+"POT-Creation-Date: 2023-05-21 14:43-0300\n"
+"PO-Revision-Date: 2023-05-02 15:22+0000\n"
 "Last-Translator: Lorenzo Salvadore <salvadore@freebsd.org>\n"
 "Language-Team: Italian <https://translate-dev.freebsd.org/projects/"
 "documentation/booksfdp-primerworking-copy_index/it_IT/>\n"
@@ -61,9 +61,14 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:58
+#, fuzzy
+#| msgid ""
+#| "link:https://git-scm.com/[Git] is used to manage the FreeBSD "
+#| "documentation files.  It is obtained by installing the Git package:"
 msgid ""
 "link:https://git-scm.com/[Git] is used to manage the FreeBSD documentation "
-"files.  It is obtained by installing the Git package:"
+"files.  It is obtained by installing the package:devel/git[] package, which "
+"also has a lighter flavor called git-lite:"
 msgstr ""
 "Viene usato link:https://git-scm.com/[Git] per gestire i file della "
 "documentazione di FreeBSD.  Si ottiene installando il pacchetto Git:"
@@ -158,18 +163,20 @@ msgstr "% git clone https://git.FreeBSD.org/doc.git ~/doc\n"
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:94
 msgid "A checkout of the source code to work on manual pages is very similar:"
 msgstr ""
+"Reperire il codice sorgente per lavorare sulle pagine di manuale funziona in "
+"maniera molto simile:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:98
 #, no-wrap
 msgid "% git clone https://git.FreeBSD.org/src.git ~/src\n"
-msgstr ""
+msgstr "% git clone https://git.FreeBSD.org/src.git ~/src\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:101
 #, no-wrap
 msgid "Updating a Working Copy"
-msgstr ""
+msgstr "Aggiornare una Copia di Lavoro"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:107
@@ -181,6 +188,13 @@ msgid ""
 "with the changes that have been made to the main repository, use `git pull` "
 "on the directory containing the local working copy:"
 msgstr ""
+"I documenti e i file nel repository di FreeBSD cambiano tutti i giorni.  Le "
+"persone modificano file e effettuano i commit delle modifiche spesso.  Anche "
+"poco tempo dopo un checkout iniziale, ci saranno già differenze tra la copia "
+"di lavoro locale e il repository principale di FreeBSD.  Per aggiornare la "
+"versione locale con le modifiche che sono state apportate al repository "
+"principale, si usi `git pull` sulla directory che contiene la copia di "
+"lavoro locale:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:112
@@ -189,6 +203,8 @@ msgid ""
 "% cd ~/doc\n"
 "% git pull --ff-only\n"
 msgstr ""
+"% cd ~/doc\n"
+"% git pull --ff-only\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:117
@@ -199,12 +215,18 @@ msgid ""
 "Editing the newest version of a file is much easier than trying to combine "
 "an older, edited local file with the newer version from the repository."
 msgstr ""
+"Si raccomanda di assumere la prudente abitudine di eseguire `git pull` prima "
+"di modificare i file dei documenti.  Qualcun altro potrebbe aver modificato "
+"lo stesso file di recente, e la copia di lavoro non conterrà le ultime "
+"modifiche finché non sarà aggiornata.  Modificare la versione più recente di "
+"un file è molto più facile che cercare di combinare un vecchio file locale "
+"modificato con la versione più recente del repository."
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:119
 #, no-wrap
 msgid "Reverting Changes"
-msgstr ""
+msgstr "Cancellare Modifiche"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:124
@@ -214,18 +236,23 @@ msgid ""
 "form with `git restore`.  For example, to erase the edits made to [."
 "filename]#_index.adoc# and reset it to unmodified form:"
 msgstr ""
+"A volte capita che le modifiche non fossero necessarie dopo tutto, o che "
+"l'autore voglia semplicemente ricominciare da capo.  I file possono essere "
+"ripristinati nella loro forma originale con `git restore`.  Per esempio, per "
+"cancellare le modifiche effettuate su [.filename]#_index.adoc# e riportarlo "
+"alla sua forma originale:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:128
 #, no-wrap
 msgid "% git restore _index.adoc\n"
-msgstr ""
+msgstr "% git restore _index.adoc\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:131
 #, no-wrap
 msgid "Making a Diff"
-msgstr ""
+msgstr "Generare una Patch in Formato Diff"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:135
@@ -235,6 +262,11 @@ msgid ""
 "must be collected into a single file for submission.  These _diff_ files are "
 "produced by redirecting the output of `git diff` into a file:"
 msgstr ""
+"Dopo che le modifiche ad un file o ad un gruppo di file sono state "
+"completate, bisogna raccogliere le differenze tra la copia di lavoro locale "
+"e la versione sul repository di FreeBSD in un solo file per essere proposte "
+"al progetto FreeBSD. Questi file _diff_ sono generati ridirigendo l'output "
+"di `git diff` in un file:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:140
@@ -243,6 +275,8 @@ msgid ""
 "% cd ~/doc\n"
 "% git diff > doc-fix-spelling.diff\n"
 msgstr ""
+"% cd ~/doc\n"
+"% git diff > doc-fix-spelling.diff\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:144
@@ -250,6 +284,9 @@ msgid ""
 "Give the file a meaningful name that identifies the contents.  The example "
 "above is for spelling fixes to the whole documentation tree."
 msgstr ""
+"Si assegni al file un nome significativo che ne identifichi il contenuto.  "
+"L'esempio sopra è per correzioni ortografiche sull'intera gerarchia di "
+"directory della documentazione."
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:146
@@ -259,6 +296,10 @@ msgid ""
 "a [.filename]#.txt# extension to give the earnest and simple-minded web form "
 "a clue that the contents are plain text."
 msgstr ""
+"Se il file diff deve essere proposto sull'interfaccia web \"link:https://"
+"bugs.FreeBSD.org/bugzilla/enter_bug.cgi[Submit a FreeBSD problem report]\", "
+"si aggiunga un'estensione [.filename]#.txt# per suggerire al form web un "
+"indizio riguardo al fatto che il contenuto sia testo semplice."
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:149
@@ -268,6 +309,10 @@ msgid ""
 "that are not ready to be submitted yet, provide a list of only the files "
 "that are to be included:"
 msgstr ""
+"Attenzione: `git diff` include tutti le modifiche effettuate nella directory "
+"corrente e in tutte le sottodirectory.  Se ci sono file nella copia di "
+"lavoro con modifiche che non sono ancora pronte per essere inviate, si "
+"fornisca un elenco con tutti i file che devono essere inclusi:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:154
@@ -276,12 +321,14 @@ msgid ""
 "% cd ~/doc\n"
 "% git diff disks/_index.adoc printers/_index.adoc > disks-printers.diff\n"
 msgstr ""
+"% cd ~/doc\n"
+"% git diff disks/_index.adoc printers/_index.adoc > disks-printers.diff\n"
 
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:157
 #, no-wrap
 msgid "Git References"
-msgstr ""
+msgstr "Riferimenti su Git"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/working-copy/_index.adoc:160
@@ -290,3 +337,6 @@ msgid ""
 "the https://git-scm.com/book/en/v2[Git Book] and the https://git-scm.com/"
 "doc[Git documentation]."
 msgstr ""
+"Questi esempi mostrano un utilizzo molto basilare di Git.  Maggiori dettagli "
+"sono disponibili nel https://git-scm.com/book/en/v2[Git Book] e nella "
+"https://git-scm.com/doc[Documentazione di Git]."

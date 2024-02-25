@@ -6,8 +6,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2023-04-20 20:56-0300\n"
-"PO-Revision-Date: 2023-05-07 07:50+0000\n"
+"POT-Creation-Date: 2023-07-15 16:41-0300\n"
+"PO-Revision-Date: 2023-08-26 02:56+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/bookshandbookkernelconfig_index/ko/>\n"
@@ -33,8 +33,8 @@ msgstr "파트 II. 일반적인 작업"
 #. type: YAML Front Matter: title
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
 #, no-wrap
-msgid "Chapter 9. Configuring the FreeBSD Kernel"
-msgstr "9장. FreeBSD 커널 구성하기"
+msgid "Chapter 10. Configuring the FreeBSD Kernel"
+msgstr "10장. FreeBSD 커널 구성하기"
 
 #. type: Title =
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:14
@@ -158,11 +158,11 @@ msgid ""
 "support for that computer's hardware.  This has a number of benefits, such "
 "as:"
 msgstr ""
-"커스텀 커널을 빌드하는 것은 종종 고급 BSD 사용자들에겐 통과의례 같은 것입니"
-"다.  이 과정은 시간이 많이 걸리지만 FreeBSD 시스템에 이점을 제공할 수 있습니"
-"다.  광범위한 하드웨어를 지원해야 하는 [.filename]#GENERIC# 커널과 달리, 커스"
-"텀 커널은 해당 컴퓨터의 하드웨어만 지원하도록 커널을 재편성할 수 있습니다.  "
-"여기에는 다음과 같은 여러 가지 이점이 있습니다:"
+"커스텀 커널을 빌드하는 것은 종종 고급 BSD 사용자들에겐 통과의례 같은 "
+"것입니다.  이 과정은 시간이 많이 걸리지만 FreeBSD 시스템에 이점을 제공할 수 "
+"있습니다.  광범위한 하드웨어를 지원해야 하는 [.filename]#GENERIC# 커널과 "
+"달리, 커스텀 커널은 해당 컴퓨터의 하드웨어만 지원하도록 커널을 재편성할 수 "
+"있습니다. 이것은 다음과 같은 장점이 있습니다:"
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:89
@@ -184,10 +184,10 @@ msgid ""
 "of RAM."
 msgstr ""
 "메모리 사용량 감소. 사용자 지정 커널은 사용하지 않는 기능과 장치 드라이버를 "
-"생략하여 [.filename]#GENERIC# 커널보다 메모리를 적게 사용하는 경우가 많습니"
-"다. 커널 코드는 항상 실제 메모리에 상주하여 애플리케이션에서 해당 메모리를 사"
-"용하지 못하도록 하기 때문에 이 점이 중요합니다. 이러한 이유로 커스텀 커널은 "
-"RAM 용량이 적은 시스템에서 유용합니다."
+"생략하여 [.filename]#GENERIC# 커널보다 메모리를 적게 사용하는 경우가 "
+"많습니다. 커널 코드는 항상 실제 메모리에 상주하여 애플리케이션에서 해당 "
+"메모리를 사용하지 못하도록 하기 때문에 이 점이 중요합니다. 이러한 이유로 "
+"커스텀 커널은 RAM 용량이 적은 시스템에서 유용합니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:91
@@ -195,8 +195,8 @@ msgid ""
 "Additional hardware support. A custom kernel can add support for devices "
 "which are not present in the [.filename]#GENERIC# kernel."
 msgstr ""
-"추가 하드웨어 지원. 사용자 지정 커널은 [.filename]#GENERIC# 커널에 없는 장치"
-"에 대한 지원을 추가할 수 있습니다."
+"추가 하드웨어 지원. 사용자 지정 커널은 [.filename]#GENERIC# 커널에 없는 "
+"장치에 대한 지원을 추가할 수 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:94
@@ -218,7 +218,7 @@ msgstr ""
 "커널 모듈은 [.filename]#/boot/kernel# 에 존재하며 man:kldload[8]를 사용하여 "
 "실행 중인 커널에 동적으로 로드할 수 있습니다.  대부분의 커널 드라이버에는 "
 "로드 가능한 모듈과 매뉴얼 페이지가 있습니다.  예를 들어, man:ath[4] 무선 "
-"네트워크 드라이버는 매뉴얼 페이지에 다음과 같은 정보가 있습니다:"
+"네트워크 드라이버의 설명서 페이지에는 다음과 같은 정보가 있습니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:103
@@ -226,8 +226,7 @@ msgstr ""
 msgid ""
 "Alternatively, to load the driver as a module at boot time, place the\n"
 "following line in man:loader.conf[5]:\n"
-msgstr "또는 부팅할 때 드라이버를 모듈로 로드하려면, man:loader.conf[5]의 다음 줄을 "
-"추가합니다:\n"
+msgstr "또는 부팅할 때 드라이버를 모듈로 로드하려면, man:loader.conf[5]의 다음 줄을 추가합니다:\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:105
@@ -348,7 +347,8 @@ msgid ""
 "    subclass   = ethernet\n"
 msgstr ""
 "% pciconf -lv\n"
-"ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c rev=0x01 hdr=0x00\n"
+"ath0@pci0:3:0:0:        class=0x020000 card=0x058a1014 chip=0x1014168c "
+"rev=0x01 hdr=0x00\n"
 "    vendor     = 'Atheros Communications Inc.'\n"
 "    device     = 'AR5212 Atheros AR5212 802.11abg wireless'\n"
 "    class      = network\n"
@@ -359,8 +359,7 @@ msgstr ""
 msgid ""
 "This output shows that the [.filename]#ath# driver located a wireless "
 "Ethernet device."
-msgstr ""
-"이 출력은 [.filename]#ath# 드라이버가 무선 이더넷 장치를 찾았음을 보여줍니다."
+msgstr "이 출력은 [.filename]#ath# 드라이버가 무선 이더넷 장치를 찾았음을 보여줍니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:157
@@ -417,9 +416,9 @@ msgid ""
 "installed.  Source can be installed with Git using the instructions in "
 "crossref:mirrors[git,“Using Git”]."
 msgstr ""
-"[.filename]#/usr/src/# 이 존재하지 않거나 비어 있으면 소스가 설치되지 않은 "
-"것입니다.  crossref:mirrors[git,“Using Git”]의 지침에 따라 Git으로 소스를 "
-"설치할 수 있습니다."
+"[.filename]#/usr/src/# 이 존재하지 않거나 비어 있으면 소스가 설치되지 않은 것"
+"입니다.  crossref:mirrors[git,“Using Git”]의 지침에 따라 Git으로 소스를 설치"
+"할 수 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:179
@@ -435,13 +434,13 @@ msgid ""
 "architecture."
 msgstr ""
 "소스가 설치되면 [.filename]#/usr/src/sys# 의 내용을 검토합니다.  이 "
-"디렉토리에는 다음과 같이 지원되는 아키텍처를 나타내는 하위 디렉터리가 다수 "
-"포함되어 있습니다: [.filename]#amd64#, [.filename]#i386#, [."
-"filename]#powerpc#, [.filename]#sparc64#.  특정 아키텍처의 디렉터리 안에 "
-"있는 모든 코드는 해당 아키텍처만 다루며 나머지 코드는 모든 플랫폼에 공통으로 "
-"적용되는 머신 독립적인 코드입니다.  지원되는 각 아키텍처에는 [."
-"filename]#conf# 하위 디렉터리가 있으며, 이 디렉터리에는 해당 아키텍처에 대한 "
-"[.filename]#GENERIC# 커널 구성 파일이 포함되어 있습니다."
+"디렉토리에는 다음의 지원되는 아키텍처: [.filename]#amd64#, [.filename]#i386#"
+", [.filename]#powerpc#, and [.filename]#sparc64# 를 나타내는 하위 디렉터리가 "
+"다수 포함되어 있습니다.  특정 아키텍처의 디렉터리 안에 있는 모든 코드는 해당 "
+"아키텍처만 다루며 나머지 코드는 모든 플랫폼에 공통으로 적용되는 머신 "
+"독립적인 코드입니다.  지원되는 각 아키텍처에는 [.filename]#conf# 하위 "
+"디렉터리가 있으며, 이 디렉터리에는 해당 아키텍처에 대한 [.filename]#GENERIC# "
+"커널 구성 파일이 포함되어 있습니다."
 
 #. type: Plain text
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:185
@@ -454,10 +453,10 @@ msgid ""
 "[.filename]#GENERIC# configuration file for the `amd64` architecture:"
 msgstr ""
 "[.filename]#GENERIC# 을 수정하지 마세요.  대신 파일을 다른 이름으로 복사하고 "
-"복사본을 수정합니다.  전부 대문자로 된 이름을 사용하는 것이 규칙입니다.  "
-"하드웨어가 다른 여러 대의 FreeBSD 머신을 유지 관리할 때는 머신의 호스트 "
-"이름을 따서 이름을 지정하는 것이 좋습니다.  이 예는 `amd64` 아키텍처에 대한 ["
-".filename]#MYKERNEL# 구성 파일의 [.filename]#GENERIC# 복사본을 만듭니다:"
+"복사본을 수정합니다.  전부 대문자로 된 이름을 사용하는 것이 규칙입니다.  하드"
+"웨어가 다른 여러 대의 FreeBSD 머신을 유지 관리할 때는 머신의 호스트 이름을 따"
+"서 이름을 지정하는 것이 좋습니다.  이 예는 `amd64` 아키텍처에 대한 [."
+"filename]#MYKERNEL# 구성 파일의 [.filename]#GENERIC# 복사본을 만듭니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:190
@@ -519,18 +518,17 @@ msgid ""
 "NOTES#."
 msgstr ""
 "이 파일에 제공된 간략한 설명 외에도 해당 아키텍처의 [.filename]#GENERIC# 과 "
-"같은 디렉터리에서 찾을 수 있는 [.filename]#NOTES# 에 추가 설명이 포함되어 "
-"있습니다.  아키텍처 독립적인 옵션은 [.filename]#/usr/src/sys/conf/NOTES# 를 "
-"참조하세요."
+"같은 디렉터리에서 찾을 수 있는 [.filename]#NOTES# 에 추가 설명이 포함되어 있"
+"습니다.  아키텍처 독립적인 옵션은 [.filename]#/usr/src/sys/conf/NOTES# 를 참"
+"조하세요."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:214
 msgid ""
 "When finished customizing the kernel configuration file, save a backup copy "
 "to a location outside of [.filename]#/usr/src#."
-msgstr ""
-"커널 구성 파일 사용자 지정이 완료되면 백업 복사본을 [.filename]#/usr/src# 외"
-"부 위치에 저장합니다."
+msgstr "커널 구성 파일 사용자 지정이 완료되면 백업 복사본을 [.filename]#/usr/src# "
+"외부 위치에 저장합니다."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:216
@@ -565,11 +563,11 @@ msgid ""
 "delta to be maintained with respect to [.filename]#GENERIC#, as seen in this "
 "example:"
 msgstr ""
-"`include` 지시어를 설정파일에 사용할 수 있습니다.  이렇게 하면 다른 설정 "
-"파일을 현재 설정 파일에 포함시킬 수 있으므로 기존 파일과 관련된 작은 변경 "
-"사항을 쉽게 유지할 수 있습니다.  소수의 추가 옵션이나 드라이버만 필요한 경우 "
-"이 예제에서 볼 수 있듯이 [.filename]#GENERIC# 에 대한 델타를 유지 관리할 수 "
-"있습니다:"
+"`include` 지시어를 설정파일에 사용할 수 있습니다.  이렇게 하면 다른 설정 파일"
+"을 현재 설정 파일에 포함시킬 수 있으므로 기존 파일과 관련된 작은 변경 사항을 "
+"쉽게 유지할 수 있습니다.  소수의 추가 옵션이나 드라이버만 필요한 경우 이 예제"
+"에서 볼 수 있듯이 [.filename]#GENERIC# 에 대한 델타를 유지 관리할 수 있습니"
+"다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:235
@@ -608,16 +606,17 @@ msgstr ""
 "이 방법을 사용하면 로컬 구성 파일은 [.filename]#GENERIC# 커널과의 로컬 "
 "차이점을 표현합니다.  업그레이드가 수행될 때, `nooptions` 또는 `nodevice` 를 "
 "사용하여 특별히 차단하지 않는 한, [.filename]#GENERIC# 에 추가된 새로운 "
-"기능도 로컬 커널에 추가됩니다.  구성 지시어의 포괄적인 목록과 설명은 "
-"man:config[5]에서 찾을 수 있습니다."
+"기능도 로컬 커널에 추가됩니다.  구성 지시어의 전체 목록과 설명은 "
+"man:config[5] 에서 확인할 수 있습니다."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:249
 msgid ""
 "To build a file which contains all available options, run the following "
 "command as `root`:"
-msgstr "사용 가능한 모든 옵션이 포함된 파일을 빌드하려면 다음 명령을 `root` 로 "
-"실행합니다:"
+msgstr ""
+"사용 가능한 모든 옵션이 포함된 파일을 빌드하려면 다음 명령을 `root` 로 실행합"
+"니다:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:253
@@ -770,7 +769,7 @@ msgid ""
 "example, for the following message, make sure that line 17 is typed "
 "correctly by comparing it to [.filename]#GENERIC# or [.filename]#NOTES#:"
 msgstr ""
-"`config` 가 실패하면 잘못된 줄 번호가 인쇄됩니다.  예를 들어 다음 메시지의 "
+"`config` 가 실패하면 잘못된 줄 번호를 인쇄합니다.예를 들어 다음 메시지의 "
 "경우 17번 줄을 [.filename]#GENERIC# 또는 [.filename]#NOTES# 와 비교하여 "
 "올바르게 입력되었는지 확인합니다:"
 
@@ -794,8 +793,8 @@ msgid ""
 "configuration, and if the problem is not apparent, send an email to the "
 "{freebsd-questions} which contains the kernel configuration file."
 msgstr ""
-"`make` 가 실패하는 경우 일반적으로 커널 구성 파일에 `config` 가 포착할 수 "
-"있을 만큼 심각하지 않은 오류가 있기 때문일 수 있습니다.  구성을 검토하고 "
+"`make` 가 실패하는 경우 일반적으로 커널 구성 파일의 오류로 인해 발생하는데, "
+"이는 `config` 가 포착할 수 있을 만큼 심각하지 않습니다.구성을 검토하고 "
 "문제가 명확하지 않은 경우 커널 구성 파일이 포함된 {freebsd-questions}으로 "
 "이메일을 보내세요."
 
@@ -831,10 +830,10 @@ msgid ""
 "which records the kernel messages from every successful boot.  Also, man:"
 "dmesg[8] will print the kernel messages from the current boot."
 msgstr ""
-"정상 커널로 부팅한 후 구성 파일을 확인하고 다시 빌드를 시도하세요.  부팅에 "
-"성공할 때마다 커널 메시지를 기록하는 [.filename]#/var/log/messages# 가 "
-"유용한 리소스 중 하나입니다.  또한 man:dmesg[8]는 현재 부팅의 커널 메시지를 "
-"인쇄합니다."
+"정상 커널로 부팅한 후 구성 파일을 확인하고 다시 빌드를 시도하세요.  부팅에 성"
+"공할 때마다 커널 메시지를 기록하는 [.filename]#/var/log/messages# 가 유용한 "
+"리소스 중 하나입니다.  또한 man:dmesg[8]는 현재 부팅의 커널 메시지를 인쇄합니"
+"다."
 
 #. type: delimited block = 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:344
@@ -848,9 +847,9 @@ msgid ""
 msgstr ""
 "커널 문제를 해결할 때는 [.filename]#GENERIC# 과 같이 작동하는 것으로 알려진 "
 "커널의 사본을 보관하세요.  새 커널이 설치될 때마다 [.filename]#kernel.old# "
-"는 마지막으로 설치된 커널로 덮어쓰기 때문에 부팅이 가능하거나 불가능할 수 "
-"있으므로 이 점이 중요합니다.  가능한 한 빨리 정상 커널이 포함된 디렉터리의 "
-"이름을 변경하여 작업 중인 커널을 이동하세요:"
+"는 마지막으로 설치된 커널로 덮어쓰기 때문에 부팅이 가능하거나 불가능할 수 있"
+"으므로 이 점이 중요합니다.  가능한 한 빨리 정상 커널이 포함된 디렉터리의 이름"
+"을 변경하여 작업 중인 커널을 이동하세요:"
 
 #. type: delimited block . 4
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:349
@@ -885,3 +884,119 @@ msgstr ""
 "동일한 버전의 소스 트리로 구축된 crossref:cutting-edge[makeworld,recompile "
 "and install a world]를 사용하십시오.  운영 체제의 다른 버전과 다른 버전의 커"
 "널을 사용하는 것은 결코 좋은 생각이 아닙니다."
+
+#~ msgid "This has a number of benefits, such as:"
+#~ msgstr "여기에는 다음과 같은 여러 가지 이점이 있습니다:"
+
+#~ msgid ""
+#~ "For example, the man:ath[4] wireless network driver has the following "
+#~ "information in its manual page:"
+#~ msgstr ""
+#~ "예를 들어 man:ath[4] 무선 네트워크 드라이버의 매뉴얼 페이지에는 다음 정보"
+#~ "가 있습니다:"
+
+#, no-wrap
+#~ msgid ""
+#~ "      if_ath_load=\"YES\"\n"
+#~ "      if_ath_pci_load=\"YES\"\n"
+#~ msgstr ""
+#~ "      if_ath_load=\"YES\"\n"
+#~ "      if_ath_pci_load=\"YES\"\n"
+
+#, no-wrap
+#~ msgid "% pciconf -lv\n"
+#~ msgstr "% pciconf -lv\n"
+
+#~ msgid "The output should be similar to the following:"
+#~ msgstr "출력은 다음과 같습니다:"
+
+#, no-wrap
+#~ msgid "# man -k Atheros\n"
+#~ msgstr "# man -k Atheros\n"
+
+#~ msgid ""
+#~ "The [.filename]#MYKERNEL# file can now be customized with any text editor."
+#~ msgstr ""
+#~ "이제 [.filename]#MYKERNEL# 파일을 모든 텍스트 편집기로 사용자 정의할 수 있"
+#~ "습니다."
+
+#~ msgid ""
+#~ "A comprehensive list of configuration directives and their descriptions "
+#~ "may be found in man:config[5]."
+#~ msgstr ""
+#~ "구성 지시문 및 해당 설명의 전체 목록은 man:config[5] 에서 찾을 수 있습니"
+#~ "다."
+
+#~ msgid "Move to [.filename]#/usr/src#:"
+#~ msgstr "[.filename]#/usr/src# 로 이동하세요:"
+
+#~ msgid ""
+#~ "This variable instructs the build to skip kernel modules and compile only "
+#~ "the kernel itself:"
+#~ msgstr ""
+#~ "이 변수는 커널 모듈을 건너뛰고 커널 자체만 컴파일하도록 빌드에 지시합니다:"
+
+#, no-wrap
+#~ msgid "NO_MODULES=\tyes\n"
+#~ msgstr "NO_MODULES=\tyes\n"
+
+#~ msgid ""
+#~ "The Ports Framework includes drivers and other modules that depend on "
+#~ "kernel interfaces, such as package:graphics/drm-kmod[] or package:"
+#~ "emulators/virtualbox-ose-kmod[].  With the `PORTS_MODULES` variable every "
+#~ "time the kernel is built, the ports containing kernel modules are re-"
+#~ "built against the updated sources.  This ensures the kernel module stays "
+#~ "in-sync with the kernel itself.  The kernel and ports trees should be "
+#~ "updated together for maximum compatibility.  `PORTS_MODULES` can be added "
+#~ "to [.filename]#/etc/make.conf# file to ensure all kernels you build "
+#~ "rebuild this module."
+#~ msgstr ""
+#~ "포트 프레임워크에는 package:graphics/drm-kmod[] 또는 package:emulators/"
+#~ "virtualbox-ose-kmod[] 와 같은 커널 인터페이스에 의존하는 드라이버 및 기타 "
+#~ "모듈이 포함되어 있습니다. 커널이 빌드될 때마다 `PORTS_MODULES` 변수를 사용"
+#~ "하면 커널 모듈을 포함하는 포트가 업데이트된 소스에 대해 다시 빌드됩니다. "
+#~ "이렇게 하면 커널 모듈이 커널 자체와 동기화 상태를 유지합니다. 최대 호환성"
+#~ "을 위해 커널 및 포트 트리를 함께 업데이트해야 합니다. `PORTS_MODULES` 를 "
+#~ "[.filename]#/etc/make.conf# 파일에 추가하여 빌드하는 모든 커널이 이 모듈"
+#~ "을 다시 빌드하도록 할 수 있습니다."
+
+#, no-wrap
+#~ msgid "PORTS_MODULES=\tdrm-kmod virtualbox-ose-kmod\n"
+#~ msgstr "PORTS_MODULES=\tdrm-kmod virtualbox-ose-kmod\n"
+
+#~ msgid ""
+#~ "If man:config[5] fails, it will print the line number that is incorrect."
+#~ msgstr "man:config[5]가 실패하면 잘못된 행 번호가 인쇄됩니다."
+
+#, no-wrap
+#~ msgid "config: /usr/src/sys/amd64/conf/GENERIC:32: syntax error\n"
+#~ msgstr "config: /usr/src/sys/amd64/conf/GENERIC:32: syntax error\n"
+
+#~ msgid ""
+#~ "If man:make[1] fails, it is usually due to an error in the kernel "
+#~ "configuration file which is not severe enough for `config` to catch."
+#~ msgstr ""
+#~ "man:make[1] 가 실패하면 일반적으로 `config` 가 포착할 만큼 심각하지 않은 "
+#~ "커널 구성 파일의 오류 때문입니다."
+
+#~ msgid ""
+#~ "If the new kernel does not boot or fails to recognize devices, do not "
+#~ "panic! Fortunately, FreeBSD has an excellent mechanism for recovering "
+#~ "from incompatible kernels."
+#~ msgstr ""
+#~ "새 커널이 부팅되지 않거나 장치를 인식하지 못하는 경우 당황하지 마십시오! "
+#~ "다행스럽게도 FreeBSD에는 호환되지 않는 커널을 복구하는 뛰어난 메커니즘이 "
+#~ "있습니다."
+
+#~ msgid ""
+#~ "Simply choose the kernel to boot from at the FreeBSD boot loader.  This "
+#~ "can be accessed when the system boot menu appears by selecting the "
+#~ "\"Kernel:\" option, which initially displays \"Kernel: default/kernel\".  "
+#~ "Each time the option is selected, another choice appears, for example "
+#~ "\"kernel.old\".  When the desired kernel is listed, press return to boot."
+#~ msgstr ""
+#~ "FreeBSD 부트 로더에서 부팅할 커널을 선택하기만 하면 됩니다. 처음에 "
+#~ "\"Kernel: default/kernel\"을 표시하는 \"Kernel:\" 옵션을 선택하여 시스템 "
+#~ "부팅 메뉴가 나타날 때 액세스할 수 있습니다. 옵션을 선택할 때마다 \"kernel."
+#~ "old\"와 같은 다른 선택 항목이 나타납니다. 원하는 커널이 나열되면 Return 키"
+#~ "를 눌러 부팅합니다."

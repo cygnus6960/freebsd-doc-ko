@@ -48,10 +48,15 @@
             <ul id="frontreleaseslist">
               <li>
                 {{ i18n "production" }}:
-                <a href={{ index $.Site.Data.releases "u-rel124-announce" }}>{{ index $.Site.Data.releases "rel124-current" }}</a>,
-                <a href={{ index $.Site.Data.releases "u-rel131-announce" }}>{{ index $.Site.Data.releases "rel131-current" }}</a>,
-                <a href={{ index $.Site.Data.releases "u-rel132-announce" }}>{{ index $.Site.Data.releases "rel132-current" }}</a>
+                <a href={{ index $.Site.Data.releases "u-rel132-announce" }}>{{ index $.Site.Data.releases "rel132-current" }}</a>,
+                <a href={{ index $.Site.Data.releases "u-rel140-announce" }}>{{ index $.Site.Data.releases "rel140-current" }}</a>
               </li>
+            <!--
+              <li>
+                {{ i18n "legacy" }}:
+                <a href={{ index $.Site.Data.releases "u-rel124-announce" }}>{{ index $.Site.Data.releases "rel124-current" }}</a>
+              </li>
+            -->
               {{ $betaUpcoming := index $.Site.Data.releases "beta-upcoming" }}
               {{ if ne $betaUpcoming "IGNORE" }}
                 <li>
@@ -90,9 +95,6 @@
             -->
             <li><a href="{{ $.Site.BaseURL }}de">de</a></li>
             <li><a href="{{ $.Site.BaseURL }}">en</a></li>
-            <li><a href="{{ $.Site.BaseURL }}fr">fr</a></li>
-            <li><a href="{{ $.Site.BaseURL }}ja">ja</a></li>
-            <li><a href="{{ $.Site.BaseURL }}zh-cn">zh-cn</a></li>
             <li><a href="{{ $.Site.BaseURL }}zh-tw">zh-tw</a></li>
           </ul>
         </div>

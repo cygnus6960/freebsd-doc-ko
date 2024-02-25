@@ -7,9 +7,9 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2022-07-07 23:23-0300\n"
-"PO-Revision-Date: 2023-04-22 03:54+0000\n"
-"Last-Translator: \"Danilo G. Baio\" <dbaio@FreeBSD.org>\n"
+"POT-Creation-Date: 2023-07-15 16:42-0300\n"
+"PO-Revision-Date: 2023-06-19 19:09+0000\n"
+"Last-Translator: Edson Brandi <ebrandi@freebsd.org>\n"
 "Language-Team: Portuguese (Brazil) <https://translate-dev.freebsd.org/"
 "projects/documentation/articlespam_index/pt_BR/>\n"
 "Language: pt_BR\n"
@@ -23,7 +23,7 @@ msgstr ""
 #: documentation/content/en/articles/pam/_index.adoc:1
 #, no-wrap
 msgid "A guide to the PAM system and modules under FreeBSD"
-msgstr ""
+msgstr "Um guia para o sistema PAM e módulos no FreeBSD"
 
 #. Copyright (c) 2001-2003 Networks Associates Technology, Inc.
 #. All rights reserved.
@@ -104,7 +104,6 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:96
-#, fuzzy
 msgid ""
 "PAM was defined and developed in 1995 by Vipin Samar and Charlie Lai of Sun "
 "Microsystems, and has not changed much since.  In 1997, the Open Group "
@@ -114,11 +113,11 @@ msgid ""
 "not yet been adopted as a standard."
 msgstr ""
 "O PAM foi definido e desenvolvido em 1995 por Vipin Samar e Charlie Lai da "
-"Sun Microsystems, e não teve muitas mudanças até hoje. Em 1997, o Open Group "
-"publicou a especificação preliminar do X/Open Single Sign-on (XSSO),  a qual "
-"padroniza a API do PAM e adiciona extensões para autenticação única ou "
-"integrada. No momento da redação deste documento, esta especificação ainda "
-"não tinha sido adotada como padrão."
+"Sun Microsystems, e não mudou muito desde então. Em 1997, o Open Group "
+"publicou a especificação preliminar de Single Sign-on (XSSO) da X/Open, que "
+"padronizou a API do PAM e adicionou extensões para autenticação única (ou "
+"melhor, autenticação integrada). No momento em que este texto foi escrito, "
+"essa especificação ainda não foi adotada como um padrão."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:98
@@ -127,6 +126,9 @@ msgid ""
 "it should be equally applicable to FreeBSD 4.x, which uses Linux-PAM, and "
 "other operating systems such as Linux and Solaris(TM)."
 msgstr ""
+"Embora este artigo se concentre principalmente no FreeBSD 5.x, que usa o "
+"OpenPAM, ele deve ser igualmente aplicável ao FreeBSD 4.x, que usa o Linux-"
+"PAM, e a outros sistemas operacionais, como Linux e Solaris(TM)."
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:100
@@ -142,7 +144,6 @@ msgstr "Definições"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:110
-#, fuzzy
 msgid ""
 "The terminology surrounding PAM is rather confused.  Neither Samar and Lai's "
 "original paper nor the XSSO specification made any attempt at formally "
@@ -155,17 +156,16 @@ msgid ""
 "attempt, heavily inspired by Morgan, to define precise and unambiguous terms "
 "for all actors and entities involved in PAM."
 msgstr ""
-"A terminologia em torno do PAM é bastante confusa. Nem o artigo original de  "
-"Neither Samar e Lai nem a especificação original do XSSO fizeram algum "
-"esforço para definir formalmente os termos de vários atores e entidades "
-"envolvidas no PAM, e os termos que eles usam (mas não definem) são algumas "
-"vezes duvidosos ou ambíguos. A primeira tentativa de estabelecer uma "
-"terminologia consistente e não ambígua foi feita no artigo escrito por "
-"Andrew G. Morgan (autor do Linux-PAM) em 1999. A escolha da terminologia de "
-"Morgan foi um grande avanço, mas na opinião deste autor, não é perfeita. O "
-"que segue é uma tentativa, fortemente inspirada por Morgan, de definir "
-"termos precisos e não ambíguos para todos os atores e entidades envolvidas "
-"no PAM."
+"A terminologia em torno do PAM é bastante confusa. Nem o artigo original de "
+"Samar e Lai nem a especificação do XSSO fizeram qualquer tentativa de "
+"definir formalmente os termos para os vários atores e entidades envolvidas "
+"no PAM, e os termos que eles usam (mas não definem) às vezes são enganosos e "
+"ambíguos. A primeira tentativa de estabelecer uma terminologia consistente e "
+"inequívoca foi um whitepaper escrito por Andrew G. Morgan (autor do Linux-"
+"PAM) em 1999. Embora a escolha de terminologia de Morgan tenha sido um "
+"grande avanço, na opinião deste autor, ela não é perfeita. O que se segue é "
+"uma tentativa, fortemente inspirada por Morgan, de definir termos precisos e "
+"inequívocos para todos os atores e entidades envolvidos no PAM."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:111
@@ -213,15 +213,15 @@ msgstr "chain"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:123
-#, fuzzy
 msgid ""
 "A sequence of modules that will be invoked in response to a PAM request.  "
 "The chain includes information about the order in which to invoke the "
 "modules, what arguments to pass to them, and how to interpret the results."
 msgstr ""
-"Uma sequência de módulos que irá ser chamada em resposta a uma solicitação "
-"do PAM. A chain inclui informações sobre a ordem a qual invocar os módulos, "
-"quais argumentos foram passados e como interpretar os resultados."
+"Uma sequência de módulos que serão invocados em resposta a uma solicitação "
+"PAM. A cadeia inclui informações sobre a ordem em que os módulos devem ser "
+"invocados, quais argumentos passar para eles e como interpretar os "
+"resultados."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:124
@@ -282,17 +282,16 @@ msgstr "política"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:136
-#, fuzzy
 msgid ""
 "The complete set of configuration statements describing how to handle PAM "
 "requests for a particular service.  A policy normally consists of four "
 "chains, one for each facility, though some services do not use all four "
 "facilities."
 msgstr ""
-"O conjunto completo de instruções de configuração que descrevem como lidar "
-"com solicitações do PAM para um serviço específico. Uma política normalmente "
-"consiste em quatro chains, uma para cada recurso, embora alguns serviços não "
-"utilizem os quatro recursos."
+"O conjunto completo de declarações de configuração que descrevem como lidar "
+"com solicitações PAM para um serviço específico. Uma política normalmente "
+"consiste em quatro cadeias, uma para cada funcionalidade (facility), embora "
+"alguns serviços não usem todas as quatro funcionalidades."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:137
@@ -319,17 +318,16 @@ msgstr "serviço"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:143
-#, fuzzy
 msgid ""
 "A class of servers providing similar or related functionality and requiring "
 "similar authentication.  PAM policies are defined on a per-service basis, so "
 "all servers that claim the same service name will be subject to the same "
 "policy."
 msgstr ""
-"Classe de servidores que provêm recursos similares ou relacionados e "
-"requerem autenticação similar. As políticas do PAM são definidas por "
-"serviço, portanto, todos os servidores que reivindicam o mesmo nome de "
-"serviço estarão sujeitos à mesma política."
+"Uma classe de servidores que fornecem funcionalidades semelhantes ou "
+"relacionadas e requerem autenticação semelhante. As políticas do PAM são "
+"definidas com base em serviço, portanto, todos os servidores que possuem o "
+"mesmo nome de serviço estarão sujeitos à mesma política."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:144
@@ -339,15 +337,14 @@ msgstr "sessão"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:147
-#, fuzzy
 msgid ""
 "The context within which service is rendered to the applicant by the "
 "server.  One of PAM's four facilities, session management, is concerned "
 "exclusively with setting up and tearing down this context."
 msgstr ""
-"O contexto com o qual serviços são apresentados para o requerente pelo "
-"servidor. Um dos quatro recursos do PAM, gerenciamento de sessão, é "
-"concedido exclusivamente configurando e derrubando esse contexto."
+"O contexto no qual o serviço é prestado ao solicitante pelo servidor. Uma "
+"das quatro funcionalidades do PAM, o gerenciamento de sessão, está "
+"exclusivamente relacionada à criação e finalização desse contexto."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:148
@@ -406,6 +403,8 @@ msgstr "O cliente e o servidor são um"
 #: documentation/content/en/articles/pam/_index.adoc:162
 msgid "This simple example shows `alice` man:su[1]'ing to `root`."
 msgstr ""
+"Este exemplo simples mostra `alice` usando o comando man:su[1] para se "
+"tornar `root`."
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:167
@@ -414,6 +413,8 @@ msgid ""
 "% whoami\n"
 "alice\n"
 msgstr ""
+"% whoami\n"
+"alice\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:170
@@ -422,6 +423,8 @@ msgid ""
 "% ls -l `which su`\n"
 "-r-sr-xr-x  1 root  wheel  10744 Dec  6 19:06 /usr/bin/su\n"
 msgstr ""
+"% ls -l `which su`\n"
+"-r-sr-xr-x  1 root  wheel  10744 Dec  6 19:06 /usr/bin/su\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:175
@@ -432,31 +435,37 @@ msgid ""
 "# whoami\n"
 "root\n"
 msgstr ""
+"% su -\n"
+"Password: xi3kiune\n"
+"# whoami\n"
+"root\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:178
 msgid "The applicant is `alice`."
-msgstr ""
+msgstr "O solicitante é `alice`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:179
 msgid "The account is `root`."
-msgstr ""
+msgstr "A conta é `root`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:180
 msgid "The man:su[1] process is both client and server."
-msgstr ""
+msgstr "O processo man:su[1] atua como cliente e servidor ao mesmo tempo."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:181
 msgid "The authentication token is `xi3kiune`."
-msgstr ""
+msgstr "O token de autenticação é `xi3kiune`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:182
 msgid "The arbitrator is `root`, which is why man:su[1] is setuid `root`."
 msgstr ""
+"O mediador (arbitrator) é `root`, por isso o man:su[1] é definido como "
+"setuid `root`."
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:183
@@ -471,6 +480,9 @@ msgid ""
 "`login.example.com`, ask to log in as `bob`, and succeed.  Bob should have "
 "chosen a better password!"
 msgstr ""
+"O exemplo abaixo mostra `eve` tentando iniciar uma conexão man:ssh[1] com "
+"`login.example.com`, solicitando fazer login como `bob` e tendo sucesso. Bob "
+"deveria ter escolhido uma senha melhor!"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:192
@@ -479,6 +491,8 @@ msgid ""
 "% whoami\n"
 "eve\n"
 msgstr ""
+"% whoami\n"
+"eve\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:200
@@ -492,44 +506,55 @@ msgid ""
 "\tThe Regents of the University of California.  All rights reserved.\n"
 "FreeBSD 4.4-STABLE (LOGIN) 4: Tue Nov 27 18:10:34 PST 2001\n"
 msgstr ""
+"% ssh bob@login.example.com\n"
+"bob@login.example.com's password:\n"
+"% god\n"
+"Last login: Thu Oct 11 09:52:57 2001 from 192.168.0.1\n"
+"Copyright (c) 1980, 1983, 1986, 1988, 1990, 1991, 1993, 1994\n"
+"\tThe Regents of the University of California.  All rights reserved.\n"
+"FreeBSD 4.4-STABLE (LOGIN) 4: Tue Nov 27 18:10:34 PST 2001\n"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:203
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "Welcome to FreeBSD!\n"
 "%\n"
-msgstr "Bem vindo ao FreeBSD!\n"
+msgstr ""
+"Welcome to FreeBSD!\n"
+"%\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:207
 msgid "The applicant is `eve`."
-msgstr ""
+msgstr "O solicitante é `eve`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:208
 msgid "The client is Eve's man:ssh[1] process."
-msgstr ""
+msgstr "O cliente é o processo man:ssh[1] de Eve."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:209
 msgid "The server is the man:sshd[8] process on `login.example.com`"
-msgstr ""
+msgstr "O servidor é o processo man:sshd[8] em `login.example.com`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:210
 msgid "The account is `bob`."
-msgstr ""
+msgstr "A conta é `bob`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:211
 msgid "The authentication token is `god`."
-msgstr ""
+msgstr "O token de autenticação é `god`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:212
 msgid "Although this is not shown in this example, the arbitrator is `root`."
 msgstr ""
+"Embora isso não seja mostrado neste exemplo, o mediador (arbitrator) é "
+"`root`."
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:213
@@ -540,11 +565,11 @@ msgstr "Exemplo de política"
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:216
 msgid "The following is FreeBSD's default policy for `sshd`:"
-msgstr ""
+msgstr "A seguinte é a política padrão do FreeBSD para o `sshd`:"
 
 #. type: delimited block . 4
 #: documentation/content/en/articles/pam/_index.adoc:225
-#, fuzzy, no-wrap
+#, no-wrap
 msgid ""
 "sshd\tauth\t\trequired\tpam_nologin.so\tno_warn\n"
 "sshd\tauth\t\trequired\tpam_unix.so\tno_warn try_first_pass\n"
@@ -566,11 +591,14 @@ msgid ""
 "This policy applies to the `sshd` service (which is not necessarily "
 "restricted to the man:sshd[8] server.)"
 msgstr ""
+"Essa política se aplica ao serviço `sshd` (que não está necessariamente "
+"restrito ao servidor man:sshd[8])"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:229
 msgid "`auth`, `account`, `session` and `password` are facilities."
 msgstr ""
+"`auth`, `account`, `session` e `password` são funcionalidades (facilities)."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:230
@@ -581,6 +609,11 @@ msgid ""
 "filename]#pam_unix.so# provides at least two facilities (authentication and "
 "account management.)"
 msgstr ""
+"Os módulos [.filename]#pam_nologin.so#, [.filename]#pam_unix.so#, [."
+"filename]#pam_login_access.so#, [.filename]#pam_lastlog.so# e [."
+"filename]#pam_permit.so# são módulos. É evidente neste exemplo que o [."
+"filename]#pam_unix.so# fornece pelo menos duas funcionalidades (autenticação "
+"e gerenciamento de contas)."
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:232
@@ -607,7 +640,7 @@ msgstr ""
 #: documentation/content/en/articles/pam/_index.adoc:239
 #, no-wrap
 msgid "`auth`"
-msgstr ""
+msgstr "`auth`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:242
@@ -616,6 +649,9 @@ msgid ""
 "applicant and establishing the account credentials.  It provides two "
 "primitives:"
 msgstr ""
+"_Authentication._ Esta funcionalidade diz respeito à autenticação do "
+"solicitante e ao estabelecimento das credenciais da conta. Ela fornece dois "
+"elementos fundamentais:"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:244
@@ -624,6 +660,9 @@ msgid ""
 "an authentication token and comparing it with a value stored in a database "
 "or obtained from an authentication server."
 msgstr ""
+"O comando man:pam_authenticate[3] autentica o solicitante, geralmente "
+"solicitando um token de autenticação e comparando-o com um valor armazenado "
+"em um banco de dados ou obtido de um servidor de autenticação."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:245
@@ -631,36 +670,39 @@ msgid ""
 "man:pam_setcred[3] establishes account credentials such as user ID, group "
 "membership and resource limits."
 msgstr ""
+"O comando man:pam_setcred[3] estabelece as credenciais da conta, como o ID "
+"do usuário, a associação ao grupo e os limites de recursos."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:246
 #, no-wrap
 msgid "`account`"
-msgstr ""
+msgstr "`account`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:249
-#, fuzzy
 msgid ""
 "_Account management._ This facility handles non-authentication-related "
 "issues of account availability, such as access restrictions based on the "
 "time of day or the server's work load.  It provides a single primitive:"
 msgstr ""
-"<emphasis>Gerenciamento de contas.</emphasis> Esse recurso lida com "
-"problemas de disponibilidade de conta não relacionados à autenticação, como "
-"restrições de acesso com base na hora do dia ou na carga de trabalho do "
-"servidor. Ele fornece uma única primitiva:"
+"_Gerenciamento de contas._ Essa funcionalidade lida com questões não "
+"relacionadas à autenticação sobre a disponibilidade da conta, como "
+"restrições de acesso com base no horário do dia ou na carga de trabalho do "
+"servidor. Ela fornece um único elemento fundamental:"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:251
 msgid "man:pam_acct_mgmt[3] verifies that the requested account is available."
 msgstr ""
+"O comando man:pam_acct_mgmt[3] verifica se a conta solicitada está "
+"disponível."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:252
 #, no-wrap
 msgid "`session`"
-msgstr ""
+msgstr "`session`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:255
@@ -668,6 +710,9 @@ msgid ""
 "_Session management._ This facility handles tasks associated with session "
 "set-up and tear-down, such as login accounting.  It provides two primitives:"
 msgstr ""
+"_Gerenciamento de sessão._ Esta funcionalidade lida com tarefas associadas à "
+"configuração e finalização de sessões, como contabilidade de login. Ela "
+"fornece dois elementos fundamentais:"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:257
@@ -676,6 +721,9 @@ msgid ""
 "an entry in the [.filename]#utmp# and [.filename]#wtmp# databases, start an "
 "SSH agent, etc."
 msgstr ""
+"O comando man:pam_open_session[3] executa tarefas associadas à configuração "
+"da sessão, como adicionar uma entrada nos bancos de dados [.filename]#utmp# "
+"e [.filename]#wtmp#, iniciar um agente SSH, etc."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:258
@@ -684,24 +732,26 @@ msgid ""
 "add an entry in the [.filename]#utmp# and [.filename]#wtmp# databases, stop "
 "the SSH agent, etc."
 msgstr ""
+"O comando man:pam_close_session[3] executa tarefas associadas à finalização "
+"da sessão, como adicionar uma entrada nos bancos de dados [.filename]#utmp# "
+"e [.filename]#wtmp#, parar o agente SSH, etc."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:259
 #, no-wrap
 msgid "`password`"
-msgstr ""
+msgstr "`password`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:262
-#, fuzzy
 msgid ""
 "_Password management._ This facility is used to change the authentication "
 "token associated with an account, either because it has expired or because "
 "the user wishes to change it.  It provides a single primitive:"
 msgstr ""
-"<emphasis>Gerenciamento de senhas.</emphasis> Esse recurso é usado para "
-"alterar o token de autenticação associado a uma conta, porque expirou ou "
-"porque o usuário deseja alterá-lo. Ele fornece uma única primitiva:"
+"_Gerenciamento de senha._ Essa funcionalidade é usada para alterar o token "
+"de autenticação associado a uma conta, seja porque ele expirou ou porque o "
+"usuário deseja alterá-lo. Ela fornece um único elemento fundamental:"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:264
@@ -709,6 +759,9 @@ msgid ""
 "man:pam_chauthtok[3] changes the authentication token, optionally verifying "
 "that it is sufficiently hard to guess, has not been used previously, etc."
 msgstr ""
+"O comando man:pam_chauthtok[3] altera o token de autenticação, opcionalmente "
+"verificando se ele é suficientemente difícil de ser adivinhado, se não foi "
+"usado anteriormente, etc."
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:266
@@ -725,6 +778,11 @@ msgid ""
 "mechanism; possible mechanisms for the authentication facility, for "
 "instance, include the UNIX(R) password database, NIS, LDAP and Radius."
 msgstr ""
+"Os módulos são um conceito central no PAM; afinal, eles são o \"M\" em \"PAM"
+"\". Um módulo PAM é um código de programa autônomo que implementa os "
+"elementos fundamentais em uma ou mais funcionalidades para um mecanismo "
+"específico. Os possíveis mecanismos para a funcionalidade de autenticação, "
+"por exemplo, incluem o banco de dados de senhas UNIX(R), NIS, LDAP e Radius."
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:273
@@ -742,6 +800,12 @@ msgid ""
 "To name one example, Solaris(TM) has a `pam_dial_auth.so.1` module which is "
 "commonly used to authenticate dialup users."
 msgstr ""
+"O FreeBSD implementa cada mecanismo em um único módulo, chamado "
+"`pam_mechanism.so` (por exemplo, `pam_unix.so` para o mecanismo UNIX(R)). "
+"Outras implementações às vezes têm módulos separados para funcionalidades "
+"separadas e incluem o nome da funcionalidade, bem como o nome do mecanismo, "
+"no nome do módulo. Como exemplo, o Solaris(TM) tem um módulo `pam_dial_auth."
+"so.1` que é comumente usado para autenticar usuários de conexões discadas."
 
 #. type: Title ====
 #: documentation/content/en/articles/pam/_index.adoc:280
@@ -751,7 +815,6 @@ msgstr "Versionando Módulos"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:284
-#, fuzzy
 msgid ""
 "FreeBSD's original PAM implementation, based on Linux-PAM, did not use "
 "version numbers for PAM modules.  This would commonly cause problems with "
@@ -759,15 +822,14 @@ msgid ""
 "system libraries, as there was no way to load a matching version of the "
 "required modules."
 msgstr ""
-"A implementação original do PAM no FreeBSD, baseada no Linux-PAM, não "
-"utilizou números de versão para os módulos PAM. Isso normalmente causaria "
+"A implementação original do PAM no FreeBSD, baseada no Linux-PAM, não usava "
+"números de versão para os módulos do PAM. Isso frequentemente causava "
 "problemas com aplicativos legados, que poderiam estar vinculados a versões "
-"mais antigas das bibliotecas do sistema, pois não havia como carregar uma "
-"versão correspondente dos módulos necessários."
+"mais antigas das bibliotecas do sistema, pois não havia maneira de carregar "
+"uma versão correspondente dos módulos necessários."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:287
-#, fuzzy
 msgid ""
 "OpenPAM, on the other hand, looks for modules that have the same version "
 "number as the PAM library (currently 2), and only falls back to an "
@@ -775,11 +837,11 @@ msgid ""
 "modules can be provided for legacy applications, while allowing new (or "
 "newly built) applications to take advantage of the most recent modules."
 msgstr ""
-"O OpenPAM, por outro lado, procura por módulos que possuam o mesmo número de "
-"versão que a biblioteca PAM (atualmente 2), e só retorna a um módulo não "
-"versionado se nenhum módulo versionado puder ser carregado. Assim, os "
-"módulos legados podem ser fornecidos para aplicativos legados, permitindo "
-"que novos aplicativos (ou recém-construídos) aproveitem os módulos mais "
+"Por outro lado, o OpenPAM procura por módulos que tenham o mesmo número de "
+"versão da biblioteca PAM (atualmente 2) e só recorre a um módulo sem versão "
+"se nenhum módulo com versão puder ser carregado. Isso permite fornecer "
+"módulos legados para aplicativos antigos, ao mesmo tempo que permite que "
+"novos aplicativos (ou aplicativos recém-criados) aproveitem os módulos mais "
 "recentes."
 
 #. type: Plain text
@@ -789,6 +851,9 @@ msgid ""
 "not truly versioned, because the number is a part of the module name and "
 "must be included in the configuration."
 msgstr ""
+"Embora os módulos PAM do Solaris(TM) comumente tenham um número de versão, "
+"eles não são verdadeiramente versionados, pois o número faz parte do nome do "
+"módulo e deve ser incluído na configuração."
 
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:291
@@ -806,37 +871,42 @@ msgid ""
 "possibility for the admin to tune the system security policy (in the wider "
 "sense of the word) simply by editing a text file."
 msgstr ""
+"Quando um servidor inicia uma transação PAM, a biblioteca PAM tenta carregar "
+"uma política para o serviço especificado na chamada man:pam_start[3]. A "
+"política especifica como as solicitações de autenticação devem ser "
+"processadas e é definida em um arquivo de configuração. Este é o outro "
+"conceito central no PAM: a possibilidade do administrador ajustar a política "
+"de segurança do sistema (no sentido mais amplo da palavra) simplesmente "
+"editando um arquivo de texto."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:299
-#, fuzzy
 msgid ""
 "A policy consists of four chains, one for each of the four PAM facilities.  "
 "Each chain is a sequence of configuration statements, each specifying a "
 "module to invoke, some (optional) parameters to pass to the module, and a "
 "control flag that describes how to interpret the return code from the module."
 msgstr ""
-"Uma política consiste em quatro cadeias, uma para cada uma dos quatro "
-"recursos do PAM. Cada chain é uma sequência de instruções de configuração, "
-"cada uma especificando um módulo para invocar, alguns parâmetros (opcionais) "
-"para passar para o módulo e um sinalizador de controle que descreve como "
-"interpretar o código de retorno do módulo."
+"Uma política consiste em quatro cadeias, uma para cada uma das quatro "
+"funcionalidades do PAM. Cada cadeia é uma sequência de declarações de "
+"configuração, cada uma especificando um módulo a ser invocado, alguns "
+"parâmetros opcionais a serem passados para o módulo e uma flag de controle "
+"que descreve como interpretar o código de retorno do módulo."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:302
-#, fuzzy
 msgid ""
 "Understanding the control flags is essential to understanding PAM "
 "configuration files.  There are four different control flags:"
 msgstr ""
-"Entender os sinalizadores de controle é essencial para entender os arquivos "
-"de configuração do PAM. Existem quatro diferentes flags de controle:"
+"Entender as flags de controle é essencial para compreender os arquivos de "
+"configuração do PAM. Existem quatro flags de controle diferentes:"
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:303
 #, no-wrap
 msgid "`binding`"
-msgstr ""
+msgstr "`binding`"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:306
@@ -858,6 +928,8 @@ msgid ""
 "This control flag was introduced by Sun in Solaris(TM) 9 (SunOS(TM) 5.9), "
 "and is also supported by OpenPAM."
 msgstr ""
+"Esta flag de controle foi introduzida pela Sun no Solaris(TM) 9 (SunOS(TM) "
+"5.9) e também é suportada pelo OpenPAM."
 
 #. type: Labeled list
 #: documentation/content/en/articles/pam/_index.adoc:308
@@ -940,6 +1012,9 @@ msgid ""
 "The module is executed, but its result is ignored.  If all modules in a "
 "chain are marked `optional`, all requests will always be granted."
 msgstr ""
+"O módulo é executado, mas o seu resultado é ignorado. Se todos os módulos em "
+"uma cadeia forem marcados como \"optional\" (opcional), todas as "
+"solicitações serão sempre concedidas."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:327
@@ -1005,6 +1080,9 @@ msgid ""
 "independent of PAM-most commonly by virtue of having been started by `root`, "
 "or of being setuid `root`."
 msgstr ""
+"Se necessário, o servidor obtém as credenciais do mediador (arbitrator) por "
+"meio de um mecanismo independente do PAM, mais comumente por ter sido "
+"iniciado pelo usuário `root` ou por ter o atributo setuid `root`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:340
@@ -1013,6 +1091,9 @@ msgid ""
 "its service name and the target account, and register a suitable "
 "conversation function."
 msgstr ""
+"O servidor chama man:pam_start[3] para inicializar a biblioteca PAM, "
+"especificar o nome do serviço e a conta de destino, e registrar uma função "
+"de conversação adequada."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:341
@@ -1021,11 +1102,15 @@ msgid ""
 "the applicant's user name and the name of the host the client runs on) and "
 "submits it to PAM using man:pam_set_item[3]."
 msgstr ""
+"O servidor obtém várias informações relacionadas à transação (como o nome de "
+"usuário do solicitante e o nome do host onde o cliente está em execução) e "
+"as envia para o PAM usando o comando man:pam_set_item[3]."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:342
 msgid "The server calls man:pam_authenticate[3] to authenticate the applicant."
 msgstr ""
+"O servidor chama man:pam_authenticate[3] para autenticar o solicitante."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:343
@@ -1034,6 +1119,10 @@ msgid ""
 "is available and valid. If the password is correct but has expired, man:"
 "pam_acct_mgmt[3] will return `PAM_NEW_AUTHTOK_REQD` instead of `PAM_SUCCESS`."
 msgstr ""
+"O servidor chama man:pam_acct_mgmt[3] para verificar se a conta solicitada "
+"está disponível e válida. Se a senha estiver correta, mas tiver expirado, o "
+"man:pam_acct_mgmt[3] retornará `PAM_NEW_AUTHTOK_REQD` em vez de "
+"`PAM_SUCCESS`."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:344
@@ -1042,6 +1131,9 @@ msgid ""
 "man:pam_chauthtok[3] to force the client to change the authentication token "
 "for the requested account."
 msgstr ""
+"Se o passo anterior retornou `PAM_NEW_AUTHTOK_REQD`, o servidor agora chama "
+"man:pam_chauthtok[3] para forçar o cliente a alterar o token de autenticação "
+"da conta solicitada."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:345
@@ -1051,6 +1143,10 @@ msgid ""
 "able to do this because it acts on behalf of the arbitrator, and holds the "
 "arbitrator's credentials."
 msgstr ""
+"Agora que o solicitante foi devidamente autenticado, o servidor chama man:"
+"pam_setcred[3] para estabelecer as credenciais da conta solicitada. Ele é "
+"capaz de fazer isso porque age em nome do mediador (arbitrator) e possui as "
+"credenciais do mediador."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:346
@@ -1058,6 +1154,8 @@ msgid ""
 "Once the correct credentials have been established, the server calls man:"
 "pam_open_session[3] to set up the session."
 msgstr ""
+"Uma vez que as credenciais corretas foram estabelecidas, o servidor chama "
+"man:pam_open_session[3] para configurar a sessão."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:347
@@ -1075,6 +1173,8 @@ msgid ""
 "Once the server is done serving the client, it calls man:"
 "pam_close_session[3] to tear down the session."
 msgstr ""
+"Quando o servidor termina de atender o cliente, ele chama man:"
+"pam_close_session[3] para encerrar a sessão."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:349
@@ -1083,6 +1183,9 @@ msgid ""
 "is done and that it can release whatever resources it has allocated in the "
 "course of the transaction."
 msgstr ""
+"Por fim, o servidor chama man:pam_end[3] para notificar a biblioteca PAM que "
+"ele concluiu o processo e que ela pode liberar os recursos alocados durante "
+"a transação."
 
 #. type: Title ==
 #: documentation/content/en/articles/pam/_index.adoc:351
@@ -1100,7 +1203,7 @@ msgstr "Arquivos de política do PAM"
 #: documentation/content/en/articles/pam/_index.adoc:357
 #, no-wrap
 msgid "The [.filename]#/etc/pam.conf#"
-msgstr ""
+msgstr "O [.filename]#/etc/pam.conf#"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:362
@@ -1158,7 +1261,7 @@ msgstr ""
 #: documentation/content/en/articles/pam/_index.adoc:376
 #, no-wrap
 msgid "The [.filename]#/etc/pam.d#"
-msgstr ""
+msgstr "O [.filename]#/etc/pam.d#"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:381
@@ -1217,6 +1320,8 @@ msgid ""
 "# cd /etc/pam.d\n"
 "# ln -s su sudo\n"
 msgstr ""
+"# cd /etc/pam.d\n"
+"# ln -s su sudo\n"
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:400
@@ -1280,6 +1385,10 @@ msgid ""
 "consists of four or more fields: the service name, the facility name, the "
 "control flag, the module name, and zero or more module arguments."
 msgstr ""
+"Conforme explicado em <<pam-config-file>>, cada linha no arquivo `/etc/pam."
+"conf` consiste em quatro ou mais campos: o nome do serviço, o nome da "
+"funcionalidade (facility), a flag de controle, o nome do módulo e zero ou "
+"mais argumentos do módulo."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:418
@@ -1314,6 +1423,8 @@ msgid ""
 "The facility is one of the four facility keywords described in <<pam-"
 "facilities-primitives>>."
 msgstr ""
+"A funcionalidade (facility) é uma das quatro palavras-chave de "
+"funcionalidade descritas em <<pam-facilities-primitives>>."
 
 #. type: Plain text
 #: documentation/content/en/articles/pam/_index.adoc:426
@@ -1656,65 +1767,22 @@ msgstr ""
 #. type: Title ===
 #: documentation/content/en/articles/pam/_index.adoc:548
 #, no-wrap
-msgid "man:pam_opie[8]"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:553
-msgid ""
-"The man:pam_opie[8] module implements the man:opie[4] authentication "
-"method.  The man:opie[4] system is a challenge-response mechanism where the "
-"response to each challenge is a direct function of the challenge and a "
-"passphrase, so the response can be easily computed \"just in time\" by "
-"anyone possessing the passphrase, eliminating the need for password lists.  "
-"Moreover, since man:opie[4] never reuses a challenge that has been correctly "
-"answered, it is not vulnerable to replay attacks."
-msgstr ""
-
-#. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:555
-#, no-wrap
-msgid "man:pam_opieaccess[8]"
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:560
-msgid ""
-"The man:pam_opieaccess[8] module is a companion module to man:pam_opie[8].  "
-"Its purpose is to enforce the restrictions codified in man:opieaccess[5], "
-"which regulate the conditions under which a user who would normally "
-"authenticate herself using man:opie[4] is allowed to use alternate methods.  "
-"This is most often used to prohibit the use of password authentication from "
-"untrusted hosts."
-msgstr ""
-
-#. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:562
-msgid ""
-"In order to be effective, the man:pam_opieaccess[8] module must be listed as "
-"`requisite` immediately after a `sufficient` entry for man:pam_opie[8], and "
-"before any other modules, in the `auth` chain."
-msgstr ""
-
-#. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:564
-#, no-wrap
 msgid "man:pam_passwdqc[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:567
+#: documentation/content/en/articles/pam/_index.adoc:551
 msgid "The man:pam_passwdqc[8] module"
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:569
+#: documentation/content/en/articles/pam/_index.adoc:553
 #, no-wrap
 msgid "man:pam_permit[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:573
+#: documentation/content/en/articles/pam/_index.adoc:557
 msgid ""
 "The man:pam_permit[8] module is one of the simplest modules available; it "
 "responds to any request with `PAM_SUCCESS`.  It is useful as a placeholder "
@@ -1722,35 +1790,35 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:575
+#: documentation/content/en/articles/pam/_index.adoc:559
 #, no-wrap
 msgid "man:pam_radius[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:578
+#: documentation/content/en/articles/pam/_index.adoc:562
 msgid "The man:pam_radius[8] module"
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:580
+#: documentation/content/en/articles/pam/_index.adoc:564
 #, no-wrap
 msgid "man:pam_rhosts[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:583
+#: documentation/content/en/articles/pam/_index.adoc:567
 msgid "The man:pam_rhosts[8] module"
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:585
+#: documentation/content/en/articles/pam/_index.adoc:569
 #, no-wrap
 msgid "man:pam_rootok[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:589
+#: documentation/content/en/articles/pam/_index.adoc:573
 msgid ""
 "The man:pam_rootok[8] module reports success if and only if the real user id "
 "of the process calling it (which is assumed to be run by the applicant) is "
@@ -1759,24 +1827,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:591
+#: documentation/content/en/articles/pam/_index.adoc:575
 #, no-wrap
 msgid "man:pam_securetty[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:594
+#: documentation/content/en/articles/pam/_index.adoc:578
 msgid "The man:pam_securetty[8] module"
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:596
+#: documentation/content/en/articles/pam/_index.adoc:580
 #, no-wrap
 msgid "man:pam_self[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:600
+#: documentation/content/en/articles/pam/_index.adoc:584
 msgid ""
 "The man:pam_self[8] module reports success if and only if the names of the "
 "applicant matches that of the target account.  It is most useful for non-"
@@ -1785,13 +1853,13 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:602
+#: documentation/content/en/articles/pam/_index.adoc:586
 #, no-wrap
 msgid "man:pam_ssh[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:608
+#: documentation/content/en/articles/pam/_index.adoc:592
 msgid ""
 "The man:pam_ssh[8] module provides both authentication and session "
 "services.  The authentication service allows users who have passphrase-"
@@ -1804,24 +1872,24 @@ msgid ""
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:610
+#: documentation/content/en/articles/pam/_index.adoc:594
 #, no-wrap
 msgid "man:pam_tacplus[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:613
+#: documentation/content/en/articles/pam/_index.adoc:597
 msgid "The man:pam_tacplus[8] module"
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:615
+#: documentation/content/en/articles/pam/_index.adoc:599
 #, no-wrap
 msgid "man:pam_unix[8]"
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:620
+#: documentation/content/en/articles/pam/_index.adoc:604
 msgid ""
 "The man:pam_unix[8] module implements traditional UNIX(R) password "
 "authentication, using man:getpwnam[3] to obtain the target account's "
@@ -1833,31 +1901,31 @@ msgid ""
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:622
+#: documentation/content/en/articles/pam/_index.adoc:606
 #, no-wrap
 msgid "PAM Application Programming"
 msgstr "Programação de Aplicação PAM"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:625
-#: documentation/content/en/articles/pam/_index.adoc:630
+#: documentation/content/en/articles/pam/_index.adoc:609
+#: documentation/content/en/articles/pam/_index.adoc:614
 msgid "This section has not yet been written."
 msgstr "Esta seção ainda não foi escrita."
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:627
+#: documentation/content/en/articles/pam/_index.adoc:611
 #, no-wrap
 msgid "PAM Module Programming"
 msgstr "Programação de Módulos PAM"
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:635
+#: documentation/content/en/articles/pam/_index.adoc:619
 #, no-wrap
 msgid "Sample PAM Application"
 msgstr "Exemplo de Aplicação PAM"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:642
+#: documentation/content/en/articles/pam/_index.adoc:626
 msgid ""
 "The following is a minimal implementation of man:su[1] using PAM.  Note that "
 "it uses the OpenPAM-specific man:openpam_ttyconv[3] conversation function, "
@@ -1870,19 +1938,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block . 4
-#: documentation/content/en/articles/pam/_index.adoc:646
+#: documentation/content/en/articles/pam/_index.adoc:630
 #, no-wrap
 msgid "include::{include-path}su.c[]\n"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:652
+#: documentation/content/en/articles/pam/_index.adoc:636
 #, no-wrap
 msgid "Sample PAM Module"
 msgstr "Exemplo do módulo PAM"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:656
+#: documentation/content/en/articles/pam/_index.adoc:640
 msgid ""
 "The following is a minimal implementation of man:pam_unix[8], offering only "
 "authentication services.  It should build and run with most PAM "
@@ -1892,19 +1960,19 @@ msgid ""
 msgstr ""
 
 #. type: delimited block . 4
-#: documentation/content/en/articles/pam/_index.adoc:660
+#: documentation/content/en/articles/pam/_index.adoc:644
 #, no-wrap
 msgid "include::{include-path}pam_unix.c[]\n"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:666
+#: documentation/content/en/articles/pam/_index.adoc:650
 #, no-wrap
 msgid "Sample PAM Conversation Function"
 msgstr "Exemplo de função de conversação PAM"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:671
+#: documentation/content/en/articles/pam/_index.adoc:655
 msgid ""
 "The conversation function presented below is a greatly simplified version of "
 "OpenPAM's man:openpam_ttyconv[3].  It is fully functional, and should give "
@@ -1916,32 +1984,32 @@ msgid ""
 msgstr ""
 
 #. type: delimited block . 4
-#: documentation/content/en/articles/pam/_index.adoc:675
+#: documentation/content/en/articles/pam/_index.adoc:659
 #, no-wrap
 msgid "include::{include-path}converse.c[]\n"
 msgstr ""
 
 #. type: Title ==
-#: documentation/content/en/articles/pam/_index.adoc:680
+#: documentation/content/en/articles/pam/_index.adoc:664
 #, no-wrap
 msgid "Further Reading"
 msgstr "Leitura Adicional"
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:682
+#: documentation/content/en/articles/pam/_index.adoc:666
 #, no-wrap
 msgid "Papers"
 msgstr "Papers"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:685
+#: documentation/content/en/articles/pam/_index.adoc:669
 msgid ""
 "Making Login Services Independent of Authentication Technologies Vipin "
 "Samar. Charlie Lai. Sun Microsystems."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:687
+#: documentation/content/en/articles/pam/_index.adoc:671
 msgid ""
 "_link:https://pubs.opengroup.org/onlinepubs/8329799/toc.htm[X/Open Single "
 "Sign-on Preliminary Specification]_. The Open Group. 1-85912-144-6. June "
@@ -1949,47 +2017,47 @@ msgid ""
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:689
+#: documentation/content/en/articles/pam/_index.adoc:673
 msgid ""
 "_link:https://mirrors.kernel.org/pub/linux/libs/pam/pre/doc/draft-morgan-"
 "pam-07.txt[Pluggable Authentication Modules]_. Andrew G. Morgan. 1999-10-06."
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:690
+#: documentation/content/en/articles/pam/_index.adoc:674
 #, no-wrap
 msgid "User Manuals"
 msgstr "Manuais do usuário"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:693
+#: documentation/content/en/articles/pam/_index.adoc:677
 msgid ""
 "_link:https://docs.oracle.com/cd/E26505_01/html/E27224/pam-1.html[PAM "
 "Administration]_. Sun Microsystems."
 msgstr ""
 
 #. type: Title ===
-#: documentation/content/en/articles/pam/_index.adoc:694
+#: documentation/content/en/articles/pam/_index.adoc:678
 #, no-wrap
 msgid "Related Web Pages"
 msgstr "Páginas Web Relacionadas"
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:697
+#: documentation/content/en/articles/pam/_index.adoc:681
 msgid ""
 "_link:https://www.openpam.org/[OpenPAM homepage]_ Dag-Erling Smørgrav. "
 "ThinkSec AS."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:699
+#: documentation/content/en/articles/pam/_index.adoc:683
 msgid ""
 "_link:http://www.kernel.org/pub/linux/libs/pam/[Linux-PAM homepage]_ Andrew "
 "Morgan."
 msgstr ""
 
 #. type: Plain text
-#: documentation/content/en/articles/pam/_index.adoc:700
+#: documentation/content/en/articles/pam/_index.adoc:684
 msgid "_Solaris PAM homepage_. Sun Microsystems."
 msgstr ""
 

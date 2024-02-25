@@ -2,12 +2,13 @@
 # Copyright (C) YEAR The FreeBSD Project
 # This file is distributed under the same license as the FreeBSD Documentation package.
 # Kyung-tak, Yoo <stonegaze@me.com>, 2023.
-# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023.
+# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023, 2024.
+# Minsoo Choo <minsoochoo0122@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2022-07-07 23:23-0300\n"
-"PO-Revision-Date: 2023-04-26 20:24+0000\n"
+"POT-Creation-Date: 2024-01-17 20:35-0300\n"
+"PO-Revision-Date: 2024-01-13 04:45+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/articleshubs_index/ko/>\n"
@@ -22,7 +23,7 @@ msgstr ""
 #: documentation/content/en/articles/hubs/_index.adoc:1
 #, no-wrap
 msgid "The all in one guide for mirroring the FreeBSD website, FTP servers, and more"
-msgstr ""
+msgstr "FreeBSD 웹사이트와 FTP 서버 등을 미러링 하기 위한 가이드"
 
 #. type: Title =
 #: documentation/content/en/articles/hubs/_index.adoc:1
@@ -34,7 +35,7 @@ msgstr ""
 #. type: Plain text
 #: documentation/content/en/articles/hubs/_index.adoc:50
 msgid "Abstract"
-msgstr "요약"
+msgstr "개요"
 
 #. type: Plain text
 #: documentation/content/en/articles/hubs/_index.adoc:52
@@ -49,7 +50,7 @@ msgstr "'''"
 
 #. type: delimited block = 4
 #: documentation/content/en/articles/hubs/_index.adoc:60
-msgid "We are not accepting new mirrors at this time."
+msgid "We are not accepting new community mirrors at this time."
 msgstr ""
 
 #. type: Title ==
@@ -509,7 +510,7 @@ msgstr ""
 #. type: Plain text
 #: documentation/content/en/articles/hubs/_index.adoc:251
 msgid ""
-"Due to very high requirements of bandwidth, storage and adminstration the "
+"Due to very high requirements of bandwidth, storage and administration the "
 "FreeBSD Project has decided not to allow public mirrors of packages.  For "
 "sites with lots of machines, it might be advantagous to run a caching HTTP "
 "proxy for the man:pkg[8] process.  Alternatively specific packages and their "
@@ -706,7 +707,7 @@ msgstr ""
 #. type: Title ====
 #: documentation/content/en/articles/hubs/_index.adoc:336
 #, no-wrap
-msgid "I am an Official Mirror, What is the Right Rite for Me?"
+msgid "I am an Official Mirror, What is the Right Site for Me?"
 msgstr ""
 
 #. type: Plain text
@@ -876,7 +877,9 @@ msgstr ""
 
 #. type: Plain text
 #: documentation/content/en/articles/hubs/_index.adoc:406
-msgid "We are not accepting any new mirrors at this time."
+msgid ""
+"Please contact the Cluster Administrators as documented at https://www."
+"FreeBSD.org/administration/#t-clusteradm."
 msgstr ""
 
 #. type: Title ==

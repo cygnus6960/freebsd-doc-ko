@@ -5,7 +5,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2022-02-01 09:20-0300\n"
+"POT-Creation-Date: 2024-01-17 20:34-0300\n"
 "PO-Revision-Date: 2023-04-20 16:42+0000\n"
 "Last-Translator: Lorenzo Salvadore <salvadore@freebsd.org>\n"
 "Language-Team: Italian <https://translate-dev.freebsd.org/projects/"
@@ -19,28 +19,40 @@ msgstr ""
 
 #. type: YAML Front Matter: description
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:1
-#, no-wrap
-msgid "A brief introduction to AsciiDoctor"
+#, fuzzy, no-wrap
+#| msgid "A brief introduction to AsciiDoctor"
+msgid "A brief introduction to Asciidoctor"
 msgstr "Una breve introduzione ad AsciiDoctor"
 
 #. type: YAML Front Matter: title
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:1
-#, no-wrap
-msgid "Chapter 6. AsciiDoctor Primer"
+#, fuzzy, no-wrap
+#| msgid "Chapter 6. AsciiDoctor Primer"
+msgid "Chapter 6. Asciidoctor Primer"
 msgstr "Capitolo 6. Guida introduttiva ad AsciiDoctor"
 
 #. type: Title =
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:13
-#, no-wrap
-msgid "AsciiDoctor Primer"
+#, fuzzy, no-wrap
+#| msgid "AsciiDoctor Primer"
+msgid "Asciidoctor Primer"
 msgstr "Guida introduttiva ad AsciiDoctor"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:54
+#, fuzzy
+#| msgid ""
+#| "Most FDP documentation is written with AsciiDoc.  This chapter explains "
+#| "what that means, how to read and understand the documentation source, and "
+#| "the techniques used.  To get a complete reference of the AsciiDoctor "
+#| "capabilities please consult the link:https://docs.asciidoctor.org/home/"
+#| "[Asciidoctor documentation].  Some of the examples used in this chapter "
+#| "have been taken from the link:https://docs.asciidoctor.org/asciidoc/"
+#| "latest/syntax-quick-reference[AsciiDoc Syntax Quick Reference]."
 msgid ""
 "Most FDP documentation is written with AsciiDoc.  This chapter explains what "
 "that means, how to read and understand the documentation source, and the "
-"techniques used.  To get a complete reference of the AsciiDoctor "
+"techniques used.  To get a complete reference of the Asciidoctor "
 "capabilities please consult the link:https://docs.asciidoctor.org/home/"
 "[Asciidoctor documentation].  Some of the examples used in this chapter have "
 "been taken from the link:https://docs.asciidoctor.org/asciidoc/latest/syntax-"
@@ -176,8 +188,13 @@ msgstr "Titoli"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:103
+#, fuzzy
+#| msgid ""
+#| "AsciiDoctor supports six headings levels.  If the document type is "
+#| "`article` only one level 0 (`=`) can be used.  If the document type is "
+#| "`book` then there can be multiple level 0 (`=`) headings."
 msgid ""
-"AsciiDoctor supports six headings levels.  If the document type is `article` "
+"Asciidoctor supports six headings levels.  If the document type is `article` "
 "only one level 0 (`=`) can be used.  If the document type is `book` then "
 "there can be multiple level 0 (`=`) headings."
 msgstr ""
@@ -306,16 +323,22 @@ msgstr "Elenchi"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:160
+#, fuzzy
+#| msgid ""
+#| "AsciiDoctor supports a few types of lists, the most common are `ordered` "
+#| "and `unordered`.  To get more information about lists, see link:https://"
+#| "docs.asciidoctor.org/asciidoc/latest/syntax-quick-reference/"
+#| "#lists[AsciiDoc Syntax Quick Reference]."
 msgid ""
-"AsciiDoctor supports a few types of lists, the most common are `ordered` and "
+"Asciidoctor supports a few types of lists, the most common are `ordered` and "
 "`unordered`.  To get more information about lists, see link:https://docs."
 "asciidoctor.org/asciidoc/latest/syntax-quick-reference/#lists[AsciiDoc "
 "Syntax Quick Reference]."
 msgstr ""
 "AsciiDoctor sopporta alcuni tipi di elenchi, i più comuni dei quali sono "
 "`ordered` e `unordered`. Per ottenere maggiori informazioni sugli elenchi, "
-"si veda link:https://docs.asciidoctor.org/asciidoc/latest/"
-"syntax-quick-reference/#lists[Riferimento Veloce alla Sintassi AsciiDoc]."
+"si veda link:https://docs.asciidoctor.org/asciidoc/latest/syntax-quick-"
+"reference/#lists[Riferimento Veloce alla Sintassi AsciiDoc]."
 
 #. type: Title ===
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:162
@@ -433,10 +456,17 @@ msgstr "link:https://www.FreeBSD.org[FreeBSD]\n"
 
 #. type: delimited block = 4
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:219
+#, fuzzy
+#| msgid ""
+#| "As the AsciiDoctor documentation describes, the `link` macro is not "
+#| "required when the target starts with a URL scheme like `https`.  However, "
+#| "it is a good practice to do this anyway to ensure that AsciiDoctor "
+#| "renders the link correctly, especially in non-latin languages like "
+#| "Japanese."
 msgid ""
-"As the AsciiDoctor documentation describes, the `link` macro is not required "
+"As the Asciidoctor documentation describes, the `link` macro is not required "
 "when the target starts with a URL scheme like `https`.  However, it is a "
-"good practice to do this anyway to ensure that AsciiDoctor renders the link "
+"good practice to do this anyway to ensure that Asciidoctor renders the link "
 "correctly, especially in non-latin languages like Japanese."
 msgstr ""
 "Come descritto dalla documentazione AsciiDoctor, la macro `link` non è "
@@ -453,8 +483,13 @@ msgstr "Collegamento interno"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:226
+#, fuzzy
+#| msgid ""
+#| "To point to another book or article the AsciiDoctor variables should be "
+#| "used.  For example, if we are in the `cups` article and we want to point "
+#| "to `ipsec-must` these steps should be used."
 msgid ""
-"To point to another book or article the AsciiDoctor variables should be "
+"To point to another book or article the Asciidoctor variables should be "
 "used.  For example, if we are in the `cups` article and we want to point to "
 "`ipsec-must` these steps should be used."
 msgstr ""
@@ -479,8 +514,12 @@ msgstr "\\include::shared/{lang}/urls.adoc[]\n"
 
 #. type: Plain text
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:234
+#, fuzzy
+#| msgid ""
+#| "Then create a link using the AsciiDoctor variable to the `ipsec-must` "
+#| "article."
 msgid ""
-"Then create a link using the AsciiDoctor variable to the `ipsec-must` "
+"Then create a link using the Asciidoctor variable to the `ipsec-must` "
 "article."
 msgstr ""
 "Dunque creare il collegamento usando la variable AsciiDoctor per l'articolo "
@@ -500,13 +539,199 @@ msgstr "extref:{ipsec-must}[articolo IPSec-Must]"
 #. type: Title ==
 #: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:244
 #, no-wrap
+msgid "Images and Icons"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:248
+msgid ""
+"Images and icons play a crucial role in enhancing the overall user "
+"experience.  These visual elements are strategically integrated to convey "
+"information, clarify concepts, and provide a visually engaging interface."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:250
+#, no-wrap
+msgid "Images"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:253
+msgid ""
+"Images help illustrate complex concepts, making them more accessible to "
+"users."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:255
+msgid ""
+"The first step will be to add the image in the images directory in the path:"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:257
+msgid "[.filename]#~/website/static/images/# for the website."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:258
+msgid "[.filename]#~/documentation/static/images/# for the documentation."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:260
+msgid ""
+"For example, to add a new image to the FreeBSD installation process, the "
+"image will be saved to the path [.filename]#~/documentation/static/images/"
+"books/handbook/bsdinstall/new-image3.png#."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:262
+msgid ""
+"The next step will be to configure the Asciidoctor attributes `images-path` "
+"and `imagesdir`."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:264
+msgid ""
+"We are going to use as an example the header of the extref:{freebsd-releng}"
+"[FreeBSD Release Engineering] article."
+msgstr ""
+
+#. type: Title =
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:267
+#, no-wrap
+msgid "FreeBSD Release Engineering"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:269
+msgid ":doctype: article"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:271
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:278
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:283
+msgid "[...]"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:273
+msgid ":images-path: articles/freebsd-releng/ <1>"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:276
+msgid "ifdef::env-beastie[] ifdef::backend-html5[]"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:281
+msgid ":imagesdir: ../../../images/{images-path} <2> endif::[]"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:287
+msgid "Makes reference to the path inside [.filename]#/static/images# folder."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:288
+msgid "Makes reference to the Asciidoctor attribute."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:290
+msgid ""
+"Once the image is in the correct path and the Asciidoctor attributes have "
+"been configured in the document, the `image` macro can be used."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:292
+msgid "This is an example:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:295
+#, no-wrap
+msgid "image::new-image3.png[New step in the FreeBSD install process]\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:300
+msgid ""
+"To improve accessibility, it is mandatory to add descriptive text to each "
+"image."
+msgstr ""
+
+#. type: Title ===
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:303
+#, no-wrap
+msgid "Icons"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:306
+msgid "Icons serve as intuitive symbols for quick recognition and navigation."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:308
+msgid ""
+"The first step to use icons is to add the `icons` property to the "
+"Asciidoctor properties section, at the top of each document."
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:311
+#, no-wrap
+msgid ":icons: font\n"
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:314
+msgid ""
+"Once the Asciidoctor icon property has been set an icon supported by link:"
+"https://fontawesome.com/v4/icons/[Font Awesome] can be added."
+msgstr ""
+
+#. type: Plain text
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:316
+msgid "This is an example about how to use the `envelope` icon:"
+msgstr ""
+
+#. type: delimited block . 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:319
+#, no-wrap
+msgid "icon:envelope[link=mailto:test@example.com, title=\"contact\"]\n"
+msgstr ""
+
+#. type: delimited block = 4
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:324
+msgid ""
+"To improve the accessibility of the website, the `title` attribute is "
+"mandatory."
+msgstr ""
+
+#. type: Title ==
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:327
+#, no-wrap
 msgid "Conclusion"
 msgstr "Conclusione"
 
 #. type: Plain text
-#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:247
+#: documentation/content/en/books/fdp-primer/asciidoctor-primer/_index.adoc:330
+#, fuzzy
+#| msgid ""
+#| "This is the conclusion of this AsciiDoctor primer.  For reasons of space "
+#| "and complexity, several things have not been covered in depth (or at all)."
 msgid ""
-"This is the conclusion of this AsciiDoctor primer.  For reasons of space and "
+"This is the conclusion of this Asciidoctor primer.  For reasons of space and "
 "complexity, several things have not been covered in depth (or at all)."
 msgstr ""
 "Questa è la fine di questa guida introduttiva ad AsciiDoctor.  Per ragioni "

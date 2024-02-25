@@ -50,7 +50,7 @@ other = "Ultima modifica"
 other = "da"
 
 [search]
-other = "Search"
+other = "Ricerca"
 
 # ---------------------------------------------------
 # Header
@@ -115,6 +115,9 @@ other = "FreeBSD man page"
 # ---------------------------------------------------
 # Footer
 # ---------------------------------------------------
+[system]
+other = "System"
+
 [light]
 other = "Light"
 

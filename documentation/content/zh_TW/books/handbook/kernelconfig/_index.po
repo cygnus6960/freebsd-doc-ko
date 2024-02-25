@@ -6,7 +6,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2023-04-20 20:56-0300\n"
+"POT-Creation-Date: 2023-07-15 16:41-0300\n"
 "PO-Revision-Date: 2022-01-21 23:24+0000\n"
 "Last-Translator: Anonymous <noreply@weblate.org>\n"
 "Language-Team: Chinese (Traditional) <https://translate-dev.freebsd.org/"
@@ -34,7 +34,7 @@ msgstr ""
 #: documentation/content/en/books/handbook/kernelconfig/_index.adoc:1
 #, fuzzy, no-wrap
 #| msgid "Configuring the FreeBSD Kernel"
-msgid "Chapter 9. Configuring the FreeBSD Kernel"
+msgid "Chapter 10. Configuring the FreeBSD Kernel"
 msgstr "設定 FreeBSD 核心"
 
 #. type: Title =

@@ -1,6 +1,6 @@
 /*
- * Copyright (c) 1994-2022, The FreeBSD Documentation Project
- * Copyright (c) 2021-2022, Sergio Carlavilla <carlavilla@FreeBSD.org>
+ * Copyright (c) 1994-2023, The FreeBSD Documentation Project
+ * Copyright (c) 2021-2023, Sergio Carlavilla <carlavilla@FreeBSD.org>
  * All rights reserved.
  *
  * Redistribution and use in source and binary forms, with or without
@@ -251,6 +251,7 @@ h2 {
 
 h3 {
   font-size: var(--size-550);
+  padding-top: .8rem;
 }
 
 h4 {

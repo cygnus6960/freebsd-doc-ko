@@ -2,12 +2,13 @@
 # Copyright (C) YEAR The FreeBSD Project
 # This file is distributed under the same license as the FreeBSD Documentation package.
 # Kyung-tak, Yoo <stonegaze@me.com>, 2023.
-# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023.
+# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023, 2024.
+# Minsoo Choo <minsoochoo0122@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2023-04-20 20:56-0300\n"
-"PO-Revision-Date: 2023-04-26 20:24+0000\n"
+"POT-Creation-Date: 2023-05-21 14:43-0300\n"
+"PO-Revision-Date: 2024-01-13 04:45+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/articlescontributors_index/ko/>\n"
@@ -34,7 +35,7 @@ msgstr ""
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:62
 msgid "Abstract"
-msgstr "요약"
+msgstr "개요"
 
 #. type: Plain text
 #: documentation/content/en/articles/contributors/_index.adoc:65
@@ -451,8 +452,7 @@ msgstr ""
 #: documentation/content/en/articles/contributors/_index.adoc:202
 msgid ""
 "Larry Altneu <mailto:larry@alr.com[larry@alr.com],> and {wilko}, provided "
-"Wangtek and Archive QIC-02 tape drives in order to improve the [."
-"filename]#wt# driver."
+"Wangtek and Archive QIC-02 tape drives to improve the [.filename]#wt# driver."
 msgstr ""
 
 #. type: Plain text
@@ -495,8 +495,8 @@ msgstr ""
 #: documentation/content/en/articles/contributors/_index.adoc:207
 msgid ""
 "Mike Tancsa <mailto:mike@sentex.ca[mike@sentex.ca]> donated four various ATM "
-"PCI cards in order to help increase support of these cards as well as help "
-"support the development effort of the netatm ATM stack."
+"PCI cards to help increase support of these cards as well as help support "
+"the development effort of the netatm ATM stack."
 msgstr ""
 
 #. type: Title ===

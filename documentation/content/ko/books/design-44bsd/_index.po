@@ -2,12 +2,13 @@
 # Copyright (C) YEAR The FreeBSD Project
 # This file is distributed under the same license as the FreeBSD Documentation package.
 # Kyung-tak, Yoo <stonegaze@me.com>, 2023.
-# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023.
+# "Kyung-tak, Yoo" <stonegaze@me.com>, 2023, 2024.
+# Minsoo Choo <minsoochoo0122@proton.me>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: FreeBSD Documentation VERSION\n"
-"POT-Creation-Date: 2023-04-20 20:56-0300\n"
-"PO-Revision-Date: 2023-05-02 04:45+0000\n"
+"POT-Creation-Date: 2024-01-17 20:35-0300\n"
+"PO-Revision-Date: 2024-01-13 04:45+0000\n"
 "Last-Translator: \"Kyung-tak, Yoo\" <stonegaze@me.com>\n"
 "Language-Team: Korean <https://translate-dev.freebsd.org/projects/"
 "documentation/booksdesign-44bsd_index/ko/>\n"
@@ -22,7 +23,7 @@ msgstr ""
 #: documentation/content/en/books/design-44bsd/_index.adoc:1
 #, no-wrap
 msgid "Donated by Addison-Wesley, provides a design overview of 4.4BSD, from which FreeBSD was originally derived"
-msgstr ""
+msgstr "Addison-Wesley으로부터 FreeBSD가 기원한 4.4BSD의 디자인 개요를 후원 받음"
 
 #. type: Title =
 #: documentation/content/en/books/design-44bsd/_index.adoc:1
@@ -1079,7 +1080,7 @@ msgid ""
 "control access to terminals and to provide a means of distributing signals "
 "to collections of related processes.  A process inherits its process group "
 "from its parent process.  Mechanisms are provided by the kernel to allow a "
-"process to alter its process group or the process group of its descendents.  "
+"process to alter its process group or the process group of its descendants.  "
 "Creating a new process group is easy; the value of a new process group is "
 "ordinarily the process identifier of the creating process."
 msgstr ""
@@ -2492,7 +2493,7 @@ msgstr ""
 #: documentation/content/en/books/design-44bsd/_index.adoc:829
 #, no-wrap
 msgid "References"
-msgstr "참고 자료"
+msgstr "참조"
 
 #. type: Plain text
 #: documentation/content/en/books/design-44bsd/_index.adoc:832
